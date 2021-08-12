@@ -11,11 +11,13 @@
   font-style: normal;
   // font-weight: 400;
   src: url("../assets/fonts/bebas-neue-v2-latin-regular.eot");
-  src: url("../assets/fonts/bebas-neue-v2-latin-regular.eot") format("embedded-opentype"),
+  src: url("../assets/fonts/bebas-neue-v2-latin-regular.eot")
+      format("embedded-opentype"),
     url("../assets/fonts/bebas-neue-v2-latin-regular.woff2") format("woff2"),
     url("../assets/fonts/bebas-neue-v2-latin-regular.woff") format("woff"),
     url("../assets/fonts/bebas-neue-v2-latin-regular.ttf") format("truetype"),
-    url("../assets/fonts/bebas-neue-v2-latin-regular.svg#BebasNeue") format("svg");
+    url("../assets/fonts/bebas-neue-v2-latin-regular.svg#BebasNeue")
+      format("svg");
 }
 
 @font-face {
@@ -244,7 +246,6 @@ a.underline.cool-link::after {
 }
 
 .header.show {
-
   .hamburger-container,
   .start-project,
   .logo {
@@ -269,7 +270,6 @@ a.underline.cool-link::after {
 }
 
 .header.initial {
-
   .hamburger-container,
   .start-project,
   .logo {
@@ -466,7 +466,6 @@ mark {
 }
 
 @-webkit-keyframes opacity {
-
   0%,
   100% {
     opacity: 0;
@@ -478,7 +477,6 @@ mark {
 }
 
 @-webkit-keyframes change {
-
   0%,
   12.66%,
   100% {
@@ -512,7 +510,6 @@ mark {
 }
 
 @-o-keyframes opacity {
-
   0%,
   100% {
     opacity: 0;
@@ -524,7 +521,6 @@ mark {
 }
 
 @-o-keyframes change {
-
   0%,
   12.66%,
   100% {
@@ -558,7 +554,6 @@ mark {
 }
 
 @-moz-keyframes opacity {
-
   0%,
   100% {
     opacity: 0;
@@ -570,7 +565,6 @@ mark {
 }
 
 @-moz-keyframes change {
-
   0%,
   12.66%,
   100% {
@@ -615,7 +609,6 @@ mark {
 }
 
 @keyframes opacity {
-
   0%,
   100% {
     opacity: 0;
@@ -627,7 +620,6 @@ mark {
 }
 
 @keyframes change {
-
   0%,
   12.66%,
   100% {
@@ -1030,26 +1022,26 @@ footer {
 }
 
 /* Animation */
-.parallax>use {
+.parallax > use {
   animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
 }
 
-.parallax>use:nth-child(1) {
+.parallax > use:nth-child(1) {
   animation-delay: -2s;
   animation-duration: 7s;
 }
 
-.parallax>use:nth-child(2) {
+.parallax > use:nth-child(2) {
   animation-delay: -3s;
   animation-duration: 10s;
 }
 
-.parallax>use:nth-child(3) {
+.parallax > use:nth-child(3) {
   animation-delay: -4s;
   animation-duration: 13s;
 }
 
-.parallax>use:nth-child(4) {
+.parallax > use:nth-child(4) {
   animation-delay: -5s;
   animation-duration: 20s;
 }
@@ -1141,7 +1133,6 @@ footer {
 }
 
 @media screen and (max-width: 1450px) {
-
   .lf-player-container,
   #lottie {
     width: 480px;
@@ -1293,7 +1284,7 @@ footer {
     min-height: 96.5em;
 
     div.main-section-six {
-      &>.wave {
+      & > .wave {
         width: 100%;
       }
 
@@ -1371,7 +1362,10 @@ footer {
 }
 
 @media screen and (max-width: 750px) {
-  section.section-six .main-section-six .services-container div.services-support {
+  section.section-six
+    .main-section-six
+    .services-container
+    div.services-support {
     top: 1150px;
   }
 
@@ -1381,7 +1375,11 @@ footer {
 }
 
 @media screen and (max-width: 650px) {
-  div section.section-six .main-section-six .services-container div.services-support {
+  div
+    section.section-six
+    .main-section-six
+    .services-container
+    div.services-support {
     top: 1250px;
   }
 
@@ -1391,7 +1389,10 @@ footer {
 }
 
 @media screen and (max-width: 1180px) {
-  section.section-six .main-section-six .services-container div.services-support {
+  section.section-six
+    .main-section-six
+    .services-container
+    div.services-support {
     top: 1150px;
   }
 
@@ -1419,7 +1420,12 @@ footer {
 // }
 
 @media screen and (max-width: 390px) {
-  div div section.section-six div.main-section-six div.services-container div.services-support {
+  div
+    div
+    section.section-six
+    div.main-section-six
+    div.services-container
+    div.services-support {
     top: 1300px;
     padding-right: 5%;
     padding-left: 5%;
@@ -1431,7 +1437,6 @@ footer {
 }
 
 @media screen and (max-width: 961px) {
-
   // .yellow-detail.mobile {
   //   display: block;
   // }
@@ -1580,14 +1585,22 @@ footer {
     margin: 0 auto;
   }
 
-  section.section-six .main-section-six .services-container .services-intro .detail-services-container .detail-services-elm img {
+  section.section-six
+    .main-section-six
+    .services-container
+    .services-intro
+    .detail-services-container
+    .detail-services-elm
+    img {
     max-width: 30px;
   }
 
   div.showcase.aerial {
-    background-image: linear-gradient(to bottom,
+    background-image: linear-gradient(
+        to bottom,
         rgba(237, 107, 0, 0.25),
-        rgba(237, 107, 0, 0.8)),
+        rgba(237, 107, 0, 0.8)
+      ),
       url("../images/access-mobile.jpg");
   }
 
@@ -1596,9 +1609,11 @@ footer {
   }
 
   div.showcase.maglashic {
-    background-image: linear-gradient(90deg,
+    background-image: linear-gradient(
+        90deg,
         rgb(249, 217, 222) 0%,
-        rgba(255, 255, 255, 0.19) 10%),
+        rgba(255, 255, 255, 0.19) 10%
+      ),
       url("../images/Mobile\ 400x700.jpg");
   }
 
@@ -1609,9 +1624,11 @@ footer {
   }
 
   div.showcase.tweewielers {
-    background-image: linear-gradient(90deg,
+    background-image: linear-gradient(
+        90deg,
         #008cb0 0%,
-        rgba(255, 255, 255, 0.19) 10%),
+        rgba(255, 255, 255, 0.19) 10%
+      ),
       url("../images/tweewielers\ mobiel.jpg");
   }
 
@@ -1740,7 +1757,6 @@ footer {
   }
 
   .section-two {
-
     // height: auto;
     // margin-bottom: 60px;
     .main-section-two {
@@ -1820,7 +1836,7 @@ footer {
     margin-bottom: 0;
   }
 
-  div>div>div.header.initial>div.hamburger-container>div>a {
+  div > div > div.header.initial > div.hamburger-container > div > a {
     padding-top: 26px;
   }
 
@@ -2030,7 +2046,8 @@ footer {
   }
 }
 
-@media screen and (max-width: 320px) {}
+@media screen and (max-width: 320px) {
+}
 
 // CLIENTS LOGOS
 $logo-max-width: 200px;
@@ -2543,18 +2560,22 @@ div.typeform-widget {
         }
 
         a {
-          background: radial-gradient(73.33% 391.36% at 12.18% 26.67%,
-              #f3e04e 0%,
-              #e3d239 100%);
+          background: radial-gradient(
+            73.33% 391.36% at 12.18% 26.67%,
+            #f3e04e 0%,
+            #e3d239 100%
+          );
           width: fit-content;
           border-radius: 10px;
           padding: 15px 20px;
           transition: 1s;
 
           &:hover {
-            background: radial-gradient(73.33% 391.36% at 12.18% 26.67%,
-                #e6d34b 0%,
-                #d3c333 100%);
+            background: radial-gradient(
+              73.33% 391.36% at 12.18% 26.67%,
+              #e6d34b 0%,
+              #d3c333 100%
+            );
           }
         }
       }
@@ -2704,7 +2725,7 @@ div.container-services.support#support {
     }
   }
 
-  #home>div.menu.open>div.menu-nav>nav>ul>li>a {
+  #home > div.menu.open > div.menu-nav > nav > ul > li > a {
     font-size: 2rem;
   }
 
@@ -2756,11 +2777,22 @@ div.container-services.support#support {
   display: flex;
 }
 
-#gatsby-focus-wrapper>div>section.section-three>div>div:nth-child(2)>div>video {
+#gatsby-focus-wrapper
+  > div
+  > section.section-three
+  > div
+  > div:nth-child(2)
+  > div
+  > video {
   max-width: 90vw;
 }
 
-#gatsby-focus-wrapper>div>section.section-three>div>div:nth-child(2)>img {
+#gatsby-focus-wrapper
+  > div
+  > section.section-three
+  > div
+  > div:nth-child(2)
+  > img {
   max-width: 70vw;
 }
 
@@ -2781,9 +2813,11 @@ div.container-services.support#support {
 
 a.see-more {
   margin: 50px 0 0 0;
-  background: radial-gradient(73.33% 391.36% at 12.18% 26.67%,
-      #f3e04e 0%,
-      #e3d239 100%);
+  background: radial-gradient(
+    73.33% 391.36% at 12.18% 26.67%,
+    #f3e04e 0%,
+    #e3d239 100%
+  );
   border-radius: 10px;
   padding: 15px 20px;
   transition: 1s;
@@ -2793,9 +2827,11 @@ a.see-more {
 }
 
 .showcase.maglashic {
-  background-image: linear-gradient(to right,
+  background-image: linear-gradient(
+      to right,
       rgba(249, 217, 222, 0.25),
-      rgba(249, 217, 222, 1)),
+      rgba(249, 217, 222, 1)
+    ),
     url("../images/Desktop\ 72px.jpg");
 }
 
@@ -2865,9 +2901,11 @@ a.see-more {
 }
 
 .showcase.tweewielers {
-  background-image: linear-gradient(to right,
+  background-image: linear-gradient(
+      to right,
       rgba(179, 221, 231, 0.1),
-      rgba(179, 221, 231, 0.9)),
+      rgba(179, 221, 231, 0.9)
+    ),
     url("../images/tweewielers\ desktop.jpg");
 }
 
@@ -2878,7 +2916,14 @@ a.see-more {
 }
 
 @media screen and (max-width: 960px) {
-  div>section.study-case-container>div.showcase.tweewielers>a>div.media>div>div>video {
+  div
+    > section.study-case-container
+    > div.showcase.tweewielers
+    > a
+    > div.media
+    > div
+    > div
+    > video {
     margin: 50px auto;
   }
 
@@ -2887,7 +2932,12 @@ a.see-more {
   }
 }
 
-section.study-case-container>div.showcase.tweewielers>a>div.media>div>div {
+section.study-case-container
+  > div.showcase.tweewielers
+  > a
+  > div.media
+  > div
+  > div {
   height: 400px !important;
   width: auto !important;
 }
@@ -2898,9 +2948,11 @@ section.study-case-container>div.showcase.tweewielers>a>div.media>div>div {
 
 .showcase.aerial {
   // background: rgba(74, 94, 131, 0.4);
-  background-image: linear-gradient(to left,
+  background-image: linear-gradient(
+      to left,
       rgba(237, 107, 0, 0.25),
-      rgba(237, 107, 0, 0.8)),
+      rgba(237, 107, 0, 0.8)
+    ),
     url("../images/access-desktop.jpg");
 }
 
@@ -2924,42 +2976,45 @@ section.study-case-container>div.showcase.tweewielers>a>div.media>div>div {
 .thumbnail-work.maglashic {
   background-image: url("../images/maglashic-thumbnail.png");
 }
+.maglashic {
+  background-image: url("../images/maglashic-thumbnail.png");
+}
 
 .thumbnail-work.four-editors {
   background-image: url("../images/four-editors-work.jpeg");
   background-position-x: 10%;
 }
-
+.four-editors {
+  background-image: url("../images/four-editors-work.jpeg");
+  background-position-x: 10%;
+}
 .thumbnail-work.faminci {
   background-image: url("../images/faminci-work.jpeg");
   background-position-x: 100%;
 }
-
+.faminci {
+  background-image: url("../images/faminci-work.jpeg");
+  background-position-x: 100%;
+}
 .thumbnail-work.tm {
   background-image: url("../images/fietsenwinkel.jpg");
 }
-
-.thumbnail-work {
-  height: 550px;
-  max-width: 450px;
-  min-width: 400px;
+.tm {
+  background-image: url("../images/fietsenwinkel.jpg");
+}
+.thumbnail__col {
+  height: 550px !important;
+  max-width: 400px !important;
   margin: 25px;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
   background-repeat: no-repeat;
-  position: relative;
 }
-
-article.thumbnail-work:nth-of-type(odd) {
-  margin-right: 0;
-}
-
-.recent-work--info {
-  position: absolute;
-  bottom: 25px;
-  left: 25px;
-  right: 25px;
-  color: white;
-
+.thumbnail__text {
+  margin-top: auto !important;
+  padding: 0 25px;
+  padding-bottom: 25px;
   h3 {
     color: white;
     font-size: 24px;
@@ -2971,44 +3026,59 @@ article.thumbnail-work:nth-of-type(odd) {
     font-style: italic;
   }
 }
-
-.recent-work-container {
-  display: flex;
-  margin: 25px auto;
-  overflow-y: hidden;
+article.thumbnail-work:nth-of-type(odd) {
+  margin-right: 0;
 }
+
+// .recent-work--info {
+//   position: absolute;
+//   bottom: 25px;
+//   left: 25px;
+//   right: 25px;
+//   color: white;
+
+//   h3 {
+//     color: white;
+//     font-size: 24px;
+//   }
+
+//   p {
+//     color: white;
+//     margin-top: 10px;
+//     font-style: italic;
+//   }
+// }
+
+// .recent-work-container {
+//   display: flex;
+//   margin: 25px auto;
+//   overflow-y: hidden;
+// }
 
 .recent-work {
   background: #fff;
-  overflow-x: scroll;
   -webkit-overflow-scrolling: touch;
   width: 100vw;
   overflow-y: hidden;
-  white-space: nowrap;
-  position: relative;
-  display: block;
   margin: 0;
+}
+.recent-work-container {
+  display: flex;
+  margin: 25px auto;
+ 
 }
 
 @media screen and (min-width: 601px) and (max-width: 961px) {
-  #home>div.header.initial>a>img {
+  #home > div.header.initial > a > img {
     margin-left: 100%;
   }
 }
 
 @media screen and (min-width: 1181px) {
-  #doen-wij>div>div.services>div.services-support.service {
+  #doen-wij > div > div.services > div.services-support.service {
     padding-left: 75px;
   }
 }
-
-
-
-
-
-
-
-
 
 .container-banner {
   height: 80vh;
@@ -3028,7 +3098,6 @@ article.thumbnail-work:nth-of-type(odd) {
 
 .container-banner.aerial {
   background-image: url("../images/aerial-work.png");
- 
 }
 
 @media screen and (max-width: 961px) {
@@ -3051,11 +3120,9 @@ article.thumbnail-work:nth-of-type(odd) {
   padding: 175px 100px;
   height: 100vh;
 
-
   .work-main--info {
     display: flex;
     justify-content: space-between;
-
 
     .subtext {
       width: 48%;
@@ -3083,7 +3150,6 @@ article.thumbnail-work:nth-of-type(odd) {
         line-height: 22px;
       }
     }
-
   }
 
   .work-icons {
@@ -3101,11 +3167,10 @@ article.thumbnail-work:nth-of-type(odd) {
       }
     }
   }
-  
 }
 .work-summary {
   height: auto;
- padding-bottom: 100px;
+  padding-bottom: 100px;
   div {
     max-width: 650px;
     margin: 200px 100px;
@@ -3113,14 +3178,14 @@ article.thumbnail-work:nth-of-type(odd) {
       font-size: 20px;
       line-height: 25px;
     }
-  h3 {
-    font-family: "BebasNeue";
-    font-weight: 100;
-    line-height: 55px;
-    font-size: 48px;
-    max-width: 75%;
+    h3 {
+      font-family: "BebasNeue";
+      font-weight: 100;
+      line-height: 55px;
+      font-size: 48px;
+      max-width: 75%;
+    }
   }
-}
 }
 .work-subbanner {
   background-image: url("../images/aerial-tijdelijk.png");
@@ -3135,18 +3200,16 @@ article.thumbnail-work:nth-of-type(odd) {
     background: rgba(238, 235, 224, 1);
     padding: 50px 5%;
     height: auto;
-  
-  
+
     .work-main--info {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-  
-  
+
       .subtext {
         width: 100%;
         margin: 50px auto;
-  
+
         h2 {
           font-family: "BebasNeue";
           font-weight: 100;
@@ -3154,24 +3217,23 @@ article.thumbnail-work:nth-of-type(odd) {
           font-size: 48px;
         }
       }
-  
+
       .main-text {
-       width: 100%;
-  
+        width: 100%;
+
         h3 {
           font-family: "BebasNeue";
           font-weight: 100;
           line-height: 55px;
           font-size: 48px;
         }
-  
+
         p {
           line-height: 22px;
         }
       }
-  
     }
-  
+
     .work-icons {
       display: flex;
       justify-content: space-evenly;
@@ -3187,7 +3249,6 @@ article.thumbnail-work:nth-of-type(odd) {
         }
       }
     }
-    
   }
 
   .work-summary {
@@ -3201,14 +3262,14 @@ article.thumbnail-work:nth-of-type(odd) {
         font-size: 20px;
         line-height: 25px;
       }
-    h3 {
-      font-family: "BebasNeue";
-      font-weight: 100;
-      line-height: 55px;
-      font-size: 48px;
-      max-width: 75%;
+      h3 {
+        font-family: "BebasNeue";
+        font-weight: 100;
+        line-height: 55px;
+        font-size: 48px;
+        max-width: 75%;
+      }
     }
-  }
   }
 }
 
