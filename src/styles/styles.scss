@@ -1447,6 +1447,7 @@ footer {
 
   div.inquiry-container {
     padding: 0 5%;
+    
   }
 
   div.showcase a.link-container {
@@ -2438,10 +2439,9 @@ $logo-max-height: 100px;
 // Inquiry page
 .inquiry-container {
   background-color: #f0ece2;
-  height: 100vh;
-  padding: 0 100px;
+  height: auto;
+  padding: 0px 100px 50px 0px;
   min-height: 30rem;
-  max-height: 100rem;
 }
 
 .screen__ContentWrapperInner-sc-9mfxmi-11.eHCVLw {
@@ -3264,3 +3264,34 @@ article.thumbnail-work:nth-of-type(odd) {
 .container-banner.maglashic {
   background-image: url("../images/work-maglashic.png");
 }
+
+.contact-info {
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  position: relative;
+    z-index: 1;
+  div {
+    display: flex;
+    flex-direction: column;
+    h3,
+    p,
+    a {
+      font-size: 16px;
+      line-height: 28px;
+      color: rgba(38, 38, 38, 0.7);
+      font-weight: 100;
+    }
+   
+  }
+}
+.typeform-widget {
+  margin-top: -60px;
+}
+@media screen and (min-width:601px) and (max-width: 960px) {
+  .header img.logo {
+    margin-left: 80%;
+  }
+}
+
+
