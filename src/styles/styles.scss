@@ -2677,8 +2677,12 @@ div.container-services.support#support {
 
       .hamburger-menu.open {
         &::before {
-          transform: translateY(-6px) rotate(45deg);
-        }
+          transform: translateY(-4px) rotate(45deg);
+          -webkit-transform: translateY(-4px) rotate(45deg);
+          -moz-transform: translateY(-4px) rotate(45deg);
+          -ms-transform: translateY(-4px) rotate(45deg);
+          -o-transform: translateY(-4px) rotate(45deg);
+}
 
         &::after {
           transform: translateY(4.5px) rotate(-45deg);
