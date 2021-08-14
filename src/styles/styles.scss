@@ -223,15 +223,23 @@ a.underline.cool-link::after {
   align-items: center;
 
   .hamburger-container {
-    transform: translatey(-30px);
+    transform: translateY(-30px);
     opacity: 0;
+    -webkit-transform: translateY(-30px);
+    -moz-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    -o-transform: translateY(-30px);
   }
 
   .logo {
     max-width: 150px;
     max-height: 55px;
-    transform: translatey(-30px);
+    transform: translateY(-30px);
     opacity: 0;
+    -webkit-transform: translateY(-30px);
+    -moz-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    -o-transform: translateY(-30px);
   }
 
   .start-project {
@@ -239,8 +247,12 @@ a.underline.cool-link::after {
     color: #1b1b1b;
     line-height: 19px;
     opacity: 0;
-    transform: translatey(-30px);
+    transform: translateY(-30px);
     position: fixed;
+    -webkit-transform: translateY(-30px);
+    -moz-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    -o-transform: translateY(-30px);
   }
 }
 
@@ -248,11 +260,15 @@ a.underline.cool-link::after {
   .hamburger-container,
   .start-project,
   .logo {
-    transition: opacity 0.5s;
+    transition: all 0.5s;
     animation-name: to-up;
     animation-timing-function: ease-out;
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
   }
 
   .hamburger-container {
@@ -302,25 +318,6 @@ mark {
   background: rgba(238, 111, 87, 0.5);
 }
 
-// .yellow-detail.small::before {
-//   height: 15px;
-//   top: 17px;
-// }
-
-// .yellow-detail::before {
-//   content: "";
-//   position: absolute;
-//   left: 50%;
-//   bottom: 16px;
-//   bottom: 5px;
-//   display: block;
-//   width: 100%;
-//   height: 25px;
-//   transform: skew(0) translateX(-50%);
-//   background: rgba(238, 111, 87, 0.5);
-//   z-index: -1;
-// }
-
 @keyframes slideInFromLeft {
   0% {
     opacity: 0;
@@ -345,10 +342,22 @@ mark {
   }
 }
 
-// .yellow-detail {
-//   position: relative;
-//   z-index: 2;
-// }
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0%);
+    -webkit-transform: translateY(0%);
+    -moz-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+    -o-transform: translateY(0%);
+  }
+}
 
 .main-section {
   display: flex;
@@ -722,17 +731,17 @@ mark {
 // x = 12.66 -> Time spent on a line
 
 // You can define a value and calculate the other if you want change speed or the number of lines
-@media screen and (max-width: 961) {
-  .showingOnPc {
-    display: none !important;
-  }
-}
+// @media screen and (max-width: 961) {
+//   .showingOnPc {
+//     display: none !important;
+//   }
+// }
 
-@media screen and (min-width: 961) {
-  .showingOnMobile {
-    display: none;
-  }
-}
+// @media screen and (min-width: 961) {
+//   .showingOnMobile {
+//     display: none;
+//   }
+// }
 
 .website-offer-container {
   background: #fffcf7;
@@ -1891,11 +1900,6 @@ footer {
           font-size: 38px;
           line-height: 40px;
 
-          // .yellow-detail:before {
-          //   height: 18px;
-          //   bottom: 2px;
-          // }
-
           p {
             font-size: 18px;
             line-height: 26px;
@@ -2677,7 +2681,11 @@ div.container-services.support#support {
 
       .hamburger-menu.open {
         &::before {
-          transform: translateY(-6px) rotate(45deg);
+          transform: translateY(-4px) rotate(45deg);
+          -webkit-transform: translateY(-4px) rotate(45deg);
+          -moz-transform: translateY(-4px) rotate(45deg);
+          -ms-transform: translateY(-4px) rotate(45deg);
+          -o-transform: translateY(-4px) rotate(45deg);
         }
 
         &::after {
