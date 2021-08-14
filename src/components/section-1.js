@@ -5,11 +5,13 @@ import Menu from "../components/menu";
 import MainSection from "./section-1/main";
 import { Player } from "@lottiefiles/react-lottie-player";
 import { AccessContext } from "../contexts/access";
+import useDeviceDetect from "../hooks/useDeviceDetect";
 
 const SectionOne = () => {
   const [isFirstAccess, pageLoaded] = React.useContext(AccessContext);
   const [open, setOpen] = React.useState(false);
   const [mounted, setMounted] = React.useState(false);
+  const { isMobile } = useDeviceDetect();
 
   setTimeout(() => {
     setMounted(true);
@@ -17,9 +19,9 @@ const SectionOne = () => {
 
   return (
     <section className="section-one" id="home">
-      {!pageLoaded && <div class="blank"></div>}
+      {!pageLoaded && !isMobile && <div class="blank"></div>}
 
-      {isFirstAccess && (
+      {isFirstAccess && !isMobile && (
         <div class={`loading ${mounted ? "hide" : ""}`}>
           <Player
             autoplay={true}
