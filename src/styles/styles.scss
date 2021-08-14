@@ -1290,7 +1290,7 @@ footer {
 
   section.section-six {
     min-height: 96.5em;
-
+    z-index: 321312;
     div.main-section-six {
       & > .wave {
         width: 100%;
@@ -1315,6 +1315,7 @@ footer {
         }
 
         div.service {
+          z-index: 1231312;
           position: unset;
           display: block;
           right: 0;
@@ -2186,7 +2187,7 @@ $logo-max-height: 100px;
   }
 
   .main-section-six {
-    opacity: 0;
+    opacity: 1;
 
     .services-container {
       position: relative;
@@ -2277,21 +2278,12 @@ $logo-max-height: 100px;
             color: rgba(27, 27, 27, 0.3);
           }
         }
-
-        // .yellow-detail {
-        //   font-weight: bold;
-        // }
-
-        // .yellow-detail::before {
-        //   height: 10px;
-        //   bottom: 0px;
-        //   font-weight: 900;
-        // }
       }
 
       .service {
         max-width: 550px;
         color: white;
+        z-index: 213321321;
 
         h2 {
           color: white;
@@ -2318,7 +2310,11 @@ $logo-max-height: 100px;
 
       .show {
         opacity: 1;
-        transition: opacity 4s;
+        transition: opacity 3s;
+        -webkit-transition: opacity 3s;
+        -moz-transition: opacity 3s;
+        -ms-transition: opacity 3s;
+        -o-transition: opacity 3s;
       }
     }
   }
