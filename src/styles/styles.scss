@@ -872,6 +872,8 @@ mark {
     height: 318px;
     width: 100%;
     position: absolute;
+    display: none;
+
 
     &.bottom {
       background-image: url("../assets/Onderkant\ wave.png");
@@ -1289,7 +1291,7 @@ footer {
   }
 
   section.section-six {
-    min-height: 96.5em;
+  
 
     div.main-section-six {
       & > .wave {
@@ -1784,7 +1786,7 @@ footer {
   }
 
   section.section-six {
-    height: 100em;
+    // height: 100em;
 
     div.main-section-six {
       div.services-container {
@@ -2136,17 +2138,19 @@ $logo-max-height: 100px;
 }
 
 .section-six {
-  background-color: #134354;
-  min-height: 71em;
-  height: auto;
+  // background-color: #134354;
+  background-image: url("../images/wavy-full.png");
+  min-height: 100em;
+  height: 100%;
   position: relative;
-  margin-bottom: 300px;
-  margin-top: 200px;
+  background-size: cover;
+  padding-top: 200px;
 
   .wave {
     height: 318px;
     width: 100%;
     position: absolute;
+    display: none;
 
     &.bottom {
       background-image: url("../assets/Wavy_bovenkant.png");
@@ -2444,7 +2448,7 @@ $logo-max-height: 100px;
 .inquiry-container {
   background-color: #f0ece2;
   height: auto;
-  padding: 0px 100px 50px 0px;
+  // padding: 0px 100px 50px 0px;
   min-height: 30rem;
 }
 
@@ -3303,3 +3307,9 @@ article.thumbnail-work:nth-of-type(odd) {
 }
 
 
+@media screen and (max-width: 1181px) {
+  section.section-six {
+    padding-bottom: 39rem;
+    padding-top: 20rem;
+  }
+}
