@@ -18,7 +18,7 @@ const MainSectionSix = () => {
     });
 
 return (
-<div className={`main-section-six ${inView && 'show' }`} id="doen-wij">
+<div className={`main-section-six ${ 'show' }`} id="doen-wij">
     <div className="services-container">
     <div className="services-intro">
         <div className="services-intro-text">
