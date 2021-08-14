@@ -1,8 +1,6 @@
 import React from "react";
-import Slider from "react-slick";
-import testimonialLogo from "../../assets/aerialaccess.png";
-import logoFour from "../../images/four-editors.png";
-import logoMaglashic from "../../images/clientsLogo/maglashic.png";
+import { StaticImage } from "gatsby-plugin-image"
+import Slider from "react-slick";;
 const LeftArrow = (props) => {
   const { className, style, onClick } = props;
   return (
@@ -10,6 +8,8 @@ const LeftArrow = (props) => {
       className={className}
       style={{ ...style, display: "block" }}
       onClick={onClick}
+      onKeyDown={onClick}
+      aria-hidden="true"
     >
       <svg
         width="16"
@@ -37,8 +37,10 @@ const RightArrow = (props) => {
       className={className}
       style={{ ...style, display: "block" }}
       onClick={onClick}
+      onKeyDown={onClick}
+      aria-hidden="true"
     >
-      <svg
+      <svg 
         width="16"
         height="30"
         viewBox="0 0 16 30"
@@ -72,7 +74,13 @@ const TestimonialSection = () => {
     <section className="testimonial-section">
       <Slider {...settings}>
         <div className="slider__item">
-          <img src={testimonialLogo} />
+          <StaticImage
+            src='../../assets/aerialaccess.png'
+            alt="aerial access"
+            width={165}
+            height={70}
+             loading="lazy"
+          />
           <h2>Aerial Access</h2>
           <p>
             “Enthousiaste agency met inzicht. Heeft voor Aerial Access een mooie
@@ -82,7 +90,7 @@ const TestimonialSection = () => {
           </p>
         </div>
         <div className="slider__item">
-          <img src={logoFour} />
+          <StaticImage src='../../images/four-editors.png' alt="four editors" width={200} height={25}  loading="lazy" />
           <h2>Four Editors</h2>
           <p>
             “Erg goed geholpen door Laforga. We zaten met wat problemen op de
@@ -91,7 +99,7 @@ const TestimonialSection = () => {
           </p>
         </div>
         <div className="slider__item">
-          <img src={logoMaglashic} />
+          <StaticImage src="../../images/clientsLogo/maglashic.png" alt="maglashic" width={200} height={50}  loading="lazy" />
           <h2>Maglashic</h2>
           <p>
             “Enthousiaste agency met inzicht. Heeft voor Aerial Access een mooie
@@ -101,7 +109,13 @@ const TestimonialSection = () => {
           </p>
         </div>
         <div className="slider__item">
-          <img src={testimonialLogo} />
+          <StaticImage
+            src='../../assets/aerialaccess.png'
+            alt="aerial access"
+            width={165}
+            height={70}
+             loading="lazy"
+          />
           <h2>Bedrijfsnaam</h2>
           <p>
             “Enthousiaste agency met inzicht. Heeft voor Aerial Access een mooie
@@ -111,7 +125,13 @@ const TestimonialSection = () => {
           </p>
         </div>
         <div className="slider__item">
-          <img src={testimonialLogo} />
+          <StaticImage
+            src='../../assets/aerialaccess.png'
+            alt="aerial access"
+            width={165}
+            height={70}
+             loading="lazy"
+          />
           <h2>Bedrijfsnaam</h2>
           <p>
             “Enthousiaste agency met inzicht. Heeft voor Aerial Access een mooie

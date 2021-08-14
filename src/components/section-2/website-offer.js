@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 import "../../styles/styles.scss";
 import { useInView } from "react-intersection-observer";
 import useDeviceDetect from "../../hooks/useDeviceDetect";
@@ -39,10 +39,12 @@ const WebsiteOffer = () => {
           className={`website-offer-container  ${inView && "show"} `}
           ref={ref}
         >
-          <h3 onClick={toggle}>
-            Geen webshop maar een website nodig?{" "}
-            {on ? <span>-</span> : <span>+</span>}
-          </h3>
+          <div onClick={toggle} onKeyDown={toggle} aria-hidden="true">
+            <h3>
+              Geen webshop maar een website nodig?{" "}
+              {on ? <span>-</span> : <span>+</span>}
+            </h3>
+          </div>
           <div className={on ? " showing" : "Question__response "}>
             <p className=" ">
               Wij zijn digitale bouwmeesters. In dit digitale tijdperk is het

@@ -1,4 +1,4 @@
-import * as React from "react";
+import  React from "react";
 import "../../styles/styles.scss";
 import { Player } from "@lottiefiles/react-lottie-player";
 import { AccessContext } from "../../contexts/access";

@@ -1,4 +1,5 @@
-import * as React from "react";
+import  React from "react";
+import { Helmet } from "react-helmet";
 import Footer from "../components/footer";
 import SectionOne from "../components/section-1";
 import SectionTwo from "../components/section-2";
@@ -18,6 +19,15 @@ import "slick-carousel/slick/slick-theme.css";
 const IndexPage = () => {
   return (
     <div>
+      <Helmet
+        htmlAttributes={{
+          lang: "nl",
+        }}
+      >
+        <meta charSet="utf-8" />
+        <title>laforga</title>
+        <link rel="canonical" href="https://www.laforga.nl" />
+      </Helmet>
       <AccessProvider>
         <SectionOne />
         <SectionTwo />

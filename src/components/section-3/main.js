@@ -1,7 +1,7 @@
-import * as React from "react";
+import  React from "react";
+import { StaticImage } from "gatsby-plugin-image"
 import { useInView } from "react-intersection-observer";
 import "../../styles/styles.scss";
-import ShopifyLogo from "../../images/shopify-partner.png";
 import ReactPlayer from "react-player";
 import Video from "../../assets/maneti dashboard.mp4";
 
@@ -46,19 +46,21 @@ const MainSectionThree = () => {
       </div>
       <div id="video-container">
         <ReactPlayer
-          playsinline="true"
+          playsinline
           autoPlay
           loop={true}
-          playing="true"
-          volume="0"
+          playing
+          volume={0}
           muted
           url={Video}
         />
-        <img
+        <StaticImage
           id="shopify-img-logo"
           className={`${inView && "show"}shopify-partner-img`}
-          src={ShopifyLogo}
+          src="../../images/shopify-partner.png"
           alt="shopify partners webshop ecommerce agency we design build bouwen mooie webshop modern fris website online verkopen"
+          width={375} height={70}
+           loading="lazy"
         />
       </div>
     </div>

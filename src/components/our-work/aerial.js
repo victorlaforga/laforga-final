@@ -1,8 +1,8 @@
-import * as React from "react";
+import  React from "react";
+import { StaticImage } from "gatsby-plugin-image"
 import "../../styles/styles.scss";
 import ReactPlayer from "react-player";
 import Video from "../../assets/aerial.mp4";
-import BrandingIcon from "../../images/services/brand.svg";
 
 const StudyCaseAerial = () => {
   return (
@@ -21,30 +21,38 @@ const StudyCaseAerial = () => {
           <div className="type-of-work">
             <div>
               <p>Shopify Store</p>{" "}
-              <img
-                src={BrandingIcon}
+              <StaticImage
+                src="../../images/services/brand.svg"
                 alt="shopify partners webshop ecommerce agency we design build bouwen mooie webshop modern fris website online verkopen"
+                width={600} height={400}
+                 loading="lazy"
               />
             </div>
             <div>
               <p>Design</p>{" "}
-              <img
-                src={BrandingIcon}
+              <StaticImage
+                src="../../images/services/brand.svg"
                 alt="shopify partners webshop ecommerce agency we design build bouwen mooie webshop modern fris website online verkopen"
+                width={600} height={400}
+                 loading="lazy"
               />
             </div>
             <div>
               <p>Branding</p>{" "}
-              <img
-                src={BrandingIcon}
+              <StaticImage
+                src="../../images/services/brand.svg"
                 alt="shopify partners webshop ecommerce agency we design build bouwen mooie webshop modern fris website online verkopen"
+                width={600} height={400}
+                 loading="lazy"
               />
             </div>
             <div>
               <p>Development</p>{" "}
-              <img
-                src={BrandingIcon}
+              <StaticImage
+                src="../../images/services/brand.svg"
                 alt="shopify partners webshop ecommerce agency we design build bouwen mooie webshop modern fris website online verkopen"
+                width={600} height={400}
+                 loading="lazy"
               />
             </div>
           </div>
@@ -52,12 +60,12 @@ const StudyCaseAerial = () => {
         <div className="media">
           <div className="video-container-work">
             <ReactPlayer
-              playsinline="true"
+              playsinline
               className="video"
               autoPlay
               loop={true}
-              playing="true"
-              volume="0"
+              playing
+              volume={0}
               muted
               url={Video}
             />

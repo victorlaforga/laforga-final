@@ -1,4 +1,4 @@
-import * as React from "react"
+import  React from "react"
 import "../styles/styles.scss"
 import MainSectionSeven from "./section-7/main"
 

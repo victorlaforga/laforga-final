@@ -1,4 +1,4 @@
-import * as React from "react";
+import  React from "react";
 import "../styles/styles.scss";
 import Navigation from "../components/section-1/nav";
 import Menu from "../components/menu";
