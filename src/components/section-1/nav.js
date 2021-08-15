@@ -13,7 +13,8 @@ const Navigation = ({ open, toggleMenu }) => {
 
   return (
     <div
-      className={`header ${isFirstAccess && inView ? "show" : "initial"}`}
+      className={`show header`}
+      // `header ${isFirstAccess && inView ? "show" : "initial"}`
       ref={ref}
     >
       <Menu className={`menu ${open ? "open" : "closed"}`} />
