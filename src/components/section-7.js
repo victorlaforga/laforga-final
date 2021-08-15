@@ -1,15 +1,12 @@
-import  React from "react"
-import "../styles/styles.scss"
-import MainSectionSeven from "./section-7/main"
-
-
+import React from "react";
+import { MainSection } from "./section-7/index";
 
 const SectionSeven = () => {
   return (
-   <section className="section-seven">
-      <MainSectionSeven />
-   </section>
-  )
-}
+    <section className="section-seven">
+      <MainSection />
+    </section>
+  );
+};
 
-export default SectionSeven
+export default SectionSeven;

@@ -1,8 +1,6 @@
 import  React from "react";
-import { StaticImage } from "gatsby-plugin-image"
 import { useInView } from "react-intersection-observer";
-import "../../styles/styles.scss";
-
+import heart from "../../images/akar-icons_heart.png"
 const MainSectionSeven = () => {
   const { ref, inView } = useInView({
     threshold: 0,
@@ -32,7 +30,7 @@ const MainSectionSeven = () => {
             <h3>Standaard</h3>
             <div>
               <span>
-                <StaticImage src="../../images/akar-icons_heart.png" alt="heart" width={14} height={14}  loading="lazy"/>
+                <img src={heart} alt="heart" width={14} height={14}  loading="lazy"/>
               </span>
               Aanbevolen voor starters
             </div>

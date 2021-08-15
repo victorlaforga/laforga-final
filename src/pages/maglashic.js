@@ -16,7 +16,7 @@ const Maglashic = () => {
         }}
       >
         <meta charSet="utf-8" />
-        <title>maglashic</title>
+        <title>Laforga | Shopify Agency | Maglashic</title>
         <link rel="canonical" href="https://www.laforga.nl" />
       </Helmet>
       <div className="container-banner maglashic">

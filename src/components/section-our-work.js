@@ -1,7 +1,6 @@
-import React from "react";
+import React, { useRef } from "react";
 import { graphql, useStaticQuery } from "gatsby";
 import BackgroundImage from "gatsby-background-image";
-import "../styles/styles.scss";
 import "swiper/swiper.scss";
 import Swiper from "react-id-swiper";
 
@@ -44,6 +43,7 @@ const SectionWork = () => {
       }
     `
   );
+  const bgRef = useRef();
   return (
     <section className="study-case-container">
       <h2>Meest recente werk</h2>
@@ -51,6 +51,9 @@ const SectionWork = () => {
         <div className="recent-work-container">
           <Swiper {...sliderParams}>
             <BackgroundImage
+              ref={bgRef}
+              onStartLoad={() => bgRef.current.selfRef.classList.toggle("loading")}
+              onLoad={() => bgRef.current.selfRef.classList.toggle("loading")}
               Tag="section"
               className="thumbnail__col"
               fluid={maglashic.childImageSharp.fluid}

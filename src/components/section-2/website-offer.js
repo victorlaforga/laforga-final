@@ -1,5 +1,4 @@
 import React from "react";
-import "../../styles/styles.scss";
 import { useInView } from "react-intersection-observer";
 import useDeviceDetect from "../../hooks/useDeviceDetect";
 

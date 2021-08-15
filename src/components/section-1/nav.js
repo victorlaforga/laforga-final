@@ -1,9 +1,9 @@
 import React from "react";
-import { StaticImage } from "gatsby-plugin-image"
 import { useInView } from "react-intersection-observer";
 import Menu from "../menu";
 import { AccessContext } from "../../contexts/access";
 import ProjectContainerLink from "./ProjectContainerLink";
+import logo from "../../images/black-logo.png"
 const Navigation = ({ open, toggleMenu }) => {
   const [isFirstAccess] = React.useContext(AccessContext);
   const { ref, inView } = useInView({
@@ -28,7 +28,7 @@ const Navigation = ({ open, toggleMenu }) => {
         </div>
       </div>
       <a href="/">
-        <StaticImage className="logo" src="../../images/black-logo.png" alt="laforga" loading="eager" width={145} height={55}/>
+        <img className="logo" src={logo} alt="laforga" loading="eager" width="100%" height="50"/>
       </a>
       <div className="start-project-container">
         <ProjectContainerLink />

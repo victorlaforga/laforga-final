@@ -1,16 +1,14 @@
-import  React from "react"
-import "../styles/styles.scss"
-import MainSectionSix from "./section-6/main"
-
+import React from "react";
+import { MainSection } from "./section-6/index";
 
 const SectionSix = () => {
   return (
-   <section className="section-six">
+    <section className="section-six">
       <div className="wave top"></div>
       <div className="wave bottom"></div>
-      <MainSectionSix />
-   </section>
-  )
-}
+      <MainSection />
+    </section>
+  );
+};
 
-export default SectionSix
+export default SectionSix;

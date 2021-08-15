@@ -1,0 +1,11 @@
+export {default as SectionOne} from './section-1';
+export {default as SectionTwo} from './section-2';
+export {default as SectionThree} from './section-3';
+export {default as SectionFour} from './section-4';
+export {default as SectionFive} from './section-5';
+export {default as SectionSix} from './section-6';
+export {default as SectionSeven} from './section-7';
+export {default as Testimonials} from './testimonial';
+export {default as OurWork} from './section-our-work';
+export {default as Footer} from './footer';
+export {default as Menu} from './menu';

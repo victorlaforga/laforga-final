@@ -10,16 +10,7 @@
 @font-face {
   font-family: "BebasNeue";
   font-style: normal;
-  // font-weight: 400;
-  src: url("../assets/fonts/bebas-neue-v2-latin-regular.eot");
-  src: url("../assets/fonts/bebas-neue-v2-latin-regular.eot")
-      format("embedded-opentype"),
-    url("../assets/fonts/bebas-neue-v2-latin-regular.woff2") format("woff2"),
-    url("../assets/fonts/bebas-neue-v2-latin-regular.woff") format("woff"),
-    url("../assets/fonts/bebas-neue-v2-latin-regular.ttf") format("truetype"),
-    url("../assets/fonts/bebas-neue-v2-latin-regular.svg#BebasNeue")
-      format("svg");
-
+  src: url("../assets/fonts/bebas-neue-v2-latin-regular.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -243,6 +234,8 @@ a.underline.cool-link::after {
   .logo {
     max-width: 150px;
     max-height: 55px;
+    width: 100%;
+    height: auto;
     transform: translateY(-30px);
     opacity: 0;
     -webkit-transform: translateY(-30px);
@@ -3309,3 +3302,9 @@ article.thumbnail-work:nth-of-type(odd) {
     margin-left: 80%;
   }
 }
+.loading,
+.loading::before,
+.loading::after {
+  filter: blur(15px);
+}
+

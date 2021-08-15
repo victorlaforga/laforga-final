@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: "laforga",
+    title: "Laforga | Shopify Agency",
     siteUrl: "https://www.laforga.nl",
   },
   plugins: [
@@ -28,8 +28,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: "laforga",
-        short_name: "laforga",
+        name: "Laforga | Shopify Agency",
+        short_name: "Laforga | Shopify Agency",
         start_url: "/",
         background_color: "#134354",
         theme_color: "#134354",
@@ -80,9 +80,27 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     {
+      resolve: `gatsby-plugin-netlify`,
+      options: {
+        headers: {}, // option to add more headers. `Link` headers are transformed by the below criteria
+        allPageHeaders: [], // option to add headers for all pages. `Link` headers are transformed by the below criteria
+        mergeSecurityHeaders: true, // boolean to turn off the default security headers
+        mergeLinkHeaders: true, // boolean to turn off the default gatsby js headers
+        mergeCachingHeaders: true, // boolean to turn off the default caching headers
+        transformHeaders: (headers, path) => headers, // optional transform for manipulating headers under each path (e.g.sorting), etc.
+        generateMatchPathRewrites: true, // boolean to turn off automatic creation of redirect rules for client only paths
+      },
+    },
+    {
+      resolve: `gatsby-plugin-minify`,
+      options: {
+        removeAttributeQuotes: true
+      }
+    },
+    {
       resolve: `gatsby-plugin-offline`,
       options: {
-        precachePages: [`/`, '/aerial-access/', 'maglashic/', 'aanvraag/' ],
+        precachePages: ['*'],
         importWorkboxFrom: `local`,
         globDirectory: 'public',
         globPatterns: ['*/**'],

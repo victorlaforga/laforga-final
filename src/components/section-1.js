@@ -1,8 +1,7 @@
 import  React from "react";
 import "../styles/styles.scss";
-import Navigation from "../components/section-1/nav";
-import Menu from "../components/menu";
-import MainSection from "./section-1/main";
+import {Menu} from "../components";
+import {MainSection, Navigation} from "./section-1/index"
 import { Player } from "@lottiefiles/react-lottie-player";
 import { AccessContext } from "../contexts/access";
 import useDeviceDetect from "../hooks/useDeviceDetect";

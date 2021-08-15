@@ -1,6 +1,5 @@
 import  React from "react";
 import { useInView } from "react-intersection-observer";
-import "../../styles/styles.scss";
 import { Player } from "@lottiefiles/react-lottie-player";
 import LottieSrc2 from "../../assets/online-shopping.json";
 

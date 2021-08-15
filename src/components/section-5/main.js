@@ -1,7 +1,6 @@
 import  React from "react";
 import { StaticImage } from "gatsby-plugin-image"
 import { useInView } from "react-intersection-observer";
-import "../../styles/styles.scss";
 
 const MainSectionFive = () => {
   const { ref, inView } = useInView({

@@ -23,7 +23,7 @@ const MyTypeformEmbed = () => {
         }}
       >
         <meta charSet="utf-8" />
-        <title>Aanvraag</title>
+        <title>Laforga | Shopify Agency | Aanvraag</title>
         <link rel="canonical" href="https://www.laforga.nl" />
       </Helmet>
       <div className="inquiry-container">

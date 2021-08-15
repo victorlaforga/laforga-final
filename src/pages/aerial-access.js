@@ -16,7 +16,7 @@ const AerialWork = () => {
         }}
       >
         <meta charSet="utf-8" />
-        <title>AerialWork</title>
+        <title>Laforga | Shopify Agency | AerialWork</title>
         <link rel="canonical" href="https://www.laforga.nl" />
       </Helmet>
       <div className="container-banner aerial">

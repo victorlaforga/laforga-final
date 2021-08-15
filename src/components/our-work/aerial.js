@@ -1,7 +1,6 @@
 import  React from "react";
 import { StaticImage } from "gatsby-plugin-image"
-import "../../styles/styles.scss";
-import ReactPlayer from "react-player";
+import ReactPlayer from "react-player/lazy";
 import Video from "../../assets/aerial.mp4";
 
 const StudyCaseAerial = () => {

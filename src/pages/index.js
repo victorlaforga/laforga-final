@@ -1,16 +1,17 @@
-import  React from "react";
+import React from "react";
 import { Helmet } from "react-helmet";
-import Footer from "../components/footer";
-import SectionOne from "../components/section-1";
-import SectionTwo from "../components/section-2";
-import SectionThree from "../components/section-3";
-import SectionFour from "../components/section-4";
-import SectionFive from "../components/section-5";
-import SectionSix from "../components/section-6";
-import SectionSeven from "../components/section-7";
-import SectionWork from "../components/section-our-work";
-import TestimonialSection from "../components/testimonial";
-
+import {
+  SectionOne,
+  SectionTwo,
+  SectionThree,
+  SectionFour,
+  SectionFive,
+  SectionSix,
+  SectionSeven,
+  OurWork,
+  Testimonials,
+  Footer,
+} from "../components";
 import { AccessProvider } from "../contexts/access";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -25,7 +26,7 @@ const IndexPage = () => {
         }}
       >
         <meta charSet="utf-8" />
-        <title>laforga</title>
+        <title>Laforga | Shopify Agency</title>
         <link rel="canonical" href="https://www.laforga.nl" />
       </Helmet>
       <AccessProvider>
@@ -36,8 +37,8 @@ const IndexPage = () => {
         <SectionFive />
         <SectionSix />
         <SectionSeven />
-        <SectionWork />
-        <TestimonialSection />
+        <OurWork />
+        <Testimonials />
         <Footer />
       </AccessProvider>
     </div>

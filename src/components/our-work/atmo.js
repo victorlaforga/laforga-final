@@ -1,6 +1,6 @@
 import  React from "react"
 import "../../styles/styles.scss"
-import ReactPlayer from 'react-player'
+import ReactPlayer from 'react-player/lazy'
 import Video from "../../assets/maneti dashboard.mp4"
 
 const StudyCaseManeti = () => {

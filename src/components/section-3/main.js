@@ -1,10 +1,8 @@
 import  React from "react";
-import { StaticImage } from "gatsby-plugin-image"
 import { useInView } from "react-intersection-observer";
-import "../../styles/styles.scss";
-import ReactPlayer from "react-player";
+import ReactPlayer from "react-player/lazy";
 import Video from "../../assets/maneti dashboard.mp4";
-
+import shopify from "../../images/shopify-partner.png"
 const MainSectionThree = () => {
   const { ref, inView } = useInView({
     threshold: 0,
@@ -54,13 +52,13 @@ const MainSectionThree = () => {
           muted
           url={Video}
         />
-        <StaticImage
+        <img
           id="shopify-img-logo"
           className={`${inView && "show"}shopify-partner-img`}
-          src="../../images/shopify-partner.png"
+          src={shopify}
           alt="shopify partners webshop ecommerce agency we design build bouwen mooie webshop modern fris website online verkopen"
-          width={375} height={70}
-           loading="lazy"
+          width="100%" height="50"
+          loading="lazy"
         />
       </div>
     </div>
