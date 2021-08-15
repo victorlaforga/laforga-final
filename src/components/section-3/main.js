@@ -3,6 +3,7 @@ import { useInView } from "react-intersection-observer";
 import ReactPlayer from "react-player/lazy";
 import Video from "../../assets/maneti dashboard.mp4";
 import shopify from "../../images/shopify-partner.png"
+import '../../styles/styles.scss'
 const MainSectionThree = () => {
   const { ref, inView } = useInView({
     threshold: 0,

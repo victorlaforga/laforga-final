@@ -1,6 +1,7 @@
 import  React from "react";
 import { useInView } from "react-intersection-observer";
 import heart from "../../images/akar-icons_heart.png"
+import '../../styles/styles.scss'
 const MainSectionSeven = () => {
   const { ref, inView } = useInView({
     threshold: 0,

@@ -1,5 +1,5 @@
 import  React from "react";
-import { StaticImage } from "gatsby-plugin-image"
+import vector from "../assets/Vector.svg"
 import "../styles/styles.scss";
 
 const Footer = () => {
@@ -67,25 +67,25 @@ const Footer = () => {
                   <a href="https://api.whatsapp.com/send?phone=+31628340312">
                     Whatsapp{" "}
                     <span>
-                      <StaticImage src="../assets/Vector.svg" alt="vector" width={11} height={13}  loading="lazy" />
+                      <img src={vector} alt="vector" width={11} height={13}  loading="lazy" />
                     </span>
                   </a>
                   <a href="https://www.instagram.com/laforga.agency/">
                     Instagram{" "}
                     <span>
-                      <StaticImage src="../assets/Vector.svg" alt="vector" width={11} height={13}  loading="lazy" />
+                      <img src={vector} alt="vector" width={11} height={13}  loading="lazy" />
                     </span>
                   </a>
                   <a href="https://www.facebook.com/laforgaa/">
                     Facebook{" "}
                     <span>
-                      <StaticImage src="../assets/Vector.svg" alt="vector" width={11} height={13}  loading="lazy" />
+                      <img src={vector} alt="vector" width={11} height={13}  loading="lazy" />
                     </span>
                   </a>
                   <a href="https://www.linkedin.com/company/laforga-agency">
                     LinkedIn{" "}
                     <span>
-                      <StaticImage src="../assets/Vector.svg" alt="vector" width={11} height={13}  loading="lazy" />
+                      <img src={vector} alt="vector" width={11} height={13}  loading="lazy" />
                     </span>
                   </a>
                 </div>

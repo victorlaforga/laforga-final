@@ -1,5 +1,5 @@
 import React from "react";
-
+import '../../styles/styles.scss'
 const MainSectionTwo = () => {
   return (
     <div className="main-section-two" id="over-ons">
