@@ -3,28 +3,37 @@ import "../styles/styles.scss";
 import Vector from "../assets/Vector.svg";
 
 const Menu = ({ open, toggleMenu }) => {
+
+  const navigate =(e, id) => {
+    
+    e && e.preventDefault(); // to avoid the link from redirecting
+    const elementToView = document.getElementById(id);
+    elementToView .scrollIntoView(); 
+ }
+ 
+
   return (
     <div className={`menu ${open ? "open" : "closed"}`}>
       <div className="menu-nav">
         <nav>
           <ul>
             <li>
-              <a href="#home" onClick={toggleMenu}>
+              <a href="/" onClick={(e=>(toggleMenu(e,'home')))}>
                 Home
               </a>
             </li>
             <li>
-              <a href="#over-ons" onClick={toggleMenu}>
+              <a href="/" onClick={(e=>(toggleMenu(e,'over-ons')))}>
                 Over ons
               </a>
             </li>
             <li>
-              <a href="#doen-wij" onClick={toggleMenu}>
+              <a href="/" onClick={(e=>(toggleMenu(e,'doen-wij')))}>
                 Wat doen wij
               </a>
             </li>
             <li>
-              <a href="#diensten-prijzen" onClick={toggleMenu}>
+              <a href="/" onClick={(e=>(toggleMenu(e,'diensten-prijzen')))}>
                 Diensten & prijzen
               </a>
             </li>
