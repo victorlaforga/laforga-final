@@ -8,6 +8,7 @@ const MainSectionSix = () => {
     triggerOnce: true,
   });
 
+
   return (
     <div className={`main-section-six ${inView && "show"}`} id="doen-wij">
       <div className="services-container">
@@ -21,6 +22,7 @@ const MainSectionSix = () => {
           </div>
 
           <div className="detail-services-container" ref={ref}>
+
             <div className="detail-services-elm">
               <StaticImage
                 src="../../images/services/strategy-img.png"
