@@ -1,7 +1,7 @@
-import  React from "react";
+import React from "react";
 import "../styles/styles.scss";
-import {Menu} from "../components";
-import {MainSection, Navigation} from "./section-1/index"
+import { Menu } from "../components";
+import { MainSection, Navigation } from "./section-1/index";
 import { Player } from "@lottiefiles/react-lottie-player";
 import { AccessContext } from "../contexts/access";
 import useDeviceDetect from "../hooks/useDeviceDetect";
@@ -37,7 +37,16 @@ const SectionOne = () => {
         toggleMenu={() => setOpen(!open)}
         isFirstAccess={isFirstAccess}
       />
-      <Menu open={open} toggleMenu={() => setOpen(!open)} />
+      <Menu
+        open={open}
+        toggleMenu={(e, id) => {
+          setOpen(!open);
+          e && e.preventDefault(); // to avoid the link from redirecting
+          const elementToView = document.getElementById(id);
+          console.log(elementToView);
+          elementToView.scrollIntoView();
+        }}
+      />
       <MainSection />
       <div class="wrapper-call-to-action">
         <a href="#diensten-prijzen" class="call-to-action">
