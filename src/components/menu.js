@@ -3,28 +3,31 @@ import "../styles/styles.scss";
 import Vector from "../assets/Vector.svg";
 
 const Menu = ({ open, toggleMenu }) => {
+
+ 
+
   return (
     <div className={`menu ${open ? "open" : "closed"}`}>
       <div className="menu-nav">
         <nav>
           <ul>
             <li>
-              <a href="#home" onClick={toggleMenu}>
+              <a href="/#home" onClick={toggleMenu}>
                 Home
               </a>
             </li>
             <li>
-              <a href="#over-ons" onClick={toggleMenu}>
+              <a href="/#over-ons" onClick={toggleMenu}>
                 Over ons
               </a>
             </li>
             <li>
-              <a href="#doen-wij" onClick={toggleMenu}>
+              <a href="/#doen-wij" onClick={toggleMenu}>
                 Wat doen wij
               </a>
             </li>
             <li>
-              <a href="#diensten-prijzen" onClick={toggleMenu}>
+              <a href="/#diensten-prijzen" onClick={toggleMenu}>
                 Diensten & prijzen
               </a>
             </li>
