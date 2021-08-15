@@ -1,12 +1,11 @@
-import * as React from "react"
-import "../styles/styles.scss"
-import MainSectionThree from "./section-3/main"
+import  React from "react"
+import {MainSection} from "./section-3/index"
 
 
 const SectionThree = () => {
   return (
    <section className="section-three">
-      <MainSectionThree />
+      <MainSection />
    </section>
   )
 }

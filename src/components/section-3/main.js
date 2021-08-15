@@ -1,10 +1,8 @@
-import * as React from "react";
+import  React from "react";
 import { useInView } from "react-intersection-observer";
-import "../../styles/styles.scss";
-import ShopifyLogo from "../../images/shopify-partner.png";
-import ReactPlayer from "react-player";
+import ReactPlayer from "react-player/lazy";
 import Video from "../../assets/maneti dashboard.mp4";
-
+import shopify from "../../images/shopify-partner.png"
 const MainSectionThree = () => {
   const { ref, inView } = useInView({
     threshold: 0,
@@ -46,19 +44,21 @@ const MainSectionThree = () => {
       </div>
       <div id="video-container">
         <ReactPlayer
-          playsinline="true"
+          playsinline
           autoPlay
           loop={true}
-          playing="true"
-          volume="0"
+          playing
+          volume={0}
           muted
           url={Video}
         />
         <img
           id="shopify-img-logo"
           className={`${inView && "show"}shopify-partner-img`}
-          src={ShopifyLogo}
+          src={shopify}
           alt="shopify partners webshop ecommerce agency we design build bouwen mooie webshop modern fris website online verkopen"
+          width="100%" height="50"
+          loading="lazy"
         />
       </div>
     </div>

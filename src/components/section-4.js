@@ -1,16 +1,14 @@
-import * as React from "react"
-import "../styles/styles.scss"
-import MainSectionFour from "./section-4/main"
-
+import React from "react";
+import { MainSection } from "./section-4/index";
 
 const SectionFour = () => {
   return (
-   <section className="section-four">
+    <section className="section-four">
       <div className="wave top"></div>
       <div className="wave bottom"></div>
-      <MainSectionFour />
-   </section>
-  )
-}
+      <MainSection />
+    </section>
+  );
+};
 
-export default SectionFour
+export default SectionFour;

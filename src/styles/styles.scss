@@ -4,20 +4,14 @@
   src: url("../assets/fonts/BebasNeue/TTF/BebasNeue-Regular.ttf");
 
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
   font-family: "BebasNeue";
   font-style: normal;
-  // font-weight: 400;
-  src: url("../assets/fonts/bebas-neue-v2-latin-regular.eot");
-  src: url("../assets/fonts/bebas-neue-v2-latin-regular.eot")
-      format("embedded-opentype"),
-    url("../assets/fonts/bebas-neue-v2-latin-regular.woff2") format("woff2"),
-    url("../assets/fonts/bebas-neue-v2-latin-regular.woff") format("woff"),
-    url("../assets/fonts/bebas-neue-v2-latin-regular.ttf") format("truetype"),
-    url("../assets/fonts/bebas-neue-v2-latin-regular.svg#BebasNeue")
-      format("svg");
+  src: url("../assets/fonts/bebas-neue-v2-latin-regular.woff2") format("woff2");
+  font-display: swap;
 }
 
 @font-face {
@@ -26,6 +20,7 @@
     url("../assets/fonts/BebasNeue/TTF/BebasNeue-Bold.ttf");
   font-family: "Bebas-Bold";
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -34,6 +29,7 @@
     url("../assets/fonts/BebasNeue/TTF/BebasNeue-Light.ttf");
   font-family: "Bebas-Light";
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -42,6 +38,7 @@
     url("../assets/fonts/BebasNeue/TTF/BebasNeue-Book.ttf");
   font-family: "Bebas-Book";
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -50,18 +47,21 @@
     url("../assets/fonts/BebasNeue/TTF/BebasNeue-Thin.ttf");
   font-family: "Bebas-Thin";
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
   src: url("../assets/fonts/glacial-indifference/GlacialIndifference-Regular.otf");
   font-family: "Glacial";
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
   src: url("../assets/fonts/glacial-indifference/GlacialIndifference-Bold.otf");
   font-family: "Glacial-Bold";
   font-style: normal;
+  font-display: swap;
 }
 
 * {
@@ -234,6 +234,8 @@ a.underline.cool-link::after {
   .logo {
     max-width: 150px;
     max-height: 55px;
+    width: 100%;
+    height: auto;
     transform: translateY(-30px);
     opacity: 0;
     -webkit-transform: translateY(-30px);
@@ -1099,6 +1101,7 @@ footer {
     width: 40px;
     height: 17px;
     border-bottom: none;
+    cursor: pointer;
 
     &::after,
     &::before {
@@ -1457,7 +1460,6 @@ footer {
 
   div.inquiry-container {
     padding: 0 5%;
-    
   }
 
   div.showcase a.link-container {
@@ -3274,7 +3276,7 @@ article.thumbnail-work:nth-of-type(odd) {
   width: 100%;
   text-align: center;
   position: relative;
-    z-index: 1;
+  z-index: 1;
   div {
     display: flex;
     flex-direction: column;
@@ -3286,16 +3288,19 @@ article.thumbnail-work:nth-of-type(odd) {
       color: rgba(38, 38, 38, 0.7);
       font-weight: 100;
     }
-   
   }
 }
 .typeform-widget {
   margin-top: -60px;
 }
-@media screen and (min-width:601px) and (max-width: 960px) {
+@media screen and (min-width: 601px) and (max-width: 960px) {
   .header img.logo {
     margin-left: 80%;
   }
 }
-
+.loading,
+.loading::before,
+.loading::after {
+  filter: blur(15px);
+}
 

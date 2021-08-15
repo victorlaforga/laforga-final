@@ -1,14 +1,12 @@
-import * as React from "react"
-import "../styles/styles.scss"
-import MainSectionFive from "./section-5/main"
-
+import React from "react";
+import { MainSection } from "./section-5/index";
 
 const SectionFive = () => {
   return (
-   <section className="section-five">
-      <MainSectionFive />
-   </section>
-  )
-}
+    <section className="section-five">
+      <MainSection />
+    </section>
+  );
+};
 
-export default SectionFive
+export default SectionFive;

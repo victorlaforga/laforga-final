@@ -1,14 +1,6 @@
-import * as React from "react";
+import  React from "react";
+import { StaticImage } from "gatsby-plugin-image"
 import { useInView } from "react-intersection-observer";
-import "../../styles/styles.scss";
-import Client4 from "../../images/clientsLogo/11-removebg-preview.png";
-import Client8 from "../../images/clientsLogo/aerialaccess.png";
-import Client1 from "../../images/clientsLogo/bankhoes discounter.png";
-import Client5 from "../../images/four-editors.png";
-import Client6 from "../../images/clientsLogo/faminci.png";
-import Client3 from "../../images/clientsLogo/gigivitale.png";
-import Client7 from "../../images/clientsLogo/logo_zwart.png";
-import Client2 from "../../images/clientsLogo/maglashic.png";
 
 const MainSectionFive = () => {
   const { ref, inView } = useInView({
@@ -24,52 +16,64 @@ const MainSectionFive = () => {
       <div class={`container-clients`} ref={ref}>
         <ul className={`logogrid`}>
           <li class="logogrid__item">
-            <img
-              src={Client1}
+            <StaticImage
+              src="../../images/clientsLogo/bankhoes discounter.png"
               class="logogrid__img"
               alt="shopify partners webshop ecommerce agency we design build bouwen mooie webshop modern fris website online verkopen"
+              width={187} height={70}
+               loading="lazy"
             />
           </li>
           <li class="logogrid__item">
-            <img
-              src={Client2}
+            <StaticImage
+              src="../../images/clientsLogo/maglashic.png"
               class="logogrid__img"
               alt="shopify partners webshop ecommerce agency we design build bouwen mooie webshop modern fris website online verkopen"
+              width={200} height={50}
+               loading="lazy"
             />
           </li>
           <li class="logogrid__item">
-            <img
-              src={Client3}
+            <StaticImage
+              src="../../images/clientsLogo/gigivitale.png"
               class="logogrid__img"
               alt="shopify partners webshop ecommerce agency we design build bouwen mooie webshop modern fris website online verkopen"
+              width={200} height={41}
+               loading="lazy"
             />
           </li>
           <li class="logogrid__item">
-            <img
-              src={Client4}
+            <StaticImage
+              src="../../images/clientsLogo/11-removebg-preview.png"
               class="logogrid__img"
               alt="shopify partners webshop ecommerce agency we design build bouwen mooie webshop modern fris website online verkopen"
+              width={200} height={99}
+               loading="lazy"
             />
           </li>
           <li class="logogrid__item">
-            <img
-              src={Client5}
+            <StaticImage
+              src="../../images/four-editors.png"
               class="logogrid__img"
               alt="shopify partners webshop ecommerce agency we design build bouwen mooie webshop modern fris website online verkopen"
+              width={200} height={25}
+               loading="lazy"
             />
           </li>
           <li class="logogrid__item">
-            <img
-              src={Client6}
+            <StaticImage
+              src="../../images/clientsLogo/faminci.png"
               class="logogrid__img"
               alt="shopify partners webshop ecommerce agency we design build bouwen mooie webshop modern fris website online verkopen"
+              width={200} height={46}
+               loading="lazy"
             />
           </li>
           <li class="logogrid__item">
-            <img src={Client7} class="logogrid__img" alt="Nike" />
+            <StaticImage src="../../images/clientsLogo/logo_zwart.png" class="logogrid__img" alt="Nike" width={200} height={59}  loading="lazy" />
           </li>
           <li class="logogrid__item">
-            <img src={Client8} class="logogrid__img" alt="Netflix" />
+            <StaticImage src="../../images/clientsLogo/aerialaccess.png" class="logogrid__img" alt="Netflix"  width={157} height={67}  loading="lazy"/>
           </li>
         </ul>
       </div>

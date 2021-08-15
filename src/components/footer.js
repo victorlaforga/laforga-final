@@ -1,7 +1,6 @@
-import * as React from "react";
+import  React from "react";
+import { StaticImage } from "gatsby-plugin-image"
 import "../styles/styles.scss";
-import Vector from "../assets/Vector.svg";
-import ArrowMenu from "../images/arrow-menu.svg";
 
 const Footer = () => {
   return (
@@ -68,25 +67,25 @@ const Footer = () => {
                   <a href="https://api.whatsapp.com/send?phone=+31628340312">
                     Whatsapp{" "}
                     <span>
-                      <img src={Vector} alt="" />
+                      <StaticImage src="../assets/Vector.svg" alt="vector" width={11} height={13}  loading="lazy" />
                     </span>
                   </a>
                   <a href="https://www.instagram.com/laforga.agency/">
                     Instagram{" "}
                     <span>
-                      <img src={Vector} alt="" />
+                      <StaticImage src="../assets/Vector.svg" alt="vector" width={11} height={13}  loading="lazy" />
                     </span>
                   </a>
                   <a href="https://www.facebook.com/laforgaa/">
                     Facebook{" "}
                     <span>
-                      <img src={Vector} alt="" />
+                      <StaticImage src="../assets/Vector.svg" alt="vector" width={11} height={13}  loading="lazy" />
                     </span>
                   </a>
                   <a href="https://www.linkedin.com/company/laforga-agency">
                     LinkedIn{" "}
                     <span>
-                      <img src={Vector} alt="" />
+                      <StaticImage src="../assets/Vector.svg" alt="vector" width={11} height={13}  loading="lazy" />
                     </span>
                   </a>
                 </div>

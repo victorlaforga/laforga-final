@@ -1,9 +1,9 @@
 import React from "react";
 import { useInView } from "react-intersection-observer";
-import Logo from "../../images/black-logo.png";
 import Menu from "../menu";
 import { AccessContext } from "../../contexts/access";
-import ProjectContainerLink from "./ProjectContainerLink"
+import ProjectContainerLink from "./ProjectContainerLink";
+import logo from "../../images/black-logo.png"
 const Navigation = ({ open, toggleMenu }) => {
   const [isFirstAccess] = React.useContext(AccessContext);
   const { ref, inView } = useInView({
@@ -20,17 +20,19 @@ const Navigation = ({ open, toggleMenu }) => {
       <Menu className={`menu ${open ? "open" : "closed"}`} />
       <div className="hamburger-container">
         <div className="hamburguer-wrapper">
-          <a
+          <div
             className={`hamburger-menu ${open ? "open" : ""}`}
             onClick={() => toggleMenu()}
-          ></a>
+            onKeyDown={() => toggleMenu()}
+            aria-hidden="true"
+          />
         </div>
       </div>
       <a href="/">
-        <img className="logo" src={Logo} />
+        <img className="logo" src={logo} alt="laforga" loading="eager" width="100%" height="50"/>
       </a>
       <div className="start-project-container">
-      <ProjectContainerLink/>
+        <ProjectContainerLink />
       </div>
     </div>
   );
