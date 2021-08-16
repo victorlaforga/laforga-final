@@ -1,9 +1,9 @@
-import React, { useRef } from "react";
+import React, { useState, useRef } from "react";
 import { graphql, useStaticQuery } from "gatsby";
 import BackgroundImage from "gatsby-background-image";
 import "swiper/swiper.scss";
 import Swiper from "react-id-swiper";
-import '../styles/styles.scss'
+import "../styles/styles.scss";
 const SectionWork = () => {
   const sliderParams = {
     centeredSlides: false,
@@ -50,28 +50,31 @@ const SectionWork = () => {
       <div className="recent-work">
         <div className="recent-work-container">
           <Swiper {...sliderParams}>
-            <BackgroundImage
-              ref={bgRef}
-              onStartLoad={() => bgRef.current.selfRef.classList.toggle("loading")}
-              onLoad={() => bgRef.current.selfRef.classList.toggle("loading")}
-              Tag="section"
-              className="thumbnail__col"
-              fluid={maglashic.childImageSharp.fluid}
-              backgroundColor={`transparent`}
-              background-position="center"
-              style={{ backgroundPositionX: "0%" }}
-            >
-              <div className="thumbnail__text">
-                <a href="/">
-                  <h3>Maglashic</h3>
-                  <p>
-                    {" "}
-                    Maakt wimpers aanbrengen eenvoudiger dan ooit met een
-                    natuurlijke look.
-                  </p>
-                </a>
-              </div>
-            </BackgroundImage>
+
+              <BackgroundImage
+                ref={bgRef}
+                Tag="section"
+                className={`thumbnail__col`}
+                fluid={maglashic.childImageSharp.fluid}
+                onStartLoad={() =>
+                  bgRef.current.selfRef.classList.toggle("loading")
+                }
+                onLoad={() => bgRef.current.selfRef.classList.toggle("loading")}
+                backgroundColor={`transparent`}
+                background-position="center"
+                style={{ backgroundPositionX: "0%" }}
+              >
+                <div className="thumbnail__text">
+                  <a href="/">
+                    <h3>Maglashic</h3>
+                    <p>
+                      {" "}
+                      Maakt wimpers aanbrengen eenvoudiger dan ooit met een
+                      natuurlijke look.
+                    </p>
+                  </a>
+                </div>
+              </BackgroundImage>
             <BackgroundImage
               Tag="section"
               className="thumbnail__col"
