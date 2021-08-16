@@ -31,22 +31,7 @@ const MyTypeformEmbed = () => {
           <Navigation open={open} toggleMenu={() => setOpen(!open)} />
           <Menu open={open} toggleMenu={() => setOpen(!open)} />
         </AccessProvider>
-        <div className="contact-info">
-          <div className="">
-            <h3>E-mail:</h3>
-            <a href="mailto:info@laforga.nl">info@laforga.nl</a>
-          </div>
-          <br />
-          <div className="">
-            <h3>Telefoonnummer: </h3>{" "}
-            <a href="tel:+31232084022">+31 23 208 4022</a> <br />
-          </div>
-          <div>
-            <a href="https://api.whatsapp.com/send?phone=+31628340312">
-              Whatsapp: +31628340312
-            </a>
-          </div>
-        </div>
+     
         <div ref={container}></div>
       </div>
     </div>

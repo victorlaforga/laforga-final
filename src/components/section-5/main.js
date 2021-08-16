@@ -77,7 +77,7 @@ const MainSectionFive = () => {
           </li>
         </ul>
       </div>
-      <a className="contact-us-btn" href="/">
+      <a className="contact-us-btn" href="/contact/">
         Contact ons
       </a>
     </div>

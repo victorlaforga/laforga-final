@@ -19,7 +19,7 @@ const MainSectionSeven = () => {
           Wij houden van transparantie en eerlijkheid. Vandaar dat wij open zijn
           over onze prijzen en diensten. Het bereiken van je volledige potentie
           zou je niet in de min moeten zetten. Heb je specifieke vragen? Neem{" "}
-          <a href="/" className="underline">
+          <a href="/contact/" className="underline">
             contact
           </a>{" "}
           met ons op
@@ -108,7 +108,7 @@ const MainSectionSeven = () => {
             de afgesproken snelheids score niet behaald? = Geld terug
           </p>
           <div className="container-services--footer">
-            <a href="/aanvraag/">Neem contact op</a>
+            <a href="/contact/">Neem contact op</a>
           </div>
         </div>
       </div>
