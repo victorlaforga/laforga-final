@@ -16,7 +16,7 @@ const AerialWork = () => {
         }}
       >
         <meta charSet="utf-8" />
-        <title>Laforga | Shopify Agency | AerialWork</title>
+        <title>Laforga | Shopify Agency | Aerial Access</title>
         <link rel="canonical" href="https://www.laforga.nl" />
       </Helmet>
       <div className="container-banner aerial">
@@ -40,30 +40,18 @@ const AerialWork = () => {
           <div className="main-text">
             <h3>Aerial Acces</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nec
-              dolor in sem lacinia iaculis eu ac tortor. Aliquam et nulla
-              dignissim, suscipit justo sit amet, tincidunt turpis. Quisque eget
-              lorem id neque faucibus congue ut sit amet dolor. Maecenas non
-              odio sit amet tellus ornare lacinia et in quam. Donec scelerisque
-              condimentum consectetur. Morbi interdum leo quis est ultrices, sed
-              dictum lectus egestas. Maecenas neque lacus, tempus sit amet
-              interdum nec, tristique placerat dui. Duis vel urna auctor,
-              ultrices lorem vitae, feugiat dui. Curabitur velit purus, rutrum
-              sit amet nibh sed, pretium porttitor ante. Proin nec ultricies
-              libero. Nulla vitae lectus eu ex commodo fermentum et ac enim.
-              Aenean sodales tempus aliquam. Phasellus nisi justo, vehicula sit
-              amet est eu, feugiat vestibulum magna.
+           In samenwerking met Marinade Studios hebben wij voor Aerial Access de complete site & brandind vernieuwd. Marinade Studios is verantwoordelijk geweest voor het ontwerp, huisstijl & branding. Wij hebben voor het development & het ontwerp van mobiele schermen gezorgd. Hiervoor hebben wij een custom site gemaakt die vanaf scratch is gebouwd. Wij zijn trots op dit werk omdat het volledig zelf ontworpen is, dit wil zeggen dat deze site een exclusief ontwerp heeft die nergens anders te bekennen is. Hierdoor krijgt Aerial Access een eigen verhaal.
             </p>
           </div>
         </div>
         <div className="work-icons">
           <div>
             <h4>100%</h4>
-            <p>Custom design</p>
+            <p>Custom design & development</p>
           </div>
           <div>
-            <h4>90+</h4>
-            <p>Sitespeed</p>
+            <h4>1</h4>
+            <p>Exclusief ontwerp</p>
           </div>
         </div>
       </section>

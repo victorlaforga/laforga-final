@@ -9,7 +9,7 @@ const SectionWork = () => {
     centeredSlides: false,
     slidesPerView: "auto",
   };
-  const { maglashic, fourEditors, faminci, fietsenwinkel } = useStaticQuery(
+  const { maglashic, fourEditors, faminci, fietsenwinkel, aerial } = useStaticQuery(
     graphql`
       query {
         maglashic: file(relativePath: { eq: "work-maglashic.png" }) {
@@ -20,6 +20,13 @@ const SectionWork = () => {
           }
         }
         fourEditors: file(relativePath: { eq: "four-editors-work.jpeg" }) {
+          childImageSharp {
+            fluid(quality: 100, maxWidth: 420) {
+              ...GatsbyImageSharpFluid_withWebp
+            }
+          }
+        }
+        aerial: file(relativePath: { eq: "aerial2.png" }) {
           childImageSharp {
             fluid(quality: 100, maxWidth: 420) {
               ...GatsbyImageSharpFluid_withWebp
@@ -46,10 +53,11 @@ const SectionWork = () => {
   const bgRef = useRef();
   return (
     <section className="study-case-container">
-      <h2>Meest recente werk</h2>
+      <h2>Meest <mark>recente werk</mark></h2>
       <div className="recent-work">
         <div className="recent-work-container">
           <Swiper {...sliderParams}>
+         
             <BackgroundImage
               ref={bgRef}
               onStartLoad={() => bgRef.current.selfRef.classList.toggle("loading")}
@@ -61,8 +69,9 @@ const SectionWork = () => {
               background-position="center"
               style={{ backgroundPositionX: "0%" }}
             >
+           
               <div className="thumbnail__text">
-                <a href="/">
+                <a href="/maglashic/">
                   <h3>Maglashic</h3>
                   <p>
                     {" "}
@@ -71,7 +80,9 @@ const SectionWork = () => {
                   </p>
                 </a>
               </div>
+        
             </BackgroundImage>
+         
             <BackgroundImage
               Tag="section"
               className="thumbnail__col"
@@ -80,28 +91,11 @@ const SectionWork = () => {
               background-position="center"
             >
               <div className="thumbnail__text">
-                <a href="/">
+                <a href="/four-editors/">
                   <h3>Four Editors</h3>
                   <p>
                     De meest complete & hoogwaardige bundels voor het editing
                     proces van film.
-                  </p>
-                </a>
-              </div>
-            </BackgroundImage>
-            <BackgroundImage
-              Tag="section"
-              className="thumbnail__col"
-              fluid={faminci.childImageSharp.fluid}
-              backgroundColor={`transparent`}
-              background-position="center"
-            >
-              <div className="thumbnail__text">
-                <a href="/">
-                  <h3>Faminci</h3>
-                  <p>
-                    Premium canvassen voor aan de muur die custom gemaakt kunnen
-                    worden.
                   </p>
                 </a>
               </div>
@@ -115,7 +109,7 @@ const SectionWork = () => {
               style={{ backgroundPositionX: "0%" }}
             >
               <div className="thumbnail__text ">
-                <a href="/">
+                <a href="/tm-tweewielers/">
                   <h3>T&M Tweewielers</h3>
                   <p>
                     De grootste scooter & fietsenwinkel van Haarlem met het
@@ -124,6 +118,40 @@ const SectionWork = () => {
                 </a>
               </div>
             </BackgroundImage>
+            <BackgroundImage
+              Tag="section"
+              className="thumbnail__col"
+              fluid={aerial.childImageSharp.fluid}
+              backgroundColor={`transparent`}
+              background-position="center"
+            >
+              <div className="thumbnail__text">
+                <a href="/aerial-access/">
+                  <h3>Aerial Access</h3>
+                  <p>
+                  Aerial Access is in staat op moeilijke toegankelijke locaties werkzaamheden uit te voeren.
+                  </p>
+                </a>
+              </div>
+            </BackgroundImage>
+            <BackgroundImage
+              Tag="section"
+              className="thumbnail__col"
+              fluid={faminci.childImageSharp.fluid}
+              backgroundColor={`transparent`}
+              background-position="center"
+            >
+              <div className="thumbnail__text">
+                <a href="https://faminci.com/collections/all">
+                  <h3>Faminci</h3>
+                  <p>
+                    Premium canvassen voor aan de muur die custom gemaakt kunnen
+                    worden.
+                  </p>
+                </a>
+              </div>
+            </BackgroundImage>
+           
           </Swiper>
         </div>
       </div>

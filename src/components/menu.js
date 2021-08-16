@@ -37,6 +37,11 @@ const Menu = ({ open, toggleMenu }) => {
                 Diensten & prijzen
               </a>
             </li>
+            <li>
+              <a href="/contact/">
+                Contact
+              </a>
+            </li>
           </ul>
         </nav>
       </div>

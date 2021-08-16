@@ -35,9 +35,9 @@ const IndexPage = () => {
         <SectionThree />
         <SectionFour />
         <SectionFive />
+        <OurWork />
         <SectionSix />
         <SectionSeven />
-        <OurWork />
         <Testimonials />
         <Footer />
       </AccessProvider>
