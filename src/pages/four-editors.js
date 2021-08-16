@@ -6,7 +6,7 @@ import "../styles/styles.scss";
 import Footer from "../components/footer";
 import { AccessProvider } from "../contexts/access";
 
-const Maglashic = () => {
+const FourEditors = () => {
   const [open, setOpen] = React.useState(false);
   return (
     <section className="container-work">
@@ -16,36 +16,36 @@ const Maglashic = () => {
         }}
       >
         <meta charSet="utf-8" />
-        <title>Laforga | Shopify Agency | Maglashic</title>
+        <title>Laforga | Shopify Agency | Four Editors</title>
         <link rel="canonical" href="https://www.laforga.nl" />
       </Helmet>
-      <div className="container-banner maglashic">
+      <div className="container-banner foureditors">
         <AccessProvider>
           <Navigation open={open} toggleMenu={() => setOpen(!open)} />
           <Menu open={open} toggleMenu={() => setOpen(!open)} />
         </AccessProvider>
         <h1>
-          <mark>Maglashic</mark>
+          <mark>Four Editors</mark>
         </h1>
       </div>
       <section className="work-main">
         <div className="work-main--info">
           <div className="subtext">
             <h2>
-           MagLashic is een van de koplopers in Europa wat betreft het verkopen van magnetische wimpers. Wimpers aanbrengen is nog nooit zo eenvoudig geweest.
+           Four Editors verkoopt wereldwijd high-end film assets die elk aspect van het montageproces omvatten.
             </h2>
           </div>
           <div className="main-text">
-            <h3>Maglashic</h3>
+            <h3>FourEditors</h3>
             <p>
-            MagLashic kwam bij ons aan met een bestaande Shopify Store. Ze verkochten al goed en wouden met ons opschalen. Door de beperkingen van het thema hebben ze bij ons speciale aanvragen gedaan zoals een 100% custom winkelwagen, een custon FAQ sectie, Add to cart knoppen op specifieke plekken & de snelheid van de website optimaliseren. Dit zijn enkele voorbeelden van functies & onderdelen die wij hebben toegepast om de conversie te verhogen.
+            Four Editors kwam bij ons aan met een bestaande Shopify Store. Wij hadden de opdracht om met hun samen op te opschalen. Door de beperkingen van het thema hebben ze bij ons speciale aanvragen gedaan voor de site, een custom ontworpen & gecodeerde collectie pagina bijvoorbeeld. Voor Four Editors hebben wij ook de snelheid van de site voor zowel mobiel als desktop geoptimaliseerd.
             </p>
           </div>
         </div>
         <div className="work-icons">
           <div>
-            <h4>100%</h4>
-            <p>Support</p>
+            <h4>20+</h4>
+            <p>Landen</p>
           </div>
           <div>
             <h4>90+</h4>
@@ -57,14 +57,13 @@ const Maglashic = () => {
           </div>
         </div>
       </section>
-      <div className="work-subbanner maglashic"></div>
+      <div className="work-subbanner foureditors"></div>
       <div className="work-summary">
         <div>
-          <h3>Nooit beroerd om die extra stap te zetten</h3>
+          <h3>Altijd beschikbaar, snel en kwalitatief</h3>
           <p>
             {" "}
-            Wij zijn zeer tevreden met het resultaat. Laforga luistert goed en heeft gevoel voor wat je wilt. Uitstekende service, snel, professioneel, creatief, oplossingsgericht, en persoonlijk. Nooit te beroerd om die extra stappen te zetten.
-          </p>
+            Erg goed geholpen door Laforga. We zaten met wat problemen op de website, en dit werd direct opgelost. Altijd beschikbaar, snel en kwalitatief. Thanks!          </p>
         </div>
       </div>
       <Footer />
@@ -72,4 +71,4 @@ const Maglashic = () => {
   );
 };
 
-export default Maglashic;
+export default FourEditors;

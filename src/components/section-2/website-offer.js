@@ -19,7 +19,7 @@ const WebsiteOffer = () => {
           className={`website-offer-container  ${inView && "show"}`}
           ref={ref}
         >
-          <h3>Geen webshop maar een website nodig?</h3>
+          <h3>website nodig?</h3>
 
           <p>
             Wij zijn digitale bouwmeesters. In dit digitale tijdperk is het
@@ -31,7 +31,7 @@ const WebsiteOffer = () => {
             van uw bedrijf. Hierdoor krijg je een geoptimaliseerde website die
             uw bedrijf uitstraalt.{" "}
           </p>
-          <a href="/">Start project</a>
+          <a href="/aanvraag/">Start project</a>
         </div>
       ) : (
         <div
@@ -40,7 +40,7 @@ const WebsiteOffer = () => {
         >
           <div onClick={toggle} onKeyDown={toggle} aria-hidden="true">
             <h3>
-              Geen webshop maar een website nodig?{" "}
+            website nodig?{" "}
               {on ? <span>-</span> : <span>+</span>}
             </h3>
           </div>
