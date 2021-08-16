@@ -3,15 +3,7 @@ import "../styles/styles.scss";
 import Vector from "../assets/Vector.svg";
 import '../styles/styles.scss'
 const Menu = ({ open, toggleMenu }) => {
-
-  const navigate =(e, id) => {
-    
-    e && e.preventDefault(); // to avoid the link from redirecting
-    const elementToView = document.getElementById(id);
-    elementToView .scrollIntoView(); 
- }
  
-
   return (
     <div className={`menu ${open ? "open" : "closed"}`}>
       <div className="menu-nav">
