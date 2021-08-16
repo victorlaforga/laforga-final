@@ -864,16 +864,19 @@ mark {
 }
 
 .section-four {
-  background-image: url("../assets/Contour.mp4");
+  background-image: url("../images/wave-beige.png");
   min-height: 25rem;
   max-height: 100rem;
-  position: relative;
-  margin: 300px 0;
+padding-top: 200px;
+padding-bottom: 275px;
+  background-size: cover;
+
 
   .wave {
     height: 318px;
     width: 100%;
     position: absolute;
+    display: none;
 
     &.bottom {
       background-image: url("../assets/Onderkant\ wave.png");
@@ -3188,6 +3191,12 @@ article.thumbnail-work:nth-of-type(odd) {
 }
 
 @media screen and (max-width: 981px) {
+  .section-four {
+    
+  padding-top: 200px;
+  padding-bottom: 200px;
+
+  }
   .work-main {
     min-height: 100vh;
     background: rgba(238, 235, 224, 1);

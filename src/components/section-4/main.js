@@ -2,7 +2,7 @@ import  React from "react";
 import { useInView } from "react-intersection-observer";
 import { Player } from "@lottiefiles/react-lottie-player";
 import LottieSrc2 from "../../assets/online-shopping.json";
-
+import '../../styles/styles.scss'
 const MainSectionFour = () => {
   const { ref, inView } = useInView({
     threshold: 0,

@@ -3,6 +3,7 @@ import { useInView } from "react-intersection-observer";
 import Menu from "../menu";
 import ProjectContainerLink from "./ProjectContainerLink";
 import logo from "../../images/black-logo.png"
+import '../../styles/styles.scss'
 const Navigation = ({ open, toggleMenu }) => {
   const { ref } = useInView({
     threshold: 0,

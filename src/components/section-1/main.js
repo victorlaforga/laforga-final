@@ -2,7 +2,7 @@ import  React from "react";
 import { Player } from "@lottiefiles/react-lottie-player";
 import { AccessContext } from "../../contexts/access";
 import lottieJson from "../../assets/laforga-newLottie.json";
-
+import '../../styles/styles.scss'
 const MainSection = () => {
   const [isFirstAccess] = React.useContext(AccessContext);
 

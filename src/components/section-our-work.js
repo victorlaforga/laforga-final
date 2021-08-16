@@ -3,7 +3,7 @@ import { graphql, useStaticQuery } from "gatsby";
 import BackgroundImage from "gatsby-background-image";
 import "swiper/swiper.scss";
 import Swiper from "react-id-swiper";
-
+import '../styles/styles.scss'
 const SectionWork = () => {
   const sliderParams = {
     centeredSlides: false,
