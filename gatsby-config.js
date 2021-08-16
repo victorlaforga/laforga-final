@@ -97,7 +97,6 @@ module.exports = {
         removeAttributeQuotes: true
       }
     },
-    `gatsby-plugin-remove-fingerprints`,
     {
       resolve: `gatsby-plugin-offline`,
       options: {

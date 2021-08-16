@@ -1,11 +1,13 @@
 import React from "react";
 import { useInView } from "react-intersection-observer";
 import Menu from "../menu";
+import { AccessContext } from "../../contexts/access";
 import ProjectContainerLink from "./ProjectContainerLink";
 import logo from "../../images/black-logo.png"
 import '../../styles/styles.scss'
 const Navigation = ({ open, toggleMenu }) => {
-  const { ref } = useInView({
+  const [isFirstAccess] = React.useContext(AccessContext);
+  const { ref, inView } = useInView({
     threshold: 0,
     triggerOnce: true,
   });
@@ -13,6 +15,7 @@ const Navigation = ({ open, toggleMenu }) => {
   return (
     <div
       className={`show header`}
+      // `header ${isFirstAccess && inView ? "show" : "initial"}`
       ref={ref}
     >
       <Menu className={`menu ${open ? "open" : "closed"}`} />
