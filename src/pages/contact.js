@@ -47,7 +47,7 @@ const ContactPage = () => {
  </div>
  <div className="contact-aanvraag">
 <h2 >Ready?</h2>
-<p>Ben jij klaar om jouw winkel om te zetten in een digitale machine? Of wil ben je meer dan ready om jouw Shopify Store op te schalen? Vul dan ons formulier in binnen 3 minuten!</p> <br/><p>Wij antwoorden binnen 24 uur.</p>
+<p>Ben jij klaar om jouw winkel om te zetten in een digitale machine? Of ben je meer dan ready om jouw Shopify Store op te schalen? Vul dan ons formulier in binnen 3 minuten!</p> <br/><p>Wij antwoorden binnen 24 uur.</p>
         <a className="aanvraag-btn" href="/aanvraag/">Ga naar het aanvraagformulier</a>
         </div>
       </div>
