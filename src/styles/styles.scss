@@ -868,10 +868,9 @@ mark {
   background-image: url("../images/wave-beige.png");
   min-height: 25rem;
   max-height: 100rem;
-padding-top: 200px;
-padding-bottom: 275px;
+  padding-top: 200px;
+  padding-bottom: 275px;
   background-size: cover;
-
 
   .wave {
     height: 318px;
@@ -1296,7 +1295,6 @@ footer {
       width: fit-content;
       margin-top: -100px;
       margin-bottom: 50px;
-      
     }
   }
 
@@ -2463,7 +2461,7 @@ $logo-max-height: 100px;
 .inquiry-container {
   background-color: #f0ece2;
   height: auto;
-  padding: 0px 100px 50px 0px;
+  // padding: 0px 100px 50px 0px;
   min-height: 30rem;
 }
 
@@ -3105,14 +3103,19 @@ article.thumbnail-work:nth-of-type(odd) {
     font-family: "BebasNeue";
     font-size: 100px;
     font-weight: 100;
-    margin: 25px 100px ;
+    margin: 25px 100px;
     bottom: 25px;
     position: absolute;
   }
 }
 
 .container-banner.aerial {
-  background-image: linear-gradient(to top,rgba(237, 235, 224,0.3),rgba(237, 235, 224,0.1)),url("../images/aerial2.png");
+  background-image: linear-gradient(
+      to top,
+      rgba(237, 235, 224, 0.3),
+      rgba(237, 235, 224, 0.1)
+    ),
+    url("../images/aerial2.png");
 }
 
 @media screen and (max-width: 961px) {
@@ -3148,7 +3151,6 @@ article.thumbnail-work:nth-of-type(odd) {
         font-weight: 100;
         line-height: 55px;
         font-size: 48px;
-       
       }
     }
 
@@ -3213,10 +3215,8 @@ article.thumbnail-work:nth-of-type(odd) {
 
 @media screen and (max-width: 981px) {
   .section-four {
-    
-  padding-top: 200px;
-  padding-bottom: 200px;
-
+    padding-top: 200px;
+    padding-bottom: 200px;
   }
   .work-main {
     min-height: 100vh;
@@ -3298,7 +3298,12 @@ article.thumbnail-work:nth-of-type(odd) {
 
 // .container-banner.aerial
 .container-banner.maglashic {
-  background-image: linear-gradient(to top,rgba(237, 235, 224,0.3),rgba(237, 235, 224,0.1)),url("../images/work-maglashic.png");
+  background-image: linear-gradient(
+      to top,
+      rgba(237, 235, 224, 0.3),
+      rgba(237, 235, 224, 0.1)
+    ),
+    url("../images/work-maglashic.png");
 }
 
 .contact-info {
@@ -3332,7 +3337,6 @@ article.thumbnail-work:nth-of-type(odd) {
   filter: blur(15px);
 }
 
-
 .contact-container {
   background-color: #f0ece2;
   height: 100vh;
@@ -3340,24 +3344,21 @@ article.thumbnail-work:nth-of-type(odd) {
   padding: 0 100px;
 }
 
-
 @media screen and (max-width: 481px) {
-div.contact-container {
-  padding: 0px 5% 20px;
-}
+  div.contact-container {
+    padding: 0px 5% 20px;
+  }
 }
 @media screen and (max-width: 641px) {
-.contact-container {
-  padding: 0 50px;
-}
-   
+  .contact-container {
+    padding: 0 50px;
+  }
 }
 @media screen and (max-width: 961px) {
   .contact-container {
     padding: 0 75px;
   }
-     
-  }
+}
 .aanvraag-btn {
   padding: 20px 40px;
   background: #000;
@@ -3380,12 +3381,22 @@ div.contact-container {
 }
 .work-subbanner.maglashic {
   // background-image: url("../images/maglashic-banner-small.png");
-  background-image: linear-gradient(to right,rgba(252, 204, 202,0.5),rgba(177, 143, 153, 0.8)),url("../images/maglashic-banner-small.png");
+  background-image: linear-gradient(
+      to right,
+      rgba(252, 204, 202, 0.5),
+      rgba(177, 143, 153, 0.8)
+    ),
+    url("../images/maglashic-banner-small.png");
   background-position-y: 50%;
 }
 
 .container-banner.foureditors {
- background-image: linear-gradient(to top,rgba(237, 235, 224,0.3),rgba(237, 235, 224,0.1)),url("../images/foureditors1.jpeg");
+  background-image: linear-gradient(
+      to top,
+      rgba(237, 235, 224, 0.3),
+      rgba(237, 235, 224, 0.1)
+    ),
+    url("../images/foureditors1.jpeg");
 }
 .work-subbanner.foureditors {
   background-image: url("../images/foureditors4.jpg");
@@ -3397,16 +3408,18 @@ div.contact-container {
   }
 }
 
-
-
 .container-banner.tm {
   background-position-y: 50%;
-  background-image: linear-gradient(to top,rgba(237, 235, 224,0.6),rgba(237, 235, 224,0.1)),url("../images/fietsenwinkel.jpg");
+  background-image: linear-gradient(
+      to top,
+      rgba(237, 235, 224, 0.6),
+      rgba(237, 235, 224, 0.1)
+    ),
+    url("../images/fietsenwinkel.jpg");
 }
 .work-subbanner.tm {
   background-image: url("../images/tmbanner.jpg");
   background-position-y: 45%;
-  
 }
 
 @media screen and (max-width: 410px) {
@@ -3423,31 +3436,31 @@ div.contact-container {
     font-size: 17px;
   }
   .menu .menu-info .container-contact div.container-info div h3 {
-  font-size: 18px;
+    font-size: 18px;
   }
   div.menu .menu-info div.container-contact div.container-info {
     margin: 15px auto;
   }
-  section.section-six .main-section-six .services-container .services-intro .detail-services-container .detail-services-elm img {
+  section.section-six
+    .main-section-six
+    .services-container
+    .services-intro
+    .detail-services-container
+    .detail-services-elm
+    img {
     max-width: 30px;
     height: auto;
   }
 }
-@media screen and (min-width: 482px) and (max-width:1180px) {
-
+@media screen and (min-width: 482px) and (max-width: 1180px) {
   .menu .menu-nav nav {
     text-align: center;
-  
   }
-  
-  }
+}
 
-  .starters {
-  
-    p {
-      font-size: 12px;
-      color: white;
-    }
-  
+.starters {
+  p {
+    font-size: 12px;
+    color: white;
   }
-
+}
