@@ -29,11 +29,12 @@ const MainSectionSeven = () => {
         <div className={`container-services ${inView && "show"}`}>
           <div className="container-services--name">
             <h3>Standaard</h3>
-            <div>
+            <div className="starters">
               <span>
                 <img src={heart} alt="heart" width={14} height={14}  loading="lazy"/>
               </span>
-              Aanbevolen voor starters
+              <p>Aanbevolen voor starters</p>
+             
             </div>
           </div>
           <ul>
