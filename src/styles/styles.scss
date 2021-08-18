@@ -1852,10 +1852,20 @@ footer {
   max-width: 96vw !important;
   width: 100% !important;
 }
-
+@media screen and (max-width: 350px) {
+  .work-main .work-icons div h4 {
+    font-size: 45px;
+  }
+}
 @media screen and (max-width: 481px) {
   .content__container {
     margin-bottom: 0;
+  }
+  .work-main .work-icons div h4 {
+    font-size: 55px;
+  }
+  .work-main .work-icons {
+    justify-content: space-between;
   }
 
   div > div > div.header.initial > div.hamburger-container > div > a {
@@ -3440,3 +3450,4 @@ div.contact-container {
     }
   
   }
+
