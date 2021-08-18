@@ -2442,7 +2442,7 @@ $logo-max-height: 100px;
 .inquiry-container {
   background-color: #f0ece2;
   height: auto;
-  padding: 0px 100px 50px 0px;
+  
   min-height: 30rem;
 }
 
@@ -2978,35 +2978,6 @@ section.study-case-container
   }
 }
 
-.thumbnail-work.maglashic {
-  background-image: url("../images/maglashic-thumbnail.png");
-}
-.maglashic {
-  background-image: url("../images/maglashic-thumbnail.png");
-}
-
-.thumbnail-work.four-editors {
-  background-image: url("../images/four-editors-work.jpeg");
-  background-position-x: 10%;
-}
-.four-editors {
-  background-image: url("../images/four-editors-work.jpeg");
-  background-position-x: 10%;
-}
-.thumbnail-work.faminci {
-  background-image: url("../images/faminci-work.jpeg");
-  background-position-x: 100%;
-}
-.faminci {
-  background-image: url("../images/faminci-work.jpeg");
-  background-position-x: 100%;
-}
-.thumbnail-work.tm {
-  background-image: url("../images/fietsenwinkel.jpg");
-}
-.tm {
-  background-image: url("../images/fietsenwinkel.jpg");
-}
 .thumbnail__col {
   height: 550px !important;
   max-width: 400px !important;

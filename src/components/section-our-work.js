@@ -3,8 +3,12 @@ import { graphql, useStaticQuery } from "gatsby";
 import BackgroundImage from "gatsby-background-image";
 import "swiper/swiper.scss";
 import Swiper from "react-id-swiper";
+import { navigate } from "gatsby";
 
 const SectionWork = () => {
+  const RedirectPage = (index) => {
+    navigate("/");
+  };
   const sliderParams = {
     centeredSlides: false,
     slidesPerView: "auto",
@@ -51,15 +55,18 @@ const SectionWork = () => {
         <div className="recent-work-container">
           <Swiper {...sliderParams}>
             <BackgroundImage
+              onClick={() => RedirectPage()}
               ref={bgRef}
-              onStartLoad={() => bgRef.current.selfRef.classList.toggle("loading")}
+              onStartLoad={() =>
+                bgRef.current.selfRef.classList.toggle("loading")
+              }
               onLoad={() => bgRef.current.selfRef.classList.toggle("loading")}
               Tag="section"
               className="thumbnail__col"
               fluid={maglashic.childImageSharp.fluid}
               backgroundColor={`transparent`}
               background-position="center"
-              style={{ backgroundPositionX: "0%" }}
+              style={{ backgroundPositionX: "0%", cursor: "pointer" }}
             >
               <div className="thumbnail__text">
                 <a href="/">
@@ -73,11 +80,13 @@ const SectionWork = () => {
               </div>
             </BackgroundImage>
             <BackgroundImage
+              onClick={() => RedirectPage()}
               Tag="section"
               className="thumbnail__col"
               fluid={fourEditors.childImageSharp.fluid}
               backgroundColor={`transparent`}
               background-position="center"
+              style={{ cursor: "pointer" }}
             >
               <div className="thumbnail__text">
                 <a href="/">
@@ -90,11 +99,13 @@ const SectionWork = () => {
               </div>
             </BackgroundImage>
             <BackgroundImage
+              onClick={() => RedirectPage()}
               Tag="section"
               className="thumbnail__col"
               fluid={faminci.childImageSharp.fluid}
               backgroundColor={`transparent`}
               background-position="center"
+              style={{ cursor: "pointer" }}
             >
               <div className="thumbnail__text">
                 <a href="/">
@@ -113,6 +124,8 @@ const SectionWork = () => {
               backgroundColor={`transparent`}
               background-position="center"
               style={{ backgroundPositionX: "0%" }}
+              style={{ cursor: "pointer" }}
+              onClick={() => RedirectPage()}
             >
               <div className="thumbnail__text ">
                 <a href="/">
