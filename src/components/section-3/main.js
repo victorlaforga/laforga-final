@@ -1,4 +1,4 @@
-import  React from "react";
+import React from "react";
 import { useInView } from "react-intersection-observer";
 import ReactPlayer from "react-player/lazy";
 import Video from "../../assets/maneti-dashboard-final.mp4";
@@ -32,7 +32,7 @@ const MainSectionThree = () => {
           gebruiksvriendelijk. Binnen een paar clicks heb je al een product
           toegevoegd! Shopify is grenzenloos, verkoop dus ook in het buitenland.
         </p>{" "}
-        
+
         <br />{" "}
         <p>
           Bij al onze{" "}
@@ -52,6 +52,7 @@ const MainSectionThree = () => {
           volume={0}
           muted
           url={Video}
+          playsInline={true}
         />
         <img
           id="shopify-img-logo"
