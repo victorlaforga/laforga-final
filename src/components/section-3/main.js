@@ -1,7 +1,7 @@
 import  React from "react";
 import { useInView } from "react-intersection-observer";
-import ReactPlayer from "react-player/lazy";
-import Video from "../../assets/maneti dashboard.mp4";
+// import ReactPlayer from "react-player/lazy";
+// import Video from "../../assets/maneti dashboard.mp4";
 import shopify from "../../images/shopify-partner.png"
 import '../../styles/styles.scss'
 const MainSectionThree = () => {
@@ -44,7 +44,7 @@ const MainSectionThree = () => {
         </p>
       </div>
       <div id="video-container">
-        <ReactPlayer
+        {/* <ReactPlayer
           playsinline
           autoPlay
           loop={true}
@@ -52,7 +52,7 @@ const MainSectionThree = () => {
           volume={0}
           muted
           url={Video}
-        />
+        /> */}
         <img
           id="shopify-img-logo"
           className={`${inView && "show"}shopify-partner-img`}
