@@ -21,8 +21,8 @@ const MainSection = () => {
       <div className={`intro-text ${isFirstAccess && "intro-text-animated"}`}>
         <h1>
           Wij zetten <br /> merken & bedrijven <br /> <mark>om</mark>
-          {" "}<mark>  in legendes </mark>{" "}
-          <mark> op het web.</mark>
+          {" "}<mark>  in legendes </mark>
+          <mark>op het web.</mark>
         </h1>
         <p>
           wees de concurrentie voor en creëer samen met ons een{" "}

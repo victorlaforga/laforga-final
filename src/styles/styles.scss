@@ -130,7 +130,7 @@ a.underline.cool-link::after {
   background: #fffcf7;
   height: 100vh;
   padding: 0 100px;
-  min-height: 51rem;
+  min-height: 50rem;
   max-height: 100rem;
 
   .loading {
@@ -1709,7 +1709,6 @@ footer {
           .container-services--name {
             div {
               font-size: 12px;
-              
 
               span {
                 img {
@@ -1723,7 +1722,6 @@ footer {
     }
   }
 
-}
   .shopify-partner-img,
   .main-section-three img.shopify-partner-img {
     margin: 0 auto;
@@ -1833,7 +1831,7 @@ footer {
       }
     }
   }
-
+}
 
 @media screen and (max-width: 330px) {
   section.section-two {
@@ -2055,7 +2053,7 @@ footer {
 
               span {
                 img {
-                  margin-top: 7px;
+                  margin-top: 10px;
                 }
               }
             }
@@ -2347,7 +2345,7 @@ $logo-max-height: 100px;
 // MENU
 
 .menu {
-  height: 102vh;
+  height: 100vh;
   width: 102.5%;
   display: flex;
   position: fixed;
@@ -2527,7 +2525,6 @@ div.typeform-widget {
           font-family: "Glacial";
           margin-top: 5px;
           margin-left: 25px;
-          display: flex;
 
           span {
             margin-right: 5px;
@@ -2988,7 +2985,7 @@ section.study-case-container
 
 @media screen and (max-width: 768px) {
   section.testimonial-section {
-    padding: 100px 25px 250px 25px !important;
+    padding: 50px 25px 250px 25px !important;
   }
 }
 
@@ -3401,45 +3398,3 @@ div.contact-container {
   
 }
 
-
-@media screen and (max-width: 410px) {
-  div.menu .menu-nav nav ul li {
-    margin-bottom: 15px !important;
-  }
-  #home > div.menu.open > div.menu-nav > nav > ul > li > a {
-    font-size: 1.5rem;
-  }
-  .menu .menu-info .container-contact div.container-info div {
-    margin-bottom: 15px;
-  }
-  .menu .menu-info .container-contact div.container-info div a {
-    font-size: 17px;
-  }
-  .menu .menu-info .container-contact div.container-info div h3 {
-  font-size: 18px;
-  }
-  div.menu .menu-info div.container-contact div.container-info {
-    margin: 15px auto;
-  }
-  section.section-six .main-section-six .services-container .services-intro .detail-services-container .detail-services-elm img {
-    max-width: 30px;
-    height: auto;
-  }
-}
-@media screen and (min-width: 482px) and (max-width:1180px) {
-
-.menu .menu-nav nav {
-  text-align: center;
-
-}
-
-}
-
-.starters {
-  
-  p {
-    font-size: 12px;
-    color: white;
-  }
-
-}
