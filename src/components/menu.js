@@ -23,13 +23,13 @@ const Menu = ({ open, toggleMenu }) => {
               </a>
             </li>
             <li>
-              <a href="/" onClick={(e=>(toggleMenu(e,'over-ons')))}>
-                Over ons
+              <a href="/" onClick={(e=>(toggleMenu(e,'doen-wij')))}>
+                Wat doen wij
               </a>
             </li>
             <li>
-              <a href="/" onClick={(e=>(toggleMenu(e,'doen-wij')))}>
-                Wat doen wij
+              <a href="/" onClick={(e=>(toggleMenu(e,'ons-werk')))}>
+                Ons werk
               </a>
             </li>
             <li>

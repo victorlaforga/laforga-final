@@ -1,6 +1,8 @@
 import React from "react";
 import { StaticImage } from "gatsby-plugin-image"
-import Slider from "react-slick";;
+import Slider from "react-slick";
+import "../../styles/styles.scss";
+
 const LeftArrow = (props) => {
   const { className, style, onClick } = props;
   return (
@@ -90,7 +92,7 @@ const TestimonialSection = () => {
           </p>
         </div>
         <div className="slider__item">
-          <StaticImage src='../../images/four-editors.png' alt="four editors" width={200} height={25}  loading="lazy" />
+          <StaticImage src='../../images/four-editors.png' alt="four editors partner laforga agency shopify design ecommerce development" width={200} height={25}  loading="lazy" />
           <h2>Four Editors</h2>
           <p>
             “Erg goed geholpen door Laforga. We zaten met wat problemen op de
@@ -102,42 +104,33 @@ const TestimonialSection = () => {
           <StaticImage src="../../images/clientsLogo/maglashic.png" alt="maglashic" width={200} height={50}  loading="lazy" />
           <h2>Maglashic</h2>
           <p>
-            “Enthousiaste agency met inzicht. Heeft voor Aerial Access een mooie
-            site ontworpen die volledig voldeed aan onze eisen. Denkt mee met
-            ontwerp vanuit de perspectief van de klant en laat ruimte voor eigen
-            ideeën. Fijne samenwerking met oog voor service. – Aerial Access’’
+            “Wij zijn zeer tevreden met het resultaat. Laforga luistert goed en heeft gevoel voor wat je wilt. Uitstekende service, snel, professioneel, creatief, oplossingsgericht, en persoonlijk. Nooit te beroerd om die extra stappen te zetten."
+          </p>
+        </div>
+        <div className="slider__item">
+          <StaticImage
+            src='../../images/studio-marinade.svg'
+            alt="studio marinade partner laforga agency shopify design ecommerce development"
+            width={165}
+            height={70}
+             loading="lazy"
+          />
+          <h2>Marinade Studios</h2>
+          <p>
+            “Wij heb als design agency een fijne samenwerking ervaren met Laforga. Laforga kan goed de Figma designs vertalen naar front/back-end en geeft waar nodig goede tips! Ze zijn in staat om mee te denken waar soms als designer de technische kennis ontbreekt. Dat is erg prettig. De communicatie loopt goed en er wordt hard gewerkt. Kort om ik kan Laforga zeker aan raden voor een goed werkende website.""
           </p>
         </div>
         <div className="slider__item">
           <StaticImage
             src='../../assets/aerialaccess.png'
-            alt="aerial access"
+            alt="partner laforga agency shopify design ecommerce development"
             width={165}
             height={70}
              loading="lazy"
           />
-          <h2>Bedrijfsnaam</h2>
+          <h2>Aerial Access (owner)</h2>
           <p>
-            “Enthousiaste agency met inzicht. Heeft voor Aerial Access een mooie
-            site ontworpen die volledig voldeed aan onze eisen. Denkt mee met
-            ontwerp vanuit de perspectief van de klant en laat ruimte voor eigen
-            ideeën. Fijne samenwerking met oog voor service. – Aerial Access’’
-          </p>
-        </div>
-        <div className="slider__item">
-          <StaticImage
-            src='../../assets/aerialaccess.png'
-            alt="aerial access"
-            width={165}
-            height={70}
-             loading="lazy"
-          />
-          <h2>Bedrijfsnaam</h2>
-          <p>
-            “Enthousiaste agency met inzicht. Heeft voor Aerial Access een mooie
-            site ontworpen die volledig voldeed aan onze eisen. Denkt mee met
-            ontwerp vanuit de perspectief van de klant en laat ruimte voor eigen
-            ideeën. Fijne samenwerking met oog voor service. – Aerial Access’’
+            “Laforga Digital Creative Agency is mede verantwoordelijk voor onze vernieuwde website. Onze ervaring is zeer positief en wij hebben de samenwerking als zeer prettig en waardevol beschouwd... onze website is helemaal naar wens ontworpen en geïmplementeerd."
           </p>
         </div>
       </Slider>
