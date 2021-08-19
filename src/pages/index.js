@@ -28,6 +28,7 @@ const IndexPage = () => {
         <meta charSet="utf-8" />
         <title>Laforga | Shopify Agency</title>
         <link rel="canonical" href="https://www.laforga.nl" />
+      
       </Helmet>
       <AccessProvider>
         <SectionOne />
