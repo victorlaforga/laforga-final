@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import { graphql, useStaticQuery } from "gatsby";
 import BackgroundImage from "gatsby-background-image";
 import "swiper/swiper.scss";
+import { navigate } from "gatsby";
 import Swiper from "react-id-swiper";
 import '../styles/styles.scss'
 const SectionWork = () => {
@@ -52,7 +53,7 @@ const SectionWork = () => {
   );
   const bgRef = useRef();
   return (
-    <section className="study-case-container">
+    <section id="ons-werk" className="study-case-container">
       <h2>Meest <mark>recente werk</mark></h2>
       <div className="recent-work">
         <div className="recent-work-container">
@@ -67,7 +68,8 @@ const SectionWork = () => {
               fluid={maglashic.childImageSharp.fluid}
               backgroundColor={`transparent`}
               background-position="center"
-              style={{ backgroundPositionX: "0%" }}
+              style={{ backgroundPositionX: "0%", cursor: "pointer" }}
+              onClick={(e) => navigate("/maglashic/")}
             >
            
               <div className="thumbnail__text">
@@ -89,6 +91,8 @@ const SectionWork = () => {
               fluid={fourEditors.childImageSharp.fluid}
               backgroundColor={`transparent`}
               background-position="center"
+              style={{ cursor: "pointer" }}
+              onClick={(e) => navigate("/four-editors/")}
             >
               <div className="thumbnail__text">
                 <a href="/four-editors/">
@@ -106,7 +110,8 @@ const SectionWork = () => {
               fluid={fietsenwinkel.childImageSharp.fluid}
               backgroundColor={`transparent`}
               background-position="center"
-              style={{ backgroundPositionX: "0%" }}
+              style={{ backgroundPositionX: "0%", cursor: "pointer" }}
+              onClick={(e) => navigate("/tm-tweewielers/")}
             >
               <div className="thumbnail__text ">
                 <a href="/tm-tweewielers/">
@@ -123,7 +128,8 @@ const SectionWork = () => {
               className="thumbnail__col"
               fluid={aerial.childImageSharp.fluid}
               backgroundColor={`transparent`}
-              background-position="center"
+              style={{ cursor: "pointer" }}
+              onClick={(e) => navigate("/aerial-access/")}
             >
               <div className="thumbnail__text">
                 <a href="/aerial-access/">
@@ -140,6 +146,8 @@ const SectionWork = () => {
               fluid={faminci.childImageSharp.fluid}
               backgroundColor={`transparent`}
               background-position="center"
+              onClick={(e) => navigate("https://faminci.com/collections/all")}
+              style={{ cursor: "pointer" }}
             >
               <div className="thumbnail__text">
                 <a href="https://faminci.com/collections/all">
