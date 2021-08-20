@@ -1,13 +1,14 @@
 import React, { useRef, useEffect } from "react";
-import { Helmet } from "react-helmet";
+// import { Helmet } from "react-helmet";
 import { createWidget } from "@typeform/embed";
 import "@typeform/embed/build/css/widget.css"; // import necessary CSS
 import Navigation from "../components/section-1/nav";
 import Menu from "../components/menu";
 import "../styles/styles.scss";
 import { AccessProvider } from "../contexts/access";
+import Seo from "../components/seo";
 
-const MyTypeformEmbed = () => {
+const MyTypeformEmbed = ({ location }) => {
   const container = useRef();
   const [open, setOpen] = React.useState(false);
 
@@ -17,21 +18,13 @@ const MyTypeformEmbed = () => {
 
   return (
     <div className="contact-container">
-      <Helmet
-        htmlAttributes={{
-          lang: "nl",
-        }}
-      >
-        <meta charSet="utf-8" />
-        <title>Laforga | Shopify Agency | Aanvraag</title>
-        <link rel="canonical" href="https://www.laforga.nl" />
-      </Helmet>
+      <Seo title="Aanvraag | Laforga" pathname={location.pathname} />
       <div className="inquiry-container">
         <AccessProvider>
           <Navigation open={open} toggleMenu={() => setOpen(!open)} />
           <Menu open={open} toggleMenu={() => setOpen(!open)} />
         </AccessProvider>
-     
+
         <div ref={container}></div>
       </div>
     </div>

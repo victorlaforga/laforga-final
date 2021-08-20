@@ -1,8 +1,8 @@
-import  React from "react";
+import React from "react";
 import { useInView } from "react-intersection-observer";
 import { Player } from "@lottiefiles/react-lottie-player";
 import LottieSrc2 from "../../assets/online-shopping.json";
-import '../../styles/styles.scss'
+import "../../styles/styles.scss";
 const MainSectionFour = () => {
   const { ref, inView } = useInView({
     threshold: 0,
@@ -21,11 +21,11 @@ const MainSectionFour = () => {
         {" "}
       </Player>
 
-      <h2>
-         Het shopgedrag van winkelen neemt alleen
-        maar toe. <mark>Online zichtbaarheid</mark> is nog nooit zo{" "}
+      <h3 className="h2">
+        Het shopgedrag van winkelen neemt alleen maar toe.{" "}
+        <mark>Online zichtbaarheid</mark> is nog nooit zo{" "}
         <mark>belangrijk</mark> geweest.
-      </h2>
+      </h3>
     </div>
   );
 };

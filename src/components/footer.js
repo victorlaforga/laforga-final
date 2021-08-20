@@ -1,5 +1,6 @@
-import  React from "react";
-import vector from "../assets/Vector.svg"
+import { StaticImage } from "gatsby-plugin-image";
+import React from "react";
+// import vector from "../assets/Vector.svg";
 import "../styles/styles.scss";
 
 const Footer = () => {
@@ -46,15 +47,15 @@ const Footer = () => {
         <div className="footer__content">
           <div className="first__content">
             <div className="row footer__title">
-              <h2>LATEN WE IETS GEWELDIGS CREËREN</h2>
+              <h4 className="h2">LATEN WE IETS GEWELDIGS CREËREN</h4>
             </div>
             <div className="row info">
               <div className="footer__email">
-                <h3>E-mail:</h3>
+                <span className="h3">E-mail:</span>
                 <a href="mailto:info@laforga.nl">info@laforga.nl</a>
               </div>
               <div className="footer__tel">
-                <h3>Telefoonnummer</h3>{" "}
+                <span className="h3">Telefoonnummer</span>{" "}
                 <a href="tel:+31232084022">+31 23 208 4022</a> <br />
                 <br />
                 <a href="https://api.whatsapp.com/send?phone=+31628340312">
@@ -62,30 +63,54 @@ const Footer = () => {
                 </a>
               </div>
               <div className="social-links">
-                <h3>Social</h3>
+                <span className="h3">Social</span>
                 <div className="social__items">
                   <a href="https://api.whatsapp.com/send?phone=+31628340312">
                     Whatsapp{" "}
                     <span>
-                      <img src={vector} alt="vector" width={11} height={13}  loading="lazy" />
+                      <StaticImage
+                        src="../assets/Vector.svg"
+                        alt="vector"
+                        width={11}
+                        height={13}
+                        loading="lazy"
+                      />
                     </span>
                   </a>
                   <a href="https://www.instagram.com/laforga.agency/">
                     Instagram{" "}
                     <span>
-                      <img src={vector} alt="vector" width={11} height={13}  loading="lazy" />
+                      <StaticImage
+                        src="../assets/Vector.svg"
+                        alt="vector"
+                        width={11}
+                        height={13}
+                        loading="lazy"
+                      />
                     </span>
                   </a>
                   <a href="https://www.facebook.com/laforgaa/">
                     Facebook{" "}
                     <span>
-                      <img src={vector} alt="vector" width={11} height={13}  loading="lazy" />
+                      <StaticImage
+                        src="../assets/Vector.svg"
+                        alt="vector"
+                        width={11}
+                        height={13}
+                        loading="lazy"
+                      />
                     </span>
                   </a>
                   <a href="https://www.linkedin.com/company/laforga-agency">
                     LinkedIn{" "}
                     <span>
-                      <img src={vector} alt="vector" width={11} height={13}  loading="lazy" />
+                      <StaticImage
+                        src="../assets/Vector.svg"
+                        alt="vector"
+                        width={11}
+                        height={13}
+                        loading="lazy"
+                      />
                     </span>
                   </a>
                 </div>

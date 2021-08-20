@@ -1,16 +1,12 @@
+import { StaticImage } from "gatsby-plugin-image";
 import React from "react";
 import "../styles/styles.scss";
-import Vector from "../assets/Vector.svg";
-import '../styles/styles.scss'
 const Menu = ({ open, toggleMenu }) => {
-
-  const navigate =(e, id) => {
-    
+  const navigate = (e, id) => {
     e && e.preventDefault(); // to avoid the link from redirecting
     const elementToView = document.getElementById(id);
-    elementToView .scrollIntoView(); 
- }
- 
+    elementToView.scrollIntoView();
+  };
 
   return (
     <div className={`menu ${open ? "open" : "closed"}`}>
@@ -18,29 +14,27 @@ const Menu = ({ open, toggleMenu }) => {
         <nav>
           <ul>
             <li>
-              <a href="/" onClick={(e=>(toggleMenu(e,'home')))}>
+              <a href="/" onClick={(e) => toggleMenu(e, "home")}>
                 Home
               </a>
             </li>
             <li>
-              <a href="/" onClick={(e=>(toggleMenu(e,'doen-wij')))}>
+              <a href="/" onClick={(e) => toggleMenu(e, "doen-wij")}>
                 Wat doen wij
               </a>
             </li>
             <li>
-              <a href="/" onClick={(e=>(toggleMenu(e,'ons-werk')))}>
+              <a href="/" onClick={(e) => toggleMenu(e, "ons-werk")}>
                 Ons werk
               </a>
             </li>
             <li>
-              <a href="/" onClick={(e=>(toggleMenu(e,'diensten-prijzen')))}>
+              <a href="/" onClick={(e) => toggleMenu(e, "diensten-prijzen")}>
                 Diensten & prijzen
               </a>
             </li>
             <li>
-              <a href="/contact/">
-                Contact
-              </a>
+              <a href="/contact/">Contact</a>
             </li>
           </ul>
         </nav>
@@ -50,26 +44,26 @@ const Menu = ({ open, toggleMenu }) => {
         <div className="container-contact">
           <div className="container-info">
             <div>
-              <h3>E-mail:</h3>{" "}
+              <span className="h3">E-mail:</span>{" "}
               <a href="mailto:info@laforga.nl">info@laforga.nl</a>
             </div>
             <div>
-              <h3>Telefoonnummer:</h3>{" "}
+              <span className="h3">Telefoonnummer:</span>{" "}
               <a href="tel:+31232084022">+31 23 208 4022</a>
             </div>
             <div className="social-links">
-              <h3>Social:</h3>
+              <span className="h3">Social:</span>
               <div>
                 {" "}
                 <a href="https://api.whatsapp.com/send?phone=+31628340312">
                   Whatsapp{" "}
                   <span>
-                    <img
-                      src={Vector}
+                    <StaticImage
+                      src="../assets/Vector.svg"
                       alt="vector"
-                      width="11"
-                      height="13"
-                       loading="lazy"
+                      width={20}
+                      height={20}
+                      loading="lazy"
                     />
                   </span>
                 </a>
@@ -77,24 +71,24 @@ const Menu = ({ open, toggleMenu }) => {
                   Facebook{" "}
                   <span>
                     {" "}
-                    <img
-                      src={Vector}
+                    <StaticImage
+                      src="../assets/Vector.svg"
                       alt="vector"
-                      width="11"
-                      height="13"
-                       loading="lazy"
+                      width={20}
+                      height={20}
+                      loading="lazy"
                     />
                   </span>
                 </a>
                 <a href="https://www.instagram.com/laforga.agency/">
                   Instagram{" "}
                   <span>
-                    <img
-                      src={Vector}
+                    <StaticImage
+                      src="../assets/Vector.svg"
                       alt="vector"
-                      width="11"
-                      height="13"
-                       loading="lazy"
+                      width={20}
+                      height={20}
+                      loading="lazy"
                     />
                   </span>
                 </a>
@@ -102,12 +96,12 @@ const Menu = ({ open, toggleMenu }) => {
                   LinkedIn{" "}
                   <span>
                     {" "}
-                    <img
-                      src={Vector}
+                    <StaticImage
+                      src="../assets/Vector.svg"
                       alt="vector"
-                      width="11"
-                      height="13"
-                       loading="lazy"
+                      width={20}
+                      height={20}
+                      loading="lazy"
                     />
                   </span>
                 </a>

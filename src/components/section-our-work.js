@@ -4,64 +4,68 @@ import BackgroundImage from "gatsby-background-image";
 import "swiper/swiper.scss";
 import { navigate } from "gatsby";
 import Swiper from "react-id-swiper";
-import '../styles/styles.scss'
+import "../styles/styles.scss";
 const SectionWork = () => {
   const sliderParams = {
     centeredSlides: false,
     slidesPerView: "auto",
   };
-  const { maglashic, fourEditors, faminci, fietsenwinkel, aerial } = useStaticQuery(
-    graphql`
-      query {
-        maglashic: file(relativePath: { eq: "work-maglashic.png" }) {
-          childImageSharp {
-            fluid(quality: 100) {
-              ...GatsbyImageSharpFluid_withWebp
+  const { maglashic, fourEditors, faminci, fietsenwinkel, aerial } =
+    useStaticQuery(
+      graphql`
+        query {
+          maglashic: file(relativePath: { eq: "work-maglashic.png" }) {
+            childImageSharp {
+              fluid(quality: 100) {
+                ...GatsbyImageSharpFluid_withWebp
+              }
+            }
+          }
+          fourEditors: file(relativePath: { eq: "four-editors-work.jpeg" }) {
+            childImageSharp {
+              fluid(quality: 100, maxWidth: 420) {
+                ...GatsbyImageSharpFluid_withWebp
+              }
+            }
+          }
+          aerial: file(relativePath: { eq: "aerial2.png" }) {
+            childImageSharp {
+              fluid(quality: 100, maxWidth: 420) {
+                ...GatsbyImageSharpFluid_withWebp
+              }
+            }
+          }
+          faminci: file(relativePath: { eq: "faminci-work.jpeg" }) {
+            childImageSharp {
+              fluid(quality: 100, maxWidth: 420) {
+                ...GatsbyImageSharpFluid_withWebp
+              }
+            }
+          }
+          fietsenwinkel: file(relativePath: { eq: "fietsenwinkel.jpg" }) {
+            childImageSharp {
+              fluid(quality: 100, maxWidth: 420) {
+                ...GatsbyImageSharpFluid_withWebp
+              }
             }
           }
         }
-        fourEditors: file(relativePath: { eq: "four-editors-work.jpeg" }) {
-          childImageSharp {
-            fluid(quality: 100, maxWidth: 420) {
-              ...GatsbyImageSharpFluid_withWebp
-            }
-          }
-        }
-        aerial: file(relativePath: { eq: "aerial2.png" }) {
-          childImageSharp {
-            fluid(quality: 100, maxWidth: 420) {
-              ...GatsbyImageSharpFluid_withWebp
-            }
-          }
-        }
-        faminci: file(relativePath: { eq: "faminci-work.jpeg" }) {
-          childImageSharp {
-            fluid(quality: 100, maxWidth: 420) {
-              ...GatsbyImageSharpFluid_withWebp
-            }
-          }
-        }
-        fietsenwinkel: file(relativePath: { eq: "fietsenwinkel.jpg" }) {
-          childImageSharp {
-            fluid(quality: 100, maxWidth: 420) {
-              ...GatsbyImageSharpFluid_withWebp
-            }
-          }
-        }
-      }
-    `
-  );
+      `
+    );
   const bgRef = useRef();
   return (
     <section id="ons-werk" className="study-case-container">
-      <h2>Meest <mark>recente werk</mark></h2>
+      <h3 className="h2">
+        Meest <mark>recente werk</mark>
+      </h3>
       <div className="recent-work">
         <div className="recent-work-container">
           <Swiper {...sliderParams}>
-         
             <BackgroundImage
               ref={bgRef}
-              onStartLoad={() => bgRef.current.selfRef.classList.toggle("loading")}
+              onStartLoad={() =>
+                bgRef.current.selfRef.classList.toggle("loading")
+              }
               onLoad={() => bgRef.current.selfRef.classList.toggle("loading")}
               Tag="section"
               className="thumbnail__col"
@@ -71,7 +75,6 @@ const SectionWork = () => {
               style={{ backgroundPositionX: "0%", cursor: "pointer" }}
               onClick={(e) => navigate("/maglashic/")}
             >
-           
               <div className="thumbnail__text">
                 <a href="/maglashic/">
                   <h3>Maglashic</h3>
@@ -82,9 +85,8 @@ const SectionWork = () => {
                   </p>
                 </a>
               </div>
-        
             </BackgroundImage>
-         
+
             <BackgroundImage
               Tag="section"
               className="thumbnail__col"
@@ -135,7 +137,8 @@ const SectionWork = () => {
                 <a href="/aerial-access/">
                   <h3>Aerial Access</h3>
                   <p>
-                  Aerial Access is in staat op moeilijke toegankelijke locaties werkzaamheden uit te voeren.
+                    Aerial Access is in staat op moeilijke toegankelijke
+                    locaties werkzaamheden uit te voeren.
                   </p>
                 </a>
               </div>
@@ -159,7 +162,6 @@ const SectionWork = () => {
                 </a>
               </div>
             </BackgroundImage>
-           
           </Swiper>
         </div>
       </div>

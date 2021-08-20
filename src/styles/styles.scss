@@ -868,10 +868,9 @@ mark {
   background-image: url("../images/wave-beige.png");
   min-height: 25rem;
   max-height: 100rem;
-padding-top: 200px;
-padding-bottom: 275px;
+  padding-top: 200px;
+  padding-bottom: 275px;
   background-size: cover;
-
 
   .wave {
     height: 318px;
@@ -916,7 +915,7 @@ padding-bottom: 275px;
 
   padding: 75px 0;
 
-  h2 {
+  h3 {
     font-family: "BebasNeue";
     font-weight: 100;
     font-size: 48px;
@@ -949,8 +948,11 @@ footer {
   height: 350px;
   margin-top: -100px;
 
-  h3 {
+  .h3 {
     color: hsla(0, 0%, 100%, 0.5);
+    display: block;
+    font-size: 1.17em;
+    font-family: "Glacial";
   }
 
   a {
@@ -978,7 +980,7 @@ footer {
   }
 
   .footer__title {
-    h2 {
+    .h2 {
       color: #fff;
       font-family: BebasNeue;
       font-size: 80px;
@@ -1296,13 +1298,12 @@ footer {
       width: fit-content;
       margin-top: -100px;
       margin-bottom: 50px;
-      
     }
   }
 
   section.section-six {
     min-height: 96.5em;
-    z-index:9;
+    z-index: 9;
     div.main-section-six {
       & > .wave {
         width: 100%;
@@ -1354,7 +1355,7 @@ footer {
     flex-direction: column;
     padding: 0 5%;
 
-    h2 {
+    .h2 {
       font-size: 26px !important;
       line-height: 32.5px;
       font-family: "BebasNeue";
@@ -1855,7 +1856,7 @@ footer {
   width: 100% !important;
 }
 @media screen and (max-width: 350px) {
-  .work-main .work-icons div h4 {
+  .work-main .work-icons div .h4 {
     font-size: 40px !important;
   }
 }
@@ -1871,20 +1872,24 @@ footer {
   div section.section-one .main-section div.intro-text p {
     font-size: 20px;
     line-height: 22px;
-}
-div.content {
-  line-height: 65px;
-  font-size: 65px;
-}
-section.section-six .main-section-six .services-container .services-intro .detail-services-container {
-  width: 115%;
-}
+  }
+  div.content {
+    line-height: 65px;
+    font-size: 65px;
+  }
+  section.section-six
+    .main-section-six
+    .services-container
+    .services-intro
+    .detail-services-container {
+    width: 115%;
+  }
 }
 @media screen and (max-width: 481px) {
   .content__container {
     margin-bottom: 0;
   }
-  .work-main .work-icons div h4 {
+  .work-main .work-icons div .h4 {
     font-size: 3.8rem !important;
   }
   .work-main .work-icons {
@@ -1895,7 +1900,7 @@ section.section-six .main-section-six .services-container .services-intro .detai
     padding-top: 26px;
   }
 
-  section.study-case-container h2 {
+  section.study-case-container .h2 {
     margin: 0 5%;
     padding-left: 0;
     font-size: 42px;
@@ -2143,7 +2148,7 @@ $logo-max-height: 100px;
     transition: opacity 3s;
   }
 
-  h2 {
+  h3 {
     font-family: "BebasNeue";
     font-weight: 100;
     font-size: 48px;
@@ -2227,10 +2232,9 @@ $logo-max-height: 100px;
     }
   }
 
-div.slick-arrow {
-  padding: 20px 10px;
-
-}
+  div.slick-arrow {
+    padding: 20px 10px;
+  }
   @media screen and (min-width: 482px) and (max-width: 1180px) {
     .services {
       margin-top: 400px;
@@ -2262,7 +2266,7 @@ div.slick-arrow {
         top: 110px;
 
         .services-intro-text {
-          h1 {
+          h3 {
             font-family: "BebasNeue";
             font-weight: 100;
             font-size: 48px;
@@ -2319,12 +2323,12 @@ div.slick-arrow {
         padding-bottom: 40px;
         border-radius: 1px;
 
-        h2,
+        .h2,
         p {
           color: #1b1b1b;
         }
 
-        h2 {
+        .h2 {
           span {
             color: rgba(27, 27, 27, 0.3);
           }
@@ -2335,8 +2339,7 @@ div.slick-arrow {
         max-width: 550px;
         color: white;
         z-index: 213321321;
-
-        h2 {
+        .h2 {
           color: white;
           font-size: 41px;
           font-family: "BebasNeue";
@@ -2442,7 +2445,7 @@ div.slick-arrow {
           min-width: 800px;
           flex-direction: row;
 
-          h3 {
+          .h3 {
             color: rgba(255, 255, 255, 0.5);
             width: 200px;
             margin: 0;
@@ -2511,7 +2514,7 @@ div.typeform-widget {
   .intro-services {
     max-width: 550px;
 
-    h2 {
+    .h2 {
       font-family: "BebasNeue";
       font-weight: 100;
       font-size: 36px;
@@ -2586,7 +2589,7 @@ div.typeform-widget {
         justify-content: space-between;
 
         .pricing {
-          h4 {
+          .h4 {
             font-family: "Glacial";
             font-style: normal;
             font-weight: normal;
@@ -2779,7 +2782,7 @@ div.container-services.support#support {
     }
   }
 
- div.menu.open > div.menu-nav > nav > ul > li > a {
+  div.menu.open > div.menu-nav > nav > ul > li > a {
     font-size: 2rem;
   }
 
@@ -2943,9 +2946,9 @@ a.see-more {
 }
 
 .study-case-container {
-margin-top: 25px;
+  margin-top: 25px;
   padding: 50px 0;
-  h2 {
+  .h2 {
     font-family: "BebasNeue";
     padding-left: 100px;
     font-weight: 100;
@@ -3113,7 +3116,7 @@ article.thumbnail-work:nth-of-type(odd) {
 }
 
 @media screen and (min-width: 601px) and (max-width: 961px) {
- div.header.initial > a > img {
+  div.header.initial > a > img {
     margin-left: 100%;
   }
 }
@@ -3134,14 +3137,19 @@ article.thumbnail-work:nth-of-type(odd) {
     font-family: "BebasNeue";
     font-size: 100px;
     font-weight: 100;
-    margin: 25px 100px ;
+    margin: 25px 100px;
     bottom: 25px;
     position: absolute;
   }
 }
 
 .container-banner.aerial {
-  background-image: linear-gradient(to top,rgba(237, 235, 224,0.3),rgba(237, 235, 224,0.1)),url("../images/aerial2.png");
+  background-image: linear-gradient(
+      to top,
+      rgba(237, 235, 224, 0.3),
+      rgba(237, 235, 224, 0.1)
+    ),
+    url("../images/aerial2.png");
 }
 
 @media screen and (max-width: 961px) {
@@ -3177,7 +3185,6 @@ article.thumbnail-work:nth-of-type(odd) {
         font-weight: 100;
         line-height: 55px;
         font-size: 48px;
-       
       }
     }
 
@@ -3203,7 +3210,7 @@ article.thumbnail-work:nth-of-type(odd) {
     margin: 100px auto;
     div {
       width: fit-content;
-      h4 {
+      .h4 {
         font-size: 75px;
         font-family: "BebasNeue";
         text-align: center;
@@ -3224,7 +3231,7 @@ article.thumbnail-work:nth-of-type(odd) {
       font-size: 20px;
       line-height: 25px;
     }
-    h3 {
+    .h3 {
       font-family: "BebasNeue";
       font-weight: 100;
       line-height: 55px;
@@ -3242,10 +3249,8 @@ article.thumbnail-work:nth-of-type(odd) {
 
 @media screen and (max-width: 981px) {
   .section-four {
-    
-  padding-top: 200px;
-  padding-bottom: 200px;
-
+    padding-top: 200px;
+    padding-bottom: 200px;
   }
   .work-main {
     min-height: 100vh;
@@ -3292,7 +3297,7 @@ article.thumbnail-work:nth-of-type(odd) {
       margin: 100px auto;
       div {
         width: fit-content;
-        h4 {
+        .h4 {
           font-size: 75px;
           font-family: "BebasNeue";
         }
@@ -3314,7 +3319,7 @@ article.thumbnail-work:nth-of-type(odd) {
         font-size: 20px;
         line-height: 25px;
       }
-      h3 {
+      .h3 {
         font-family: "BebasNeue";
         font-weight: 100;
         line-height: 55px;
@@ -3327,7 +3332,12 @@ article.thumbnail-work:nth-of-type(odd) {
 
 // .container-banner.aerial
 .container-banner.maglashic {
-  background-image: linear-gradient(to top,rgba(237, 235, 224,0.3),rgba(237, 235, 224,0.1)),url("../images/work-maglashic.png");
+  background-image: linear-gradient(
+      to top,
+      rgba(237, 235, 224, 0.3),
+      rgba(237, 235, 224, 0.1)
+    ),
+    url("../images/work-maglashic.png");
 }
 
 .contact-info {
@@ -3366,8 +3376,6 @@ article.thumbnail-work:nth-of-type(odd) {
 //   filter: blur(15px);
 // }
 
-
-
 .contact-container {
   background-color: #f0ece2;
   height: 100vh;
@@ -3375,24 +3383,21 @@ article.thumbnail-work:nth-of-type(odd) {
   padding: 0 100px;
 }
 
-
 @media screen and (max-width: 481px) {
-div.contact-container {
-  padding: 0px 5% 20px;
-}
+  div.contact-container {
+    padding: 0px 5% 20px;
+  }
 }
 @media screen and (max-width: 641px) {
-.contact-container {
-  padding: 0 50px;
-}
-   
+  .contact-container {
+    padding: 0 50px;
+  }
 }
 @media screen and (max-width: 961px) {
   .contact-container {
     padding: 0 75px;
   }
-     
-  }
+}
 .aanvraag-btn {
   padding: 20px 40px;
   background: #000;
@@ -3404,7 +3409,7 @@ div.contact-container {
   text-align: center;
 }
 .contact-container--info {
-  h2 {
+  .h2 {
     margin: 30px auto 15px auto;
     font-family: "BebasNeue";
     font-size: 32px;
@@ -3415,12 +3420,22 @@ div.contact-container {
 }
 .work-subbanner.maglashic {
   // background-image: url("../images/maglashic-banner-small.png");
-  background-image: linear-gradient(to right,rgba(252, 204, 202,0.5),rgba(177, 143, 153, 0.8)),url("../images/maglashic-banner-small.png");
+  background-image: linear-gradient(
+      to right,
+      rgba(252, 204, 202, 0.5),
+      rgba(177, 143, 153, 0.8)
+    ),
+    url("../images/maglashic-banner-small.png");
   background-position-y: 50%;
 }
 
 .container-banner.foureditors {
- background-image: linear-gradient(to top,rgba(237, 235, 224,0.3),rgba(237, 235, 224,0.1)),url("../images/foureditors1.jpeg");
+  background-image: linear-gradient(
+      to top,
+      rgba(237, 235, 224, 0.3),
+      rgba(237, 235, 224, 0.1)
+    ),
+    url("../images/foureditors1.jpeg");
 }
 .work-subbanner.foureditors {
   background-image: url("../images/foureditors4.jpg");
@@ -3432,16 +3447,18 @@ div.contact-container {
   }
 }
 
-
-
 .container-banner.tm {
   background-position-y: 50%;
-  background-image: linear-gradient(to top,rgba(237, 235, 224,0.6),rgba(237, 235, 224,0.1)),url("../images/fietsenwinkel.jpg");
+  background-image: linear-gradient(
+      to top,
+      rgba(237, 235, 224, 0.6),
+      rgba(237, 235, 224, 0.1)
+    ),
+    url("../images/fietsenwinkel.jpg");
 }
 .work-subbanner.tm {
   background-image: url("../images/tmbanner.jpg");
   background-position-y: 45%;
-  
 }
 
 @media screen and (max-width: 410px) {
@@ -3457,34 +3474,35 @@ div.contact-container {
   .menu .menu-info .container-contact div.container-info div a {
     font-size: 17px;
   }
-  .menu .menu-info .container-contact div.container-info div h3 {
-  font-size: 18px;
+  .menu .menu-info .container-contact div.container-info div .h3 {
+    font-size: 18px;
   }
   div.menu .menu-info div.container-contact div.container-info {
     margin: 15px auto;
   }
-  section.section-six .main-section-six .services-container .services-intro .detail-services-container .detail-services-elm img {
+  section.section-six
+    .main-section-six
+    .services-container
+    .services-intro
+    .detail-services-container
+    .detail-services-elm
+    img {
     max-width: 30px;
     height: auto;
   }
 }
-@media screen and (min-width: 482px) and (max-width:1180px) {
-
+@media screen and (min-width: 482px) and (max-width: 1180px) {
   .menu .menu-nav nav {
     text-align: center;
-  
   }
-  
-  }
+}
 
-  .starters {
-  
-    p {
-      font-size: 12px;
-      color: white;
-    }
-  
+.starters {
+  p {
+    font-size: 12px;
+    color: white;
   }
+}
 
 .contact-container .inquiry-container div.menu {
   margin-left: -5%;
