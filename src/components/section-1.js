@@ -5,7 +5,7 @@ import { MainSection, Navigation } from "./section-1/index";
 import { Player } from "@lottiefiles/react-lottie-player";
 import { AccessContext } from "../contexts/access";
 import useDeviceDetect from "../hooks/useDeviceDetect";
-import '../styles/styles.scss'
+// import '../styles/styles.scss'
 const SectionOne = () => {
   const [isFirstAccess, pageLoaded] = React.useContext(AccessContext);
   const [open, setOpen] = React.useState(false);

@@ -1,13 +1,13 @@
-import  React from "react"
-import {MainSection} from "./section-3/index"
-import '../styles/styles.scss'
+import React from "react";
+import { MainSection } from "./section-3/index";
+// import '../styles/styles.scss'
 
 const SectionThree = () => {
   return (
-   <section className="section-three">
+    <section className="section-three">
       <MainSection />
-   </section>
-  )
-}
+    </section>
+  );
+};
 
-export default SectionThree
+export default SectionThree;

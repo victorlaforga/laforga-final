@@ -1,45 +1,57 @@
+// import { StaticImage } from "gatsby-plugin-image";
 import React from "react";
 import "../styles/styles.scss";
-import Vector from "../assets/Vector.svg";
-import '../styles/styles.scss'
+import vector from "../assets/Vector.svg";
 const Menu = ({ open, toggleMenu }) => {
-
-  const navigate =(e, id) => {
-    
+  const navigate = (e, id) => {
     e && e.preventDefault(); // to avoid the link from redirecting
     const elementToView = document.getElementById(id);
-    elementToView .scrollIntoView(); 
- }
- 
+    elementToView.scrollIntoView();
+  };
 
   return (
     <div className={`menu ${open ? "open" : "closed"}`}>
       <div className="menu-nav">
-        <nav>
+        <nav
+          itemscope="itemscope"
+          itemtype="http://www.schema.org/SiteNavigationElement"
+        >
           <ul>
-            <li>
-              <a href="/" onClick={(e=>(toggleMenu(e,'home')))}>
-                Home
+            <li itemprop="hasPart">
+              <a itemprop="url" href="/" onClick={(e) => toggleMenu(e, "home")}>
+                <span itemprop="name">Home</span>
               </a>
             </li>
-            <li>
-              <a href="/" onClick={(e=>(toggleMenu(e,'doen-wij')))}>
-                Wat doen wij
+            <li itemprop="hasPart">
+              <a
+                itemprop="url"
+                href="/"
+                onClick={(e) => toggleMenu(e, "doen-wij")}
+              >
+                <span itemprop="name">Wat doen wij</span>
               </a>
             </li>
-            <li>
-              <a href="/" onClick={(e=>(toggleMenu(e,'ons-werk')))}>
-                Ons werk
+            <li itemprop="hasPart">
+              <a
+                itemprop="url"
+                href="/"
+                onClick={(e) => toggleMenu(e, "ons-werk")}
+              >
+                <span itemprop="name">Ons werk</span>
               </a>
             </li>
-            <li>
-              <a href="/" onClick={(e=>(toggleMenu(e,'diensten-prijzen')))}>
-                Diensten & prijzen
+            <li itemprop="hasPart">
+              <a
+                itemprop="url"
+                href="/"
+                onClick={(e) => toggleMenu(e, "diensten-prijzen")}
+              >
+                <span itemprop="name">Diensten & prijzen</span>
               </a>
             </li>
-            <li>
-              <a href="/contact/">
-                Contact
+            <li itemprop="hasPart">
+              <a itemprop="url" href="/contact/">
+                <span itemprop="name">Contact</span>
               </a>
             </li>
           </ul>
@@ -50,26 +62,26 @@ const Menu = ({ open, toggleMenu }) => {
         <div className="container-contact">
           <div className="container-info">
             <div>
-              <h3>E-mail:</h3>{" "}
+              <span className="h3">E-mail:</span>{" "}
               <a href="mailto:info@laforga.nl">info@laforga.nl</a>
             </div>
             <div>
-              <h3>Telefoonnummer:</h3>{" "}
+              <span className="h3">Telefoonnummer:</span>{" "}
               <a href="tel:+31232084022">+31 23 208 4022</a>
             </div>
             <div className="social-links">
-              <h3>Social:</h3>
+              <span className="h3">Social:</span>
               <div>
                 {" "}
                 <a href="https://api.whatsapp.com/send?phone=+31628340312">
                   Whatsapp{" "}
                   <span>
                     <img
-                      src={Vector}
+                      src={vector}
                       alt="vector"
-                      width="11"
-                      height="13"
-                       loading="lazy"
+                      width={11}
+                      height={13}
+                      loading="lazy"
                     />
                   </span>
                 </a>
@@ -78,11 +90,11 @@ const Menu = ({ open, toggleMenu }) => {
                   <span>
                     {" "}
                     <img
-                      src={Vector}
+                      src={vector}
                       alt="vector"
-                      width="11"
-                      height="13"
-                       loading="lazy"
+                      width={11}
+                      height={13}
+                      loading="lazy"
                     />
                   </span>
                 </a>
@@ -90,11 +102,11 @@ const Menu = ({ open, toggleMenu }) => {
                   Instagram{" "}
                   <span>
                     <img
-                      src={Vector}
+                      src={vector}
                       alt="vector"
-                      width="11"
-                      height="13"
-                       loading="lazy"
+                      width={11}
+                      height={13}
+                      loading="lazy"
                     />
                   </span>
                 </a>
@@ -103,11 +115,11 @@ const Menu = ({ open, toggleMenu }) => {
                   <span>
                     {" "}
                     <img
-                      src={Vector}
+                      src={vector}
                       alt="vector"
-                      width="11"
-                      height="13"
-                       loading="lazy"
+                      width={11}
+                      height={13}
+                      loading="lazy"
                     />
                   </span>
                 </a>

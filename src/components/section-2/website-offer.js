@@ -19,7 +19,7 @@ const WebsiteOffer = () => {
           className={`website-offer-container  ${inView && "show"}`}
           ref={ref}
         >
-          <h3>website nodig?</h3>
+          <span className="h3">website nodig?</span>
 
           <p>
             Wij zijn digitale bouwmeesters. In dit digitale tijdperk is het
@@ -39,10 +39,7 @@ const WebsiteOffer = () => {
           ref={ref}
         >
           <div onClick={toggle} onKeyDown={toggle} aria-hidden="true">
-            <h3>
-            website nodig?{" "}
-              {on ? <span>-</span> : <span>+</span>}
-            </h3>
+            <h3>website nodig? {on ? <span>-</span> : <span>+</span>}</h3>
           </div>
           <div className={on ? " showing" : "Question__response "}>
             <p className=" ">

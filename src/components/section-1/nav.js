@@ -3,8 +3,8 @@ import { useInView } from "react-intersection-observer";
 import Menu from "../menu";
 import { AccessContext } from "../../contexts/access";
 import ProjectContainerLink from "./ProjectContainerLink";
-import logo from "../../images/black-logo.png"
-import '../../styles/styles.scss'
+import logo from "../../images/black-logo.png";
+// import "../../styles/styles.scss";
 const Navigation = ({ open, toggleMenu }) => {
   const [isFirstAccess] = React.useContext(AccessContext);
   const { ref, inView } = useInView({
@@ -30,7 +30,14 @@ const Navigation = ({ open, toggleMenu }) => {
         </div>
       </div>
       <a href="/">
-        <img className="logo" src={logo} alt="laforga" loading="eager" width="100%" height="50"/>
+        <img
+          className="logo"
+          src={logo}
+          alt="laforga"
+          loading="eager"
+          width="100%"
+          height="50"
+        />
       </a>
       <div className="start-project-container">
         <ProjectContainerLink />

@@ -2,8 +2,8 @@ import React from "react";
 import { useInView } from "react-intersection-observer";
 import ReactPlayer from "react-player/lazy";
 import Video from "../../assets/maneti-dashboard-final.mp4";
-import shopify from "../../images/shopify-partner.png"
-import '../../styles/styles.scss'
+import shopify from "../../images/shopify-partner.png";
+// import '../../styles/styles.scss'
 const MainSectionThree = () => {
   const { ref, inView } = useInView({
     threshold: 0,
@@ -24,7 +24,8 @@ const MainSectionThree = () => {
         </p>{" "}
         <br />{" "}
         <p>
-          Wij zijn officiele partners met Shopify met een team van Shopify & design experts!
+          Wij zijn officiele partners met Shopify met een team van Shopify &
+          design experts!
         </p>{" "}
         <br />{" "}
         <p>
@@ -32,7 +33,6 @@ const MainSectionThree = () => {
           gebruiksvriendelijk. Binnen een paar clicks heb je al een product
           toegevoegd! Shopify is grenzenloos, verkoop dus ook in het buitenland.
         </p>{" "}
-
         <br />{" "}
         <p>
           Bij al onze{" "}
@@ -59,7 +59,8 @@ const MainSectionThree = () => {
           className={`${inView && "show"}shopify-partner-img`}
           src={shopify}
           alt="shopify partners webshop ecommerce agency we design build bouwen mooie webshop modern fris website online verkopen"
-          width="100%" height="50"
+          width="100%"
+          height="50"
           loading="lazy"
         />
       </div>

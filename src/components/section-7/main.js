@@ -1,7 +1,7 @@
-import  React from "react";
+import React from "react";
 import { useInView } from "react-intersection-observer";
-import heart from "../../images/akar-icons_heart.png"
-import '../../styles/styles.scss'
+import heart from "../../images/akar-icons_heart.png";
+// import "../../styles/styles.scss";
 const MainSectionSeven = () => {
   const { ref, inView } = useInView({
     threshold: 0,
@@ -14,7 +14,7 @@ const MainSectionSeven = () => {
       id="diensten-prijzen"
     >
       <div className="intro-services">
-        <h2>Onze diensten</h2>
+        <h3 className="h2">Onze diensten</h3>
         <p>
           Wij houden van transparantie en eerlijkheid. Vandaar dat wij open zijn
           over onze prijzen en diensten. Het bereiken van je volledige potentie
@@ -31,7 +31,13 @@ const MainSectionSeven = () => {
             <h3>Standaard</h3>
             <div className="starters">
               <span>
-                <img src={heart} alt="heart" width={14} height={14}  loading="lazy"/>
+                <img
+                  src={heart}
+                  alt="heart"
+                  width={14}
+                  height={14}
+                  loading="lazy"
+                />
               </span>
               <p>Aanbevolen voor starters</p>
             </div>
@@ -45,7 +51,7 @@ const MainSectionSeven = () => {
           <div className="container-services--footer">
             <a href="/aanvraag/">Vraag offerte aan</a>
             <div className="pricing">
-              <h4>vanaf €999</h4>
+              <span className="h4">vanaf €999</span>
               <p>* alle prijzen zijn exclusief btw</p>
             </div>
           </div>
@@ -63,7 +69,7 @@ const MainSectionSeven = () => {
           <div className="container-services--footer">
             <a href="/aanvraag/">Vraag offerte aan</a>
             <div className="pricing">
-              <h4>vanaf €1999</h4>
+              <span className="h4">vanaf €1999</span>
               <p>* alle prijzen zijn exclusief btw</p>
             </div>
           </div>
@@ -82,7 +88,7 @@ const MainSectionSeven = () => {
           <div className="container-services--footer">
             <a href="/aanvraag/">Vraag offerte aan</a>
             <div className="pricing">
-              <h4>vanaf €4999</h4>
+              <span className="h4">vanaf €4999</span>
               <p>* alle prijzen zijn exclusief btw</p>
             </div>
           </div>

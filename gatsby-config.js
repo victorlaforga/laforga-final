@@ -1,11 +1,48 @@
 module.exports = {
   siteMetadata: {
-    title: "Laforga | Shopify Agency",
+    title: "Digital Creative Agency | Shopify Partner",
+    author: "Victor Laforga",
+    keywords: ["Shopify Partner", "Digital Creative Agency", "Laforga"],
+    description:
+      "Begin vandaag nog met online verkopen met Shopify of schaal je winkel op met custom features. Wij zetten merken en bedrijven om in online legendes. Het bereiken van je volledige potentie zou je niet in de min moeten zetten",
     siteUrl: "https://www.laforga.nl",
   },
   plugins: [
     "gatsby-plugin-sass",
     `gatsby-plugin-preact`,
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        query: `
+{
+  site {
+    siteMetadata {
+      siteUrl
+    }
+  }
+  allSitePage {
+    nodes {
+      path
+    }
+  }
+}
+`,
+        resolveSiteUrl: ({ site }) => site.siteMetadata.siteUrl,
+        resolvePages: ({ allSitePage }) =>
+          allSitePage.nodes.map((page) => {
+            return { ...page };
+          }),
+        serialize: ({ path }) => {
+          return {
+            url: path,
+            changefreq: `weekly`,
+            priority: 0.8,
+          };
+        },
+      },
+    },
+
+    `gatsby-plugin-robots-txt`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: "gatsby-plugin-google-analytics",
@@ -94,20 +131,20 @@ module.exports = {
     {
       resolve: `gatsby-plugin-minify`,
       options: {
-        removeAttributeQuotes: true
-      }
+        removeAttributeQuotes: true,
+      },
     },
     {
       resolve: `gatsby-plugin-offline`,
       options: {
-        precachePages: ['*'],
+        precachePages: ["*"],
         importWorkboxFrom: `local`,
-        globDirectory: 'public',
-        globPatterns: ['*/**'],
+        globDirectory: "public",
+        globPatterns: ["*/**"],
         cacheId: `gatsby-plugin-offline`,
         skipWaiting: true,
         clientsClaim: true,
-        directoryIndex: 'index.html',
+        directoryIndex: "index.html",
       },
     },
   ],

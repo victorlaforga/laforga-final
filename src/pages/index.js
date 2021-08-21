@@ -1,5 +1,5 @@
 import React from "react";
-import { Helmet } from "react-helmet";
+// import { Helmet } from "react-helmet";
 import {
   SectionOne,
   SectionTwo,
@@ -15,12 +15,19 @@ import {
 import { AccessProvider } from "../contexts/access";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
+import Seo from "../components/seo";
+import image from "../images/black-logo.png";
 // import Menu from "../components/menu";
-const IndexPage = () => {
+const IndexPage = ({ location }) => {
+  const metaImage = {
+    src: image,
+    width: 512,
+    height: 512,
+  };
+
   return (
     <div>
-      <Helmet
+      {/* <Helmet
         htmlAttributes={{
           lang: "nl",
         }}
@@ -29,7 +36,8 @@ const IndexPage = () => {
         <title>Laforga | Shopify Agency</title>
         <link rel="canonical" href="https://www.laforga.nl" />
       
-      </Helmet>
+      </Helmet> */}
+      <Seo image={metaImage} title="Laforga" pathname={location.pathname} />
       <AccessProvider>
         <SectionOne />
         <SectionTwo />

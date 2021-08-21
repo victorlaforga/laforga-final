@@ -1,34 +1,33 @@
-import  React from "react";
-import { StaticImage } from "gatsby-plugin-image"
+import React from "react";
+import { StaticImage } from "gatsby-plugin-image";
 import { useInView } from "react-intersection-observer";
-import '../../styles/styles.scss'
+// import "../../styles/styles.scss";
 const MainSectionSix = () => {
   const { ref, inView } = useInView({
     threshold: 0,
     triggerOnce: true,
   });
 
-
   return (
     <div className={`main-section-six ${inView && "show"}`} id="doen-wij">
       <div className="services-container">
         <div className="services-intro">
           <div className="services-intro-text">
-            <h1>Wat doen wij?</h1>
+            <h3>Wat doen wij?</h3>
             <p>
               Wij helpen u in alle fasen van de realisatie van uw digitale
-              project.
+              project.Z
             </p>
           </div>
 
           <div className="detail-services-container" ref={ref}>
-
             <div className="detail-services-elm">
               <StaticImage
                 src="../../images/services/strategy-img.png"
                 alt="shopify partners webshop ecommerce agency we design build bouwen mooie webshop modern fris website online verkopen"
-                width={40} height={40}
-                 loading="lazy"
+                width={40}
+                height={40}
+                loading="lazy"
               />
               <p>Strategie</p>
             </div>
@@ -36,8 +35,9 @@ const MainSectionSix = () => {
               <StaticImage
                 src="../../images/services/Design.png"
                 alt="shopify partners webshop ecommerce agency we design build bouwen mooie webshop modern fris website online verkopen"
-                width={40} height={40}
-                 loading="lazy"
+                width={40}
+                height={40}
+                loading="lazy"
               />
               <p>Ontwerp & branding</p>
             </div>
@@ -45,8 +45,9 @@ const MainSectionSix = () => {
               <StaticImage
                 src="../../images/services/Web-development.png"
                 alt="shopify partners webshop ecommerce agency we design build bouwen mooie webshop modern fris website online verkopen"
-                width={40} height={40}
-                 loading="lazy"
+                width={40}
+                height={40}
+                loading="lazy"
               />
               <p>Webontwikkeling</p>
             </div>
@@ -54,8 +55,9 @@ const MainSectionSix = () => {
               <StaticImage
                 src="../../images/services/Support.png"
                 alt="shopify partners webshop ecommerce agency we design build bouwen mooie webshop modern fris website online verkopen"
-                width={40} height={40}
-                 loading="lazy"
+                width={40}
+                height={40}
+                loading="lazy"
               />
               <p>Support & groei</p>
             </div>
@@ -64,9 +66,9 @@ const MainSectionSix = () => {
 
         <div className="services">
           <div className={`services-strategy service`}>
-            <h2>
+            <h3 className="h2">
               Strategie<span id="number">1</span>
-            </h2>
+            </h3>
             <p>
               Alleen uw succes is ons succes. Wij leven ons in & verplaatsen ons
               volledig in uw(of de klant) en proberen vanuit dit perspectief mee
@@ -77,9 +79,9 @@ const MainSectionSix = () => {
             </p>
           </div>
           <div className={`services-design service`}>
-            <h2>
+            <h3 className="h2">
               Design<span id="number">2</span>
-            </h2>
+            </h3>
             <p>
               Wij geloven dat het ontwerp van een website de belangrijkste
               factor is bij het omzetten van bezoekers in klanten. Met een jong,
@@ -91,9 +93,9 @@ const MainSectionSix = () => {
             </p>
           </div>
           <div className={`services-development service`}>
-            <h2>
+            <h3 className="h2">
               Webontwikkeling <span id="number">3</span>
-            </h2>
+            </h3>
             <p>
               Onze focus ligt altijd op de bruikbaarheid,
               gebruiksvriendelijkheid en de prestaties van de winkels. Ons team
@@ -105,9 +107,9 @@ const MainSectionSix = () => {
           </div>
 
           <div className={`services-support service`}>
-            <h2>
+            <h3 className="h2">
               Optimalisering & support<span id="number">4</span>
-            </h2>
+            </h3>
 
             <p>
               Heb je al een{" "}

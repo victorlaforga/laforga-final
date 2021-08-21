@@ -1,6 +1,6 @@
 import React from "react";
 import { MainSection } from "./section-6/index";
-import '../styles/styles.scss'
+// import '../styles/styles.scss'
 const SectionSix = () => {
   return (
     <section className="section-six">
