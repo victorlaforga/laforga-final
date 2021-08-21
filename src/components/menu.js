@@ -1,6 +1,6 @@
-import { StaticImage } from "gatsby-plugin-image";
+// import { StaticImage } from "gatsby-plugin-image";
 import React from "react";
-// import "../styles/styles.scss";
+import "../styles/styles.scss";
 import vector from "../assets/Vector.svg";
 const Menu = ({ open, toggleMenu }) => {
   const navigate = (e, id) => {
