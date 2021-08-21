@@ -117,6 +117,12 @@ const schemaMarkUp = {
   "@context": "http://www.schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://www.laforga.nl/#webpage",
+      url: "https://www.laforga.nl/",
+      name: "Laforga",
+    },
+    {
       "@type": "LocalBusiness",
       name: "Laforga",
       url: "https://www.laforga.nl",
