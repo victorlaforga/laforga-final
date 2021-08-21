@@ -1,7 +1,7 @@
 import React from "react";
 import { StaticImage } from "gatsby-plugin-image";
 import Slider from "react-slick";
-import "../../styles/styles.scss";
+// import "../../styles/styles.scss";
 
 const LeftArrow = (props) => {
   const { className, style, onClick } = props;

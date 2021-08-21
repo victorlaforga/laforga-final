@@ -4,7 +4,7 @@ import Menu from "../menu";
 import { AccessContext } from "../../contexts/access";
 import ProjectContainerLink from "./ProjectContainerLink";
 import logo from "../../images/black-logo.png";
-import "../../styles/styles.scss";
+// import "../../styles/styles.scss";
 const Navigation = ({ open, toggleMenu }) => {
   const [isFirstAccess] = React.useContext(AccessContext);
   const { ref, inView } = useInView({

@@ -10,6 +10,39 @@ module.exports = {
   plugins: [
     "gatsby-plugin-sass",
     `gatsby-plugin-preact`,
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        query: `
+{
+  site {
+    siteMetadata {
+      siteUrl
+    }
+  }
+  allSitePage {
+    nodes {
+      path
+    }
+  }
+}
+`,
+        resolveSiteUrl: ({ site }) => site.siteMetadata.siteUrl,
+        resolvePages: ({ allSitePage }) =>
+          allSitePage.nodes.map((page) => {
+            return { ...page };
+          }),
+        serialize: ({ path }) => {
+          return {
+            url: path,
+            changefreq: `weekly`,
+            priority: 0.8,
+          };
+        },
+      },
+    },
+
+    `gatsby-plugin-robots-txt`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: "gatsby-plugin-google-analytics",

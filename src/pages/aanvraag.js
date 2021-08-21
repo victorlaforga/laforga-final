@@ -4,7 +4,7 @@ import { createWidget } from "@typeform/embed";
 import "@typeform/embed/build/css/widget.css"; // import necessary CSS
 import Navigation from "../components/section-1/nav";
 import Menu from "../components/menu";
-import "../styles/styles.scss";
+// import "../styles/styles.scss";
 import { AccessProvider } from "../contexts/access";
 import Seo from "../components/seo";
 

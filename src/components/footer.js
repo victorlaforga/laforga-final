@@ -1,7 +1,7 @@
 import { StaticImage } from "gatsby-plugin-image";
 import React from "react";
 // import vector from "../assets/Vector.svg";
-import "../styles/styles.scss";
+// import "../styles/styles.scss";
 
 const Footer = () => {
   return (

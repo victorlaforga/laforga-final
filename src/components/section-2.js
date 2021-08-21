@@ -1,6 +1,6 @@
-import  React from "react";
-import {MainSection, WebsiteOffer} from "./section-2/index"
-import '../styles/styles.scss'
+import React from "react";
+import { MainSection, WebsiteOffer } from "./section-2/index";
+// import '../styles/styles.scss'
 const SectionTwo = () => {
   return (
     <section className="section-two">

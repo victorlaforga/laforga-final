@@ -1,6 +1,6 @@
 import { StaticImage } from "gatsby-plugin-image";
 import React from "react";
-import "../styles/styles.scss";
+// import "../styles/styles.scss";
 const Menu = ({ open, toggleMenu }) => {
   const navigate = (e, id) => {
     e && e.preventDefault(); // to avoid the link from redirecting

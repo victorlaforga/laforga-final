@@ -4,7 +4,7 @@ import BackgroundImage from "gatsby-background-image";
 import "swiper/swiper.scss";
 import { navigate } from "gatsby";
 import Swiper from "react-id-swiper";
-import "../styles/styles.scss";
+// import "../styles/styles.scss";
 const SectionWork = () => {
   const sliderParams = {
     centeredSlides: false,
