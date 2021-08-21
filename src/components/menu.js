@@ -1,6 +1,7 @@
 import { StaticImage } from "gatsby-plugin-image";
 import React from "react";
 // import "../styles/styles.scss";
+import vector from "../assets/Vector.svg";
 const Menu = ({ open, toggleMenu }) => {
   const navigate = (e, id) => {
     e && e.preventDefault(); // to avoid the link from redirecting
@@ -36,7 +37,7 @@ const Menu = ({ open, toggleMenu }) => {
                 href="/"
                 onClick={(e) => toggleMenu(e, "ons-werk")}
               >
-                <span itemprop="name">Wat doen wij</span>
+                <span itemprop="name">Ons werk</span>
               </a>
             </li>
             <li itemprop="hasPart">
@@ -45,12 +46,12 @@ const Menu = ({ open, toggleMenu }) => {
                 href="/"
                 onClick={(e) => toggleMenu(e, "diensten-prijzen")}
               >
-                <span itemprop="name">Wat doen wij</span>
+                <span itemprop="name">Diensten & prijzen</span>
               </a>
             </li>
             <li itemprop="hasPart">
               <a itemprop="url" href="/contact/">
-                <span itemprop="name">Wat doen wij</span>
+                <span itemprop="name">Contact</span>
               </a>
             </li>
           </ul>
@@ -75,8 +76,8 @@ const Menu = ({ open, toggleMenu }) => {
                 <a href="https://api.whatsapp.com/send?phone=+31628340312">
                   Whatsapp{" "}
                   <span>
-                    <StaticImage
-                      src="../assets/Vector.svg"
+                    <img
+                      src={vector}
                       alt="vector"
                       width={20}
                       height={20}
@@ -88,8 +89,8 @@ const Menu = ({ open, toggleMenu }) => {
                   Facebook{" "}
                   <span>
                     {" "}
-                    <StaticImage
-                      src="../assets/Vector.svg"
+                    <img
+                      src={vector}
                       alt="vector"
                       width={20}
                       height={20}
@@ -100,8 +101,8 @@ const Menu = ({ open, toggleMenu }) => {
                 <a href="https://www.instagram.com/laforga.agency/">
                   Instagram{" "}
                   <span>
-                    <StaticImage
-                      src="../assets/Vector.svg"
+                    <img
+                      src={vector}
                       alt="vector"
                       width={20}
                       height={20}
@@ -113,8 +114,8 @@ const Menu = ({ open, toggleMenu }) => {
                   LinkedIn{" "}
                   <span>
                     {" "}
-                    <StaticImage
-                      src="../assets/Vector.svg"
+                    <img
+                      src={vector}
                       alt="vector"
                       width={20}
                       height={20}
