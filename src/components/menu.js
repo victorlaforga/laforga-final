@@ -11,30 +11,47 @@ const Menu = ({ open, toggleMenu }) => {
   return (
     <div className={`menu ${open ? "open" : "closed"}`}>
       <div className="menu-nav">
-        <nav>
+        <nav
+          itemscope="itemscope"
+          itemtype="http://www.schema.org/SiteNavigationElement"
+        >
           <ul>
-            <li>
-              <a href="/" onClick={(e) => toggleMenu(e, "home")}>
-                Home
+            <li itemprop="hasPart">
+              <a itemprop="url" href="/" onClick={(e) => toggleMenu(e, "home")}>
+                <span itemprop="name">Home</span>
               </a>
             </li>
-            <li>
-              <a href="/" onClick={(e) => toggleMenu(e, "doen-wij")}>
-                Wat doen wij
+            <li itemprop="hasPart">
+              <a
+                itemprop="url"
+                href="/"
+                onClick={(e) => toggleMenu(e, "doen-wij")}
+              >
+                <span itemprop="name">Wat doen wij</span>
               </a>
             </li>
-            <li>
-              <a href="/" onClick={(e) => toggleMenu(e, "ons-werk")}>
-                Ons werk
+            <li itemprop="hasPart">
+              <a
+                itemprop="url"
+                href="/"
+                onClick={(e) => toggleMenu(e, "ons-werk")}
+              >
+                <span itemprop="name">Wat doen wij</span>
               </a>
             </li>
-            <li>
-              <a href="/" onClick={(e) => toggleMenu(e, "diensten-prijzen")}>
-                Diensten & prijzen
+            <li itemprop="hasPart">
+              <a
+                itemprop="url"
+                href="/"
+                onClick={(e) => toggleMenu(e, "diensten-prijzen")}
+              >
+                <span itemprop="name">Wat doen wij</span>
               </a>
             </li>
-            <li>
-              <a href="/contact/">Contact</a>
+            <li itemprop="hasPart">
+              <a itemprop="url" href="/contact/">
+                <span itemprop="name">Wat doen wij</span>
+              </a>
             </li>
           </ul>
         </nav>
