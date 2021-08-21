@@ -6,9 +6,14 @@ import Menu from "../components/menu";
 import Footer from "../components/footer";
 import { AccessProvider } from "../contexts/access";
 import Seo from "../components/seo";
-
+import image from "../images/black-logo.png";
 const TmTweewielers = ({ location }) => {
   const [open, setOpen] = React.useState(false);
+  const metaImage = {
+    src: image,
+    width: 512,
+    height: 512,
+  };
   return (
     <section className="container-work">
       {/* <Helmet
@@ -22,6 +27,7 @@ const TmTweewielers = ({ location }) => {
       </Helmet> */}
       <Seo
         pathname={location.pathname}
+        image={metaImage}
         title="T&M Tweewielers"
         description="T&M Tweewielers is de grootste tweewielers winkel in Haarlem.
               Experts in het repareren & verkopen van fietsen en scooters."

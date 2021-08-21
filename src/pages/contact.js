@@ -7,10 +7,14 @@ import Menu from "../components/menu";
 // import "../styles/styles.scss";
 import { AccessProvider } from "../contexts/access";
 import Seo from "../components/seo";
-
+import image from "../images/black-logo.png";
 const ContactPage = ({ location }) => {
   const [open, setOpen] = React.useState(false);
-
+  const metaImage = {
+    src: image,
+    width: 512,
+    height: 512,
+  };
   return (
     <div className="contact-container">
       {/* <Helmet
@@ -24,6 +28,7 @@ const ContactPage = ({ location }) => {
       </Helmet> */}
 
       <Seo
+        image={metaImage}
         title="Contact"
         description="Neem contact met ons op. Wij reageren binnen 24 uur."
         pathname={location.pathname}

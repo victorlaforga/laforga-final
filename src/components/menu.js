@@ -79,8 +79,8 @@ const Menu = ({ open, toggleMenu }) => {
                     <img
                       src={vector}
                       alt="vector"
-                      width={20}
-                      height={20}
+                      width={11}
+                      height={13}
                       loading="lazy"
                     />
                   </span>
@@ -92,8 +92,8 @@ const Menu = ({ open, toggleMenu }) => {
                     <img
                       src={vector}
                       alt="vector"
-                      width={20}
-                      height={20}
+                      width={11}
+                      height={13}
                       loading="lazy"
                     />
                   </span>
@@ -104,8 +104,8 @@ const Menu = ({ open, toggleMenu }) => {
                     <img
                       src={vector}
                       alt="vector"
-                      width={20}
-                      height={20}
+                      width={11}
+                      height={13}
                       loading="lazy"
                     />
                   </span>
@@ -117,8 +117,8 @@ const Menu = ({ open, toggleMenu }) => {
                     <img
                       src={vector}
                       alt="vector"
-                      width={20}
-                      height={20}
+                      width={11}
+                      height={13}
                       loading="lazy"
                     />
                   </span>

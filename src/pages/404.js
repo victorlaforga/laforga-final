@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
 import Seo from "../components/seo";
-
+import image from "../images/black-logo.png";
 // styles
 const pageStyles = {
   color: "#232129",
@@ -27,9 +27,18 @@ const codeStyles = {
 
 // markup
 const NotFoundPage = ({ location }) => {
+  const metaImage = {
+    src: image,
+    width: 512,
+    height: 512,
+  };
   return (
     <main style={pageStyles}>
-      <Seo title="404: Not Found" pathname={location.pathname} />
+      <Seo
+        image={metaImage}
+        title="404: Not Found"
+        pathname={location.pathname}
+      />
       <title>Not found</title>
       <h1 style={headingStyles}>Page not found</h1>
       <p style={paragraphStyles}>

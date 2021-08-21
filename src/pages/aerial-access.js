@@ -6,12 +6,18 @@ import Menu from "../components/menu";
 import Footer from "../components/footer";
 import { AccessProvider } from "../contexts/access";
 import Seo from "../components/seo";
-
+import image from "../images/black-logo.png";
 const AerialWork = ({ location }) => {
   const [open, setOpen] = React.useState(false);
+  const metaImage = {
+    src: image,
+    width: 512,
+    height: 512,
+  };
   return (
     <section className="container-work">
       <Seo
+        image={metaImage}
         title="Aerial Access"
         description="Door het gebruik van gespecialiseerde rope access technieken is
               Aerial Access in staat op moeilijke toegankelijke locaties

@@ -6,9 +6,14 @@ import Menu from "../components/menu";
 import Footer from "../components/footer";
 import { AccessProvider } from "../contexts/access";
 import Seo from "../components/seo";
-
+import image from "../images/black-logo.png";
 const FourEditors = ({ location }) => {
   const [open, setOpen] = React.useState(false);
+  const metaImage = {
+    src: image,
+    width: 512,
+    height: 512,
+  };
   return (
     <section className="container-work">
       {/* <Helmet
@@ -21,6 +26,7 @@ const FourEditors = ({ location }) => {
         <link rel="canonical" href="https://www.laforga.nl" />
       </Helmet> */}
       <Seo
+        image={metaImage}
         pathname={location.pathname}
         title="Four Editors"
         description="Four Editors verkoopt wereldwijd high-end film assets die elk
