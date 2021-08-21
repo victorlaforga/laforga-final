@@ -3460,7 +3460,12 @@ article.thumbnail-work:nth-of-type(odd) {
   background-image: url("../images/tmbanner.jpg");
   background-position-y: 45%;
 }
+@media screen and (max-width: 330px) {
+  .main-section-four h3 {
+    font-size: 38px !important;
+  }
 
+}
 @media screen and (max-width: 410px) {
   div.menu .menu-nav nav ul li {
     margin-bottom: 15px !important;
@@ -3479,6 +3484,9 @@ article.thumbnail-work:nth-of-type(odd) {
   }
   div.menu .menu-info div.container-contact div.container-info {
     margin: 15px auto;
+  }
+  div.main-section-four h3 {
+    font-size: 42px;
   }
   section.section-six
     .main-section-six
