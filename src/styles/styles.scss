@@ -82,7 +82,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 a,
@@ -111,10 +111,10 @@ ul {
   padding: 0;
 }
 
-html {
-  scroll-behavior: smooth;
-  // overflow-x: hidden;
-}
+// html {
+
+//   // overflow-x: hidden;
+// }
 
 .underline {
   display: inline-block;

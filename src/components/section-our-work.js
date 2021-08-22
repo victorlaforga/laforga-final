@@ -73,7 +73,7 @@ const SectionWork = () => {
               backgroundColor={`transparent`}
               background-position="center"
               style={{ backgroundPositionX: "0%", cursor: "pointer" }}
-              onClick={(e) => navigate("/maglashic/")}
+              onClick={(e) => navigate("/maglashic")}
             >
               <div className="thumbnail__text">
                 <a href="/maglashic/">
@@ -94,7 +94,7 @@ const SectionWork = () => {
               backgroundColor={`transparent`}
               background-position="center"
               style={{ cursor: "pointer" }}
-              onClick={(e) => navigate("/four-editors/")}
+              onClick={(e) => navigate("/four-editors")}
             >
               <div className="thumbnail__text">
                 <a href="/four-editors/">
@@ -113,7 +113,7 @@ const SectionWork = () => {
               backgroundColor={`transparent`}
               background-position="center"
               style={{ backgroundPositionX: "0%", cursor: "pointer" }}
-              onClick={(e) => navigate("/tm-tweewielers/")}
+              onClick={(e) => navigate("/tm-tweewielers")}
             >
               <div className="thumbnail__text ">
                 <a href="/tm-tweewielers/">
@@ -131,7 +131,7 @@ const SectionWork = () => {
               fluid={aerial.childImageSharp.fluid}
               backgroundColor={`transparent`}
               style={{ cursor: "pointer" }}
-              onClick={(e) => navigate("/aerial-access/")}
+              onClick={(e) => navigate("/aerial-access")}
             >
               <div className="thumbnail__text">
                 <a href="/aerial-access/">
