@@ -2,6 +2,8 @@
 import React from "react";
 import "../styles/styles.scss";
 import vector from "../assets/Vector.svg";
+// import "../styles/styles.scss";
+// import "lazysizes";
 const Menu = ({ open, toggleMenu }) => {
   const navigate = (e, id) => {
     e && e.preventDefault(); // to avoid the link from redirecting
