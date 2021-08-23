@@ -47,7 +47,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-google-analytics",
       options: {
-        trackingId: "195436344",
+        trackingId: "UA-195436344-1",
       },
     },
     "gatsby-plugin-webpack-bundle-analyser-v2",
