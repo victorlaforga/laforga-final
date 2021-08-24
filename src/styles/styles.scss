@@ -130,8 +130,6 @@ a.underline.cool-link::after {
   background: #fffcf7;
   height: 100vh;
   padding: 0 100px;
-  min-height: 51rem;
-  max-height: 100rem;
 
   .loading {
     width: 100%;
@@ -1548,7 +1546,7 @@ footer {
   .section-one {
     padding: 30px;
     padding-top: 0;
-    min-height: 100vh;
+    height: 100vh;
 
     .main-section {
       flex-direction: column;
