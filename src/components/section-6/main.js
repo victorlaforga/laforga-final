@@ -16,7 +16,7 @@ const MainSectionSix = () => {
             <h3>Wat doen wij?</h3>
             <p>
               Wij helpen u in alle fasen van de realisatie van uw digitale
-              project.Z
+              project.
             </p>
           </div>
 
@@ -71,7 +71,7 @@ const MainSectionSix = () => {
             </h3>
             <p>
               Alleen uw succes is ons succes. Wij leven ons in & verplaatsen ons
-              volledig in uw(of de klant) en proberen vanuit dit perspectief mee
+              volledig in de klant, en proberen vanuit dit perspectief mee
               te denken. We brengen quality time door met onze klanten om te
               ontdekken waar hun merk echt voor staat & ons te verdiepen in het
               bedrijf. Onze UX-designers analyseren de concurrentie en kijken

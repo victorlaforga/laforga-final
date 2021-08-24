@@ -39,7 +39,7 @@ const WebsiteOffer = () => {
           ref={ref}
         >
           <div onClick={toggle} onKeyDown={toggle} aria-hidden="true">
-            <h3>website nodig? {on ? <span>-</span> : <span>+</span>}</h3>
+            <h3>Website nodig? {on ? <span>-</span> : <span>+</span>}</h3>
           </div>
           <div className={on ? " showing" : "Question__response "}>
             <p className=" ">

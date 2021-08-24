@@ -2007,7 +2007,7 @@ footer {
 
   section.section-four {
     div.main-section-four {
-      padding: 50px 5% 75px 5%;
+      padding: 125px 5% 75px 5%;
 
       h2 {
         font-size: 28px;
@@ -2821,8 +2821,7 @@ div.container-services.support#support {
     height: 175px;
   }
 
-  // section.section-one .main-section div.intro-text h1 {
-  // }
+
 }
 
 .shopify-partner-img,
@@ -3236,6 +3235,13 @@ article.thumbnail-work:nth-of-type(odd) {
       font-size: 48px;
       max-width: 75%;
     }
+    h3 {
+      font-family: "BebasNeue";
+      font-weight: 100;
+      line-height: 55px;
+      font-size: 48px;
+      max-width: 75%;
+    }
   }
 }
 .work-subbanner {
@@ -3385,6 +3391,10 @@ article.thumbnail-work:nth-of-type(odd) {
   div.contact-container {
     padding: 0px 5% 20px;
   }
+  section.section-four > div.main-section-four.show > h3 {
+    font-size: 36px;
+    line-height: 40px;
+  }
 }
 @media screen and (max-width: 641px) {
   .contact-container {
@@ -3458,7 +3468,12 @@ article.thumbnail-work:nth-of-type(odd) {
   background-image: url("../images/tmbanner.jpg");
   background-position-y: 45%;
 }
+@media screen and (max-width: 330px) {
+  .main-section-four h3 {
+    font-size: 36px !important;
+  }
 
+}
 @media screen and (max-width: 410px) {
   div.menu .menu-nav nav ul li {
     margin-bottom: 15px !important;
@@ -3477,6 +3492,9 @@ article.thumbnail-work:nth-of-type(odd) {
   }
   div.menu .menu-info div.container-contact div.container-info {
     margin: 15px auto;
+  }
+  div.main-section-four h3 {
+    font-size: 42px;
   }
   section.section-six
     .main-section-six

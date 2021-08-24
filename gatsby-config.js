@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: "Digital Creative Agency | Shopify Partner",
     author: "Victor Laforga",
-    keywords: ["Shopify Partner", "Digital Creative Agency", "Laforga"],
+    keywords: ["Shopify Partner", "Digital Creative Agency", "Laforga", "Webwinkel starten", "Webshop", "Online verkopen", "Fashion and brands","Shopify"],
     description:
       "Begin vandaag nog met online verkopen met Shopify of schaal je winkel op met custom features. Wij zetten merken en bedrijven om in online legendes. Het bereiken van je volledige potentie zou je niet in de min moeten zetten",
     siteUrl: "https://www.laforga.nl",
