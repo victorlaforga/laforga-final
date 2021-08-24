@@ -128,7 +128,7 @@ a.underline.cool-link::after {
 .section-one {
   background-color: #fffcf7;
   background: #fffcf7;
-  height: 100vh;
+  min-height: 100vh;
   padding: 0 100px;
 
   .loading {
@@ -2820,8 +2820,6 @@ div.container-services.support#support {
   div.lf-player-container {
     height: 175px;
   }
-
-
 }
 
 .shopify-partner-img,
@@ -3472,7 +3470,6 @@ article.thumbnail-work:nth-of-type(odd) {
   .main-section-four h3 {
     font-size: 36px !important;
   }
-
 }
 @media screen and (max-width: 410px) {
   div.menu .menu-nav nav ul li {
