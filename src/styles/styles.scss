@@ -116,11 +116,12 @@ ul {
 //   // overflow-x: hidden;
 // }
 .switch {
-  position: absolute;
+  position: relative;
   display: inline-block;
   width: 100px;
   height: 34px;
-  margin-top: -35px;
+  // margin-top: -30px;
+  margin-right: 20px;
 }
 
 /* Hide default HTML checkbox */
@@ -310,8 +311,8 @@ a.underline.cool-link::after {
     line-height: 19px;
     opacity: 0;
     transform: translateY(-30px);
-    position: fixed;
-    margin-top: 30px;
+    position: relative;
+    // margin-top: 15px;
     -webkit-transform: translateY(-30px);
     -moz-transform: translateY(-30px);
     -ms-transform: translateY(-30px);
@@ -1661,6 +1662,14 @@ footer {
 
     .start-project-container {
       right: 30px;
+      display: grid;
+      .switch {
+        position: absolute;
+        margin-top: -30px;
+      }
+      .start-project {
+        margin-top: 25px;
+      }
     }
   }
 }
@@ -2748,7 +2757,7 @@ div.container-services.support#support {
   align-items: center;
   position: fixed;
   right: 50px;
-  max-width: 93px;
+  max-width: 300px;
   z-index: 20000;
 }
 
