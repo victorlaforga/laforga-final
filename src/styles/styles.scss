@@ -115,6 +115,68 @@ ul {
 
 //   // overflow-x: hidden;
 // }
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 100px;
+  height: 34px;
+  margin-top: 70px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #1d4f61;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider-active {
+  background-color: rgba(238, 111, 87, 0.5);
+}
+
+.slider-active {
+  box-shadow: 0 0 1px rgba(238, 111, 87, 0.5);
+}
+
+.slider-active:before {
+  -webkit-transform: translateX(58px);
+  -ms-transform: translateX(58px);
+  transform: translateX(58px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
 
 .underline {
   display: inline-block;
@@ -2685,7 +2747,7 @@ div.container-services.support#support {
   align-items: center;
   position: fixed;
   right: 50px;
-  width: 93px;
+  max-width: 93px;
   z-index: 20000;
 }
 

@@ -27,22 +27,22 @@ const Maglashic = ({ location }) => {
         <link rel="canonical" href="https://www.laforga.nl" />
       </Helmet> */}
       <Seo
-        lang="nl"
         image={metaImage}
         pathname={location.pathname}
         title="Maglashic"
-        description="MagLashic is een van de koplopers in Europa wat betreft het
-              verkopen van magnetische wimpers. Wimpers aanbrengen is nog nooit
-              zo eenvoudig geweest."
+        description="MagLashic is one of the leaders in Europe when it comes to
+        selling magnetic eyelashes. Applying eyelashes has never
+        been easier."
       />
       <div className="container-banner maglashic">
         <AccessProvider>
           <Navigation
             link="/maglashic"
+            lang="en"
             open={open}
             toggleMenu={() => setOpen(!open)}
           />
-          <Menu open={open} toggleMenu={() => setOpen(!open)} />
+          <Menu lang="en" open={open} toggleMenu={() => setOpen(!open)} />
         </AccessProvider>
         <h1>
           <mark>Maglashic</mark>
@@ -52,21 +52,20 @@ const Maglashic = ({ location }) => {
         <div className="work-main--info">
           <div className="subtext">
             <h2>
-              MagLashic is een van de koplopers in Europa wat betreft het
-              verkopen van magnetische wimpers. Wimpers aanbrengen is nog nooit
-              zo eenvoudig geweest.
+              MagLashic is one of the leaders in Europe when it comes to selling
+              magnetic eyelashes. Applying eyelashes has never been easier.
             </h2>
           </div>
           <div className="main-text">
             <h3>Maglashic</h3>
             <p>
-              MagLashic kwam bij ons aan met een bestaande Shopify Store. Ze
-              verkochten al goed en wouden met ons opschalen. Door de
-              beperkingen van het thema hebben ze bij ons speciale aanvragen
-              gedaan zoals een 100% custom winkelwagen, een custon FAQ sectie,
-              Add to cart knoppen op specifieke plekken & de snelheid van de
-              website optimaliseren. Dit zijn enkele voorbeelden van functies &
-              onderdelen die wij hebben toegepast om de conversie te verhogen.
+              MagLashic came to us with an existing Shopify Store. They were
+              already selling well and wanted to scale up with us. Due to the
+              limitations of the theme, they have made special requests with us
+              such as a 100% custom shopping cart, a custom FAQ section, Add to
+              cart buttons in specific places & optimizing the speed of the
+              website. These are some examples of functions & features that we
+              have applied to increase conversion.
             </p>
           </div>
         </div>
@@ -77,28 +76,28 @@ const Maglashic = ({ location }) => {
           </div>
           <div>
             <h3 className="h4">90+</h3>
-            <p>Sitespeed</p>
+            <p>Sitespeed </p>
           </div>
           <div>
             <h3 className="h4">+1</h3>
-            <p>Jaar trouwe klant</p>
+            <p>Year of loyal customer</p>
           </div>
         </div>
       </section>
       <div className="work-subbanner maglashic"></div>
       <div className="work-summary">
         <div>
-          <h3>Nooit beroerd om die extra stap te zetten</h3>
+          <h3>Never mind taking that extra step</h3>
           <p>
             {" "}
-            Wij zijn zeer tevreden met het resultaat. Laforga luistert goed en
-            heeft gevoel voor wat je wilt. Uitstekende service, snel,
-            professioneel, creatief, oplossingsgericht, en persoonlijk. Nooit te
-            beroerd om die extra stappen te zetten.
+            We are very pleased with the result. Laforga listens well and has a
+            feeling for what you want. Excellent service, fast, professional,
+            creative, solution-oriented, and personal. Never be afraid to take
+            those extra steps.
           </p>
         </div>
       </div>
-      <Footer />
+      <Footer lang="en" />
     </section>
   );
 };
