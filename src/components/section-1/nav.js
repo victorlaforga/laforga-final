@@ -42,8 +42,8 @@ const Navigation = ({ open, toggleMenu, lang, link }) => {
           />
         </a>
         <div className="start-project-container">
-          <ProjectContainerLink />
           <LangSwitch link={link} />
+          <ProjectContainerLink />
         </div>
       </div>
     );
@@ -76,8 +76,8 @@ const Navigation = ({ open, toggleMenu, lang, link }) => {
           />
         </a>
         <div className="start-project-container">
-          <ProjectContainerLink lang={lang} />
           <LangSwitch link={link} lang={lang} />
+          <ProjectContainerLink lang={lang} />
         </div>
       </div>
     );

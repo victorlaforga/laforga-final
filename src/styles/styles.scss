@@ -116,11 +116,11 @@ ul {
 //   // overflow-x: hidden;
 // }
 .switch {
-  position: relative;
+  position: absolute;
   display: inline-block;
   width: 100px;
   height: 34px;
-  margin-top: 70px;
+  margin-top: -35px;
 }
 
 /* Hide default HTML checkbox */
@@ -311,6 +311,7 @@ a.underline.cool-link::after {
     opacity: 0;
     transform: translateY(-30px);
     position: fixed;
+    margin-top: 30px;
     -webkit-transform: translateY(-30px);
     -moz-transform: translateY(-30px);
     -ms-transform: translateY(-30px);
