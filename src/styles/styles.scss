@@ -118,7 +118,7 @@ ul {
 .switch {
   position: relative;
   display: inline-block;
-  width: 100px;
+  width: 70px;
   height: 34px;
   // margin-top: -30px;
   margin-right: 20px;
@@ -165,9 +165,9 @@ ul {
 }
 
 .slider-active:before {
-  -webkit-transform: translateX(58px);
-  -ms-transform: translateX(58px);
-  transform: translateX(58px);
+  -webkit-transform: translateX(36px);
+  -ms-transform: translateX(36px);
+  transform: translateX(36px);
 }
 
 /* Rounded sliders */
@@ -1234,7 +1234,7 @@ footer {
 
   .main-section div.intro-text h1 {
     font-size: 78px;
-    line-height: 94px;
+    line-height: 80px;
   }
 
   .main-section div.intro-text p {

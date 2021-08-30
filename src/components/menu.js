@@ -161,7 +161,7 @@ const Menu = ({ open, toggleMenu, lang }) => {
                   href="/"
                   onClick={(e) => toggleMenu(e, "doen-wij")}
                 >
-                  <span itemprop="name">What are we doing</span>
+                  <span itemprop="name">Our services</span>
                 </a>
               </li>
               <li itemprop="hasPart">
@@ -199,7 +199,7 @@ const Menu = ({ open, toggleMenu, lang }) => {
                 <a href="mailto:info@laforga.nl">info@laforga.nl</a>
               </div>
               <div>
-                <span className="h3">Mobile:</span>{" "}
+                <span className="h3">Tel:</span>{" "}
                 <a href="tel:+31232084022">+31 23 208 4022</a>
               </div>
               <div className="social-links">

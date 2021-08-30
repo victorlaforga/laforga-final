@@ -47,17 +47,17 @@ const MainSection = ({ lang }) => {
         </Player>
         <div className={`intro-text ${isFirstAccess && "intro-text-animated"}`}>
           <h1>
-            We put
+            We turn
             <br />
             brands & companies <br />
-            <mark> to </mark>
-            <mark> turn into legends</mark>
-            <mark> on the web.</mark>
+            <mark> into </mark>{" "}
+            <mark> online</mark>{" "}
+            <mark> legends.</mark>
           </h1>
           <p>
             stay ahead of the competition and create a{" "}
             <br className="hide-media" />
-            <mark>true digital experience.</mark>
+            <mark>true digital experience with us.</mark>
           </p>
         </div>
       </div>

@@ -32,7 +32,7 @@ const Maglashic = ({ location }) => {
         title="Maglashic"
         description="MagLashic is one of the leaders in Europe when it comes to
         selling magnetic eyelashes. Applying eyelashes has never
-        been easier."
+        been this easy."
       />
       <div className="container-banner maglashic">
         <AccessProvider>
@@ -53,14 +53,14 @@ const Maglashic = ({ location }) => {
           <div className="subtext">
             <h2>
               MagLashic is one of the leaders in Europe when it comes to selling
-              magnetic eyelashes. Applying eyelashes has never been easier.
+              magnetic eyelashes. Applying eyelashes has never this easy.
             </h2>
           </div>
           <div className="main-text">
             <h3>Maglashic</h3>
             <p>
               MagLashic came to us with an existing Shopify Store. They were
-              already selling well and wanted to scale up with us. Due to the
+              already selling very good and wanted to scale up with us. Due to the
               limitations of the theme, they have made special requests with us
               such as a 100% custom shopping cart, a custom FAQ section, Add to
               cart buttons in specific places & optimizing the speed of the

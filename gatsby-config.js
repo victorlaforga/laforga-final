@@ -11,6 +11,9 @@ module.exports = {
       "Online verkopen",
       "Fashion and brands",
       "Shopify",
+      "Shopify expert",
+      "Webshop",
+      "E-commerce"
     ],
     description:
       "Begin vandaag nog met online verkopen met Shopify of schaal je winkel op met custom features. Wij zetten merken en bedrijven om in online legendes. Het bereiken van je volledige potentie zou je niet in de min moeten zetten",
