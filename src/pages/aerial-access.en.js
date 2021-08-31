@@ -17,22 +17,20 @@ const AerialWork = ({ location }) => {
   return (
     <section className="container-work">
       <Seo
-        lang="nl"
         image={metaImage}
         title="Aerial Access"
-        description="Door het gebruik van gespecialiseerde rope access technieken is
-              Aerial Access in staat op moeilijke toegankelijke locaties
-              werkzaamheden uit te voeren."
+        description="By using specialized rope access techniques, Aerial Access is able to perform work in difficult accessible locations."
         pathname={location.pathname}
       />
       <div className="container-banner aerial">
         <AccessProvider>
           <Navigation
             link="/aerial-access"
+            lang="en"
             open={open}
             toggleMenu={() => setOpen(!open)}
           />
-          <Menu open={open} toggleMenu={() => setOpen(!open)} />
+          <Menu lang="en" open={open} toggleMenu={() => setOpen(!open)} />
         </AccessProvider>
         <h1>
           <mark>Aerial Access</mark>
@@ -42,23 +40,21 @@ const AerialWork = ({ location }) => {
         <div className="work-main--info">
           <div className="subtext">
             <h2>
-              Door het gebruik van gespecialiseerde rope access technieken is
-              Aerial Access in staat op moeilijke toegankelijke locaties
-              werkzaamheden uit te voeren.
+              By using specialized rope access techniques, Aerial Access is able
+              to perform work in difficult accessible locations .
             </h2>
           </div>
           <div className="main-text">
             <h3>Aerial Acces</h3>
             <p>
-              In samenwerking met Marinade Studios hebben wij voor Aerial Access
-              de complete site & brandind vernieuwd. Marinade Studios is
-              verantwoordelijk geweest voor het ontwerp, huisstijl & branding.
-              Wij hebben voor het development & het ontwerp van mobiele schermen
-              gezorgd. Hiervoor hebben wij een custom site gemaakt die vanaf
-              scratch is gebouwd. Wij zijn trots op dit werk omdat het volledig
-              zelf ontworpen is, dit wil zeggen dat deze site een exclusief
-              ontwerp heeft die nergens anders te bekennen is. Hierdoor krijgt
-              Aerial Access een eigen verhaal.
+              In collaboration with Marinade Studios we have renewed the
+              complete site & brandind for Aerial Access. Marinade Studios has
+              been responsible for the design, corporate identity & branding. We
+              took care of the development & design of mobile screens. For this
+              we have created a custom site that has been built from scratch. We
+              are proud of this work because it is completely self-designed,
+              which means that this site has an exclusive design that cannot be
+              seen anywhere else. This gives Aerial Access its own story.
             </p>
           </div>
         </div>
@@ -77,18 +73,18 @@ const AerialWork = ({ location }) => {
       <div className="work-summary">
         <div>
           <h3 className="h3">
-            Laforga denkt mee vanuit het perspectief van de klant
+            Laforga thinks along from the customer's perspective
           </h3>
           <p>
             {" "}
-            Enthousiaste agency met inzicht. Heeft voor Aerial Access een mooie
-            site ontworpen die volledig voldeed aan onze eisen. Denkt mee met
-            ontwerp vanuit de perspectief van de klant en laat ruimte voor eigen
-            ideeën. Fijne samenwerking met oog voor service.
+            Enthusiastic agency with insight. Designed a beautiful site for
+            Aerial Access that fully met our requirements. Thinks along with the
+            design from the customer's perspective and leaves room for your own
+            ideas. Pleasant cooperation with an eye for service.
           </p>
         </div>
       </div>
-      <Footer />
+      <Footer lang="en" />
     </section>
   );
 };

@@ -26,7 +26,7 @@ const IndexPage = ({ location }) => {
   };
 
   return (
-    <div>
+    <div lang="en">
       {/* <Helmet
         htmlAttributes={{
           lang: "nl",
@@ -38,22 +38,23 @@ const IndexPage = ({ location }) => {
       
       </Helmet> */}
       <Seo
-        lang="nl"
+        lang="en"
         image={metaImage}
         title="Laforga"
+        description="Start selling online with Shopify today or scale your store with custom features. We turn brands and companies into online legends. Reaching your full potential shouldn't put you down."
         pathname={location.pathname}
       />
-      <AccessProvider>
-        <SectionOne />
-        <SectionTwo />
-        <SectionThree />
-        <SectionFour />
-        <SectionFive />
-        <OurWork />
-        <SectionSix />
-        <SectionSeven />
-        <Testimonials />
-        <Footer />
+      <AccessProvider lang="en">
+        <SectionOne lang="en" />
+        <SectionTwo lang="en" />
+        <SectionThree lang="en" />
+        <SectionFour lang="en" />
+        <SectionFive lang="en" />
+        <OurWork lang="en" />
+        <SectionSix lang="en" />
+        <SectionSeven lang="en" />
+        <Testimonials lang="en" />
+        <Footer lang="en" />
       </AccessProvider>
     </div>
   );

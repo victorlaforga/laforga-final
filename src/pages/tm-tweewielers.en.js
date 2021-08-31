@@ -26,21 +26,21 @@ const TmTweewielers = ({ location }) => {
         <link rel="canonical" href="https://www.laforga.nl" />
       </Helmet> */}
       <Seo
-        lang="nl"
         pathname={location.pathname}
         image={metaImage}
         title="T&M Tweewielers"
-        description="T&M Tweewielers is de grootste tweewielers winkel in Haarlem.
-              Experts in het repareren & verkopen van fietsen en scooters."
+        description="T&M Tweewielers is the largest bicycle store in Haarlem.
+        Experts in repairing & selling bicycles and scooters."
       />
       <div className="container-banner tm">
         <AccessProvider>
           <Navigation
             link="/tm-tweewielers"
+            lang="en"
             open={open}
             toggleMenu={() => setOpen(!open)}
           />
-          <Menu open={open} toggleMenu={() => setOpen(!open)} />
+          <Menu lang="en" open={open} toggleMenu={() => setOpen(!open)} />
         </AccessProvider>
         <h1>
           <mark>T&M Tweewielers</mark>
@@ -50,45 +50,44 @@ const TmTweewielers = ({ location }) => {
         <div className="work-main--info">
           <div className="subtext">
             <h2>
-              T&M Tweewielers is de grootste tweewielers winkel in Haarlem.
-              Experts in het repareren & verkopen van fietsen en scooters.
+              T&M Tweewielers is the largest bicycle store in Haarlem. Experts
+              in repairing & selling bicycles and scooters.
             </h2>
           </div>
           <div className="main-text">
             <h3>T&M Tweewielers</h3>
             <p>
-              Voor T&M Tweewielers hebben bij alles in handen genomen. We hebben
-              een nieuw logo, nieuwe huisstijl, en hun retail winkel
-              getransformeerd in een webshop om in dit digitale tijdperk te
-              groeien. Ze hebben nu dus 2 verkooppunten, fysiek en digitaal, wat
-              dus voor extra inkomsten zorgt.{" "}
+              For T&M Tweewielers took care of everything. We have a new logo,
+              new corporate identity, and transformed their retail store into a
+              webshop to grow in this digital age . So they now have 2 points of
+              sale, physical and digital, which provides extra income.{" "}
             </p>
           </div>
         </div>
         <div className="work-icons">
           <div>
             <h3 className="h4">100%</h3>
-            <p>Nieuwe site & branding</p>
+            <p>New site & branding</p>
           </div>
           <div>
             <h3 className="h4">100%</h3>
-            <p>Huisstijl van de winkel overgenomen</p>
+            <p>The store's corporate identity has been adopted</p>
           </div>
         </div>
       </section>
       <div className="work-subbanner tm"></div>
       <div className="work-summary">
         <div>
-          <h3>Onze retail winkel weerspiegelt de webshop</h3>
+          <h3>Our retail store reflects the webshop</h3>
           <p>
             {" "}
-            Laforga heeft voor ons het hele pakket gemaakt. Van de huisstijl en
-            het logo tot de webshop zelf. We zijn onzettend blij met het
-            resultaat en de webshop weerspiegelt onze retail winkel.
+            Laforga made the whole package for us. From the corporate identity
+            and logo to the webshop itself. We are very happy with the result
+            and the webshop reflects our retail store.
           </p>
         </div>
       </div>
-      <Footer />
+      <Footer lang="en" />
     </section>
   );
 };

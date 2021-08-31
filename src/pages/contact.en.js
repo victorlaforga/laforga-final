@@ -28,20 +28,20 @@ const ContactPage = ({ location }) => {
       </Helmet> */}
 
       <Seo
-        lang="nl"
         image={metaImage}
         title="Contact"
-        description="Neem contact met ons op. Wij reageren binnen 24 uur."
+        description="Contact us. We respond within 24 hours."
         pathname={location.pathname}
       />
 
       <AccessProvider>
         <Navigation
           link="/contact"
+          lang="en"
           open={open}
           toggleMenu={() => setOpen(!open)}
         />
-        <Menu open={open} toggleMenu={() => setOpen(!open)} />
+        <Menu lang="en" open={open} toggleMenu={() => setOpen(!open)} />
       </AccessProvider>
       <div className="contact-container--info">
         <div className="contact-info">
@@ -51,8 +51,8 @@ const ContactPage = ({ location }) => {
           </div>
           <br />
           <div className="">
-            <h3>Telefoonnummer: </h3>{" "}
-            <a href="tel:+31232084022">+31 23 208 4022</a> <br />
+            <h3>Mobile: </h3> <a href="tel:+31232084022">+31 23 208 4022</a>{" "}
+            <br />
           </div>
           <div>
             <a href="https://api.whatsapp.com/send?phone=+31628340312">
@@ -64,14 +64,14 @@ const ContactPage = ({ location }) => {
         <div className="contact-aanvraag">
           <h3 className="h2">Ready?</h3>
           <p>
-            Ben jij klaar om jouw winkel om te zetten in een digitale machine?
-            Of ben je meer dan ready om jouw Shopify Store op te schalen met
-            nieuwe features? Vul dan ons formulier in binnen 3 minuten!
+            Are you ready to turn your store into a digital machine? Or are you
+            more than ready to scale up your Shopify Store with new features?
+            Then fill in our form within 3 minutes!
           </p>{" "}
           <br />
-          <p>Wij antwoorden binnen 24 uur.</p>
+          <p>We will reply within 24 hours.</p>
           <a className="aanvraag-btn" href="/aanvraag/">
-            Ga naar het contactformulier
+            Go to the contact form
           </a>
         </div>
       </div>

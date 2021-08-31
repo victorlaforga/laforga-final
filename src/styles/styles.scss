@@ -115,6 +115,88 @@ ul {
 
 //   // overflow-x: hidden;
 // }
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 70px;
+  height: 34px;
+  // margin-top: -30px;
+  margin-right: 20px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #1d4f61;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider-right-text {
+  position: absolute;
+  z-index: 1;
+  color: white;
+  right: 15%;
+  top: 30%;
+
+  font-family: "Bebas-Bold";
+}
+
+.slider-left-text {
+  position: absolute;
+  z-index: 1;
+  left: 15%;
+  top: 30%;
+
+  font-family: "Bebas-Bold";
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider-active {
+  background-color: rgba(238, 111, 87, 0.5);
+}
+
+.slider-active {
+  box-shadow: 0 0 1px rgba(238, 111, 87, 0.5);
+}
+
+.slider-active:before {
+  -webkit-transform: translateX(36px);
+  -ms-transform: translateX(36px);
+  transform: translateX(36px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
 
 .underline {
   display: inline-block;
@@ -248,7 +330,8 @@ a.underline.cool-link::after {
     line-height: 19px;
     opacity: 0;
     transform: translateY(-30px);
-    position: fixed;
+    position: relative;
+    // margin-top: 15px;
     -webkit-transform: translateY(-30px);
     -moz-transform: translateY(-30px);
     -ms-transform: translateY(-30px);
@@ -1170,7 +1253,7 @@ footer {
 
   .main-section div.intro-text h1 {
     font-size: 78px;
-    line-height: 94px;
+    line-height: 80px;
   }
 
   .main-section div.intro-text p {
@@ -1598,6 +1681,14 @@ footer {
 
     .start-project-container {
       right: 30px;
+      display: grid;
+      .switch {
+        position: absolute;
+        margin-top: -30px;
+      }
+      .start-project {
+        margin-top: 25px;
+      }
     }
   }
 }
@@ -2685,7 +2776,7 @@ div.container-services.support#support {
   align-items: center;
   position: fixed;
   right: 50px;
-  width: 93px;
+  max-width: 300px;
   z-index: 20000;
 }
 

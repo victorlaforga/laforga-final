@@ -25,7 +25,11 @@ const MyTypeformEmbed = ({ location }) => {
       <Seo image={metaImage} title="Aanvraag" pathname={location.pathname} />
       <div className="inquiry-container">
         <AccessProvider>
-          <Navigation open={open} toggleMenu={() => setOpen(!open)} />
+          <Navigation
+            // link="/aanvraag"
+            open={open}
+            toggleMenu={() => setOpen(!open)}
+          />
           <Menu open={open} toggleMenu={() => setOpen(!open)} />
         </AccessProvider>
 

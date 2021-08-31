@@ -2,10 +2,10 @@ import React from "react";
 import { MainSection } from "./section-3/index";
 // import '../styles/styles.scss'
 
-const SectionThree = () => {
+const SectionThree = ({ lang }) => {
   return (
     <section className="section-three">
-      <MainSection />
+      <MainSection lang={lang} />
     </section>
   );
 };
