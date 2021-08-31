@@ -1,5 +1,3 @@
-
-
 import React, { useRef, useEffect } from "react";
 // import { Helmet } from "react-helmet";
 import { createWidget } from "@typeform/embed";
@@ -28,7 +26,8 @@ const MyTypeformEmbed = ({ location }) => {
       <div className="inquiry-container">
         <AccessProvider>
           <Navigation
-            // link="/aanvraag"
+            lang="en"
+            link="/aanvraag"
             open={open}
             toggleMenu={() => setOpen(!open)}
           />

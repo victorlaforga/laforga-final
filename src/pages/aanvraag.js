@@ -26,7 +26,7 @@ const MyTypeformEmbed = ({ location }) => {
       <div className="inquiry-container">
         <AccessProvider>
           <Navigation
-            // link="/aanvraag"
+            link="/aanvraag"
             open={open}
             toggleMenu={() => setOpen(!open)}
           />

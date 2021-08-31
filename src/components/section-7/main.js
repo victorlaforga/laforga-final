@@ -133,7 +133,8 @@ const MainSectionSeven = ({ lang }) => {
           <h3 className="h2">Our services</h3>
           <p>
             We love transparency and honesty. That is why we are open about our
-            prices and services. Reaching your full potential shouldn't make you bankrupt. Do you have specific questions? {""}
+            prices and services. Reaching your full potential shouldn't make you
+            bankrupt. Do you have specific questions? {""}
             <a href="/en/contact/" className="underline">
               Contact
             </a>{" "}
@@ -165,7 +166,7 @@ const MainSectionSeven = ({ lang }) => {
               <li>Live within 10 days!</li>
             </ul>
             <div className="container-services--footer">
-              <a href="/aanvraag/">Request quote</a>
+              <a href="/en/aanvraag/">Request quote</a>
               <div className="pricing">
                 <span className="h4">from €999</span>
                 <p>* all prices are exclusive of VAT</p>
@@ -183,7 +184,7 @@ const MainSectionSeven = ({ lang }) => {
               <li>1-3 exclusive & custom designed pages </li>
             </ul>
             <div className="container-services--footer">
-              <a href="/aanvraag/">Request quote</a>
+              <a href="/en/aanvraag/">Request quote</a>
               <div className="pricing">
                 <span className="h4">from €1999</span>
                 <p>* all prices are exclusive of VAT</p>
@@ -202,7 +203,7 @@ const MainSectionSeven = ({ lang }) => {
               <li>Built & designed especially for your company </li>
             </ul>
             <div className="container-services--footer">
-              <a href="/aanvraag/">Request a quote</a>
+              <a href="/en/aanvraag/">Request a quote</a>
               <div className="pricing">
                 <span className="h4">from €4999</span>
                 <p>* all prices are exclusive of VAT</p>
