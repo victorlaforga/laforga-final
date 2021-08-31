@@ -85,7 +85,7 @@ const MainSectionSeven = ({ lang }) => {
               <li>Wereldwijde concurrenten analyse</li>
               <li>Exclusief ontwerp!</li>
               <li>Geoptimaliseerde webshop</li>
-              <li>Gebouwd & ontwporpen speciaal voor je bedrijf</li>
+              <li>Gebouwd & ontwporpen speciaal voor uw bedrijf</li>
             </ul>
             <div className="container-services--footer">
               <a href="/aanvraag/">Vraag offerte aan</a>
@@ -166,7 +166,7 @@ const MainSectionSeven = ({ lang }) => {
               <li>Live within 10 days!</li>
             </ul>
             <div className="container-services--footer">
-              <a href="/en/aanvraag/">Request quote</a>
+              <a href="/aanvraag/">Request quote</a>
               <div className="pricing">
                 <span className="h4">from €999</span>
                 <p>* all prices are exclusive of VAT</p>
@@ -184,7 +184,7 @@ const MainSectionSeven = ({ lang }) => {
               <li>1-3 exclusive & custom designed pages </li>
             </ul>
             <div className="container-services--footer">
-              <a href="/en/aanvraag/">Request quote</a>
+              <a href="/aanvraag/">Request quote</a>
               <div className="pricing">
                 <span className="h4">from €1999</span>
                 <p>* all prices are exclusive of VAT</p>
@@ -203,7 +203,7 @@ const MainSectionSeven = ({ lang }) => {
               <li>Built & designed especially for your company </li>
             </ul>
             <div className="container-services--footer">
-              <a href="/en/aanvraag/">Request a quote</a>
+              <a href="/aanvraag/">Request a quote</a>
               <div className="pricing">
                 <span className="h4">from €4999</span>
                 <p>* all prices are exclusive of VAT</p>

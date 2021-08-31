@@ -47,9 +47,8 @@ const IndexPage = ({ location }) => {
         <SectionOne />
         <SectionTwo />
         <SectionThree />
-       
-        <SectionFive />
         <SectionFour />
+        <SectionFive />
         <OurWork />
         <SectionSix />
         <SectionSeven />

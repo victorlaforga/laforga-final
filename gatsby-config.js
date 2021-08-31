@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: "Digital Creative Agency | E-Commerce | Shopify",
+    title: "Digital Creative Agency | Shopify Partner",
     author: "Victor Laforga",
     keywords: [
       "Shopify Partner",
@@ -13,18 +13,10 @@ module.exports = {
       "Shopify",
       "Shopify expert",
       "Webshop",
-      "Website",
-      "E-commerce",
-      "Ecommerce",
-      "Online selling",
-      "Fashion brands",
-      "Scale up",
-      "Opschalen",
-      "Dhl ecommerce",
-      "Ecommerce website"
+      "E-commerce"
     ],
     description:
-      "Begin vandaag nog met online verkopen met Shopify of schaal je winkel op met custom features. Wij zetten merken en bedrijven om in online legendes. Het bereiken van je volledige potentie zou je niet in de min moeten zetten. Wij zijn een innovatieve E-commerce Agency",
+      "Begin vandaag nog met online verkopen met Shopify of schaal je winkel op met custom features. Wij zetten merken en bedrijven om in online legendes. Het bereiken van je volledige potentie zou je niet in de min moeten zetten",
     siteUrl: "https://www.laforga.nl",
   },
   plugins: [

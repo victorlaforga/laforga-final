@@ -29,8 +29,8 @@ const WebsiteOffer = ({ lang }) => {
               in websites. Wij geloven in het produceren van creatieve producten
               die harten veroveren, geesten inspireren en zakelijke resultaten
               opleveren. Hierbij ontwerpen wij specifiek gericht op de behoeftes
-              van jouw bedrijf. Hierdoor krijg je een geoptimaliseerde website die
-              jouw bedrijf uitstraalt.{" "}
+              van uw bedrijf. Hierdoor krijg je een geoptimaliseerde website die
+              uw bedrijf uitstraalt.{" "}
             </p>
             <a href="/aanvraag/">Start project</a>
           </div>
@@ -50,8 +50,8 @@ const WebsiteOffer = ({ lang }) => {
                 ook in websites. Wij geloven in het produceren van creatieve
                 producten die harten veroveren, geesten inspireren en zakelijke
                 resultaten opleveren. Hierbij ontwerpen wij specifiek gericht op
-                de behoeftes van jouw bedrijf. Hierdoor krijg je een
-                geoptimaliseerde website die jouw bedrijf uitstraalt.{" "}
+                de behoeftes van uw bedrijf. Hierdoor krijg je een
+                geoptimaliseerde website die uw bedrijf uitstraalt.{" "}
               </p>
               <a href="/">Start project</a>
             </div>

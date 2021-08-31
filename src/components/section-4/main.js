@@ -44,7 +44,7 @@ const MainSectionFour = ({ lang }) => {
 
         <h3 className="h2">
           Online shopping behavior is only increasing.{" "}
-          <mark>Online visibility</mark> has never been{" "}
+          <mark>Online visibility</mark> has never been <br />
           <mark> more important</mark>.
         </h3>
       </div>

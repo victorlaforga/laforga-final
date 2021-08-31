@@ -70,7 +70,7 @@ const ContactPage = ({ location }) => {
           </p>{" "}
           <br />
           <p>We will reply within 24 hours.</p>
-          <a className="aanvraag-btn" href="/en/aanvraag/">
+          <a className="aanvraag-btn" href="/aanvraag/">
             Go to the contact form
           </a>
         </div>

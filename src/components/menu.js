@@ -161,7 +161,7 @@ const Menu = ({ open, toggleMenu, lang }) => {
                   href="/"
                   onClick={(e) => toggleMenu(e, "doen-wij")}
                 >
-                  <span itemprop="name">What we do</span>
+                  <span itemprop="name">Our services</span>
                 </a>
               </li>
               <li itemprop="hasPart">
