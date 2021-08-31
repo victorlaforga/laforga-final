@@ -1978,7 +1978,8 @@ footer {
 }
 @media screen and (max-width: 485px) {
   li.content__container__list__item {
-    margin-left: 0;
+    // margin-left: 0;
+    margin: 0;
   }
 }
 

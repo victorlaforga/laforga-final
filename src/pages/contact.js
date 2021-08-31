@@ -43,7 +43,7 @@ const ContactPage = ({ location }) => {
         />
         <Menu open={open} toggleMenu={() => setOpen(!open)} />
       </AccessProvider>
-      <div className="contact-container--info">
+      <div className="contact-container--info ">
         <div className="contact-info">
           <div className="">
             <h3>E-mail:</h3>
