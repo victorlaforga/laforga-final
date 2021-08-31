@@ -76,30 +76,27 @@ const MainSectionThree = ({ lang }) => {
             Why <mark>shopify</mark> <mark>for webshops?</mark>
           </h2>
           <p>
-            Shopify is the most scalable, versatile and fastest growing
-            ecommerce platform. Trusted by leading brands, Shopify is a reliable
-            and secure ecommerce solution for businesses of all sizes.
+          Shopify is the most scalable, versatile and fastest growing ecommerce platform. Trusted by leading brands, Shopify is a reliable and secure ecommerce solution for businesses of all sizes.
           </p>
           <br />{" "}
           <p>
-            We are official partners with Shopify with a team of Shopify &
+            We are official Shopify partners, including a team of developers &
             design experts!
           </p>{" "}
           <br />{" "}
           <p>
             {" "}
-            In addition, Shopfiy is very easy to use & user-friendly. Within a
-            few clicks you have already added a product ! Shopify is borderless,
-            so you can also sell abroad.
+            In addition, Shopfiy is very user-friendly. With a
+            few clicks, you can have a new product added! Shopify is borderless,
+            so you can even sell abroad.
           </p>{" "}
           <br />{" "}
           <p>
-            With all our{" "}
+            Included in all our{" "}
             <a className="cool-link underline" href="#diensten-prijzen">
               services
             </a>{" "}
-            you get a free Shopify course in which we explain everything you
-            need to know in an hour !
+            you get a free Shopify course which we explain everything you need to know within just an hour!
           </p>
         </div>
         <div id="video-container">

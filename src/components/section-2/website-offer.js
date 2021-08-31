@@ -67,16 +67,16 @@ const WebsiteOffer = ({ lang }) => {
             className={`website-offer-container  ${inView && "show"}`}
             ref={ref}
           >
-            <span className="h3">need a website?</span>
+            <span className="h3">Need a website?</span>
 
             <p>
-              We are digital master builders. In this digital age, it is
-              important for a company or self-employed person to have an online
-              sign . We are not only specialized in webshops, but also in
-              websites. We believe in producing creative products that capture
-              hearts, inspire minds and deliver business results . We design
-              specifically aimed at the needs of your company. This will give
-              you an optimized website that reflects your company.{" "}
+            We are digital master builders. In this digital age, it is
+                important for a company, or self-employed person to have an
+                online presence. We are not only specialized in webshops, but also
+                in websites. We believe in producing creative products that
+                capture hearts, inspire minds and deliver optimal business results. We create
+                designs specifically aimed towards the needs of your company. This
+                will provide you with an optimized website that reflects the mission your company.{" "}
             </p>
             <a href="/aanvraag/">Start project</a>
           </div>
@@ -91,12 +91,12 @@ const WebsiteOffer = ({ lang }) => {
             <div className={on ? " showing" : "Question__response "}>
               <p className=" ">
                 We are digital master builders. In this digital age, it is
-                important for a company or self-employed person to have an
-                online sign . We are not only specialized in webshops, but also
+                important for a company, or self-employed person to have an
+                online presence. We are not only specialized in webshops, but also
                 in websites. We believe in producing creative products that
-                capture hearts, inspire minds and deliver business results . We
-                design specifically aimed at the needs of your company. This
-                will give you an optimized website that reflects your company.{" "}
+                capture hearts, inspire minds and deliver optimal business results. We create
+                designs specifically aimed towards the needs of your company. This
+                will provide you with an optimized website that reflects the mission your company.{" "}
               </p>
               <a href="/">Start project</a>
             </div>

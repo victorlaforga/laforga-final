@@ -133,10 +133,9 @@ const MainSectionSeven = ({ lang }) => {
           <h3 className="h2">Our services</h3>
           <p>
             We love transparency and honesty. That is why we are open about our
-            prices and services. Reaching your full potential shouldn't put you
-            down. Do you have specific questions? Take {""}
+            prices and services. Reaching your full potential shouldn't make you bankrupt. Do you have specific questions? {""}
             <a href="/en/contact/" className="underline">
-              contact
+              Contact
             </a>{" "}
             {""}
             us

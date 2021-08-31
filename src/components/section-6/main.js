@@ -195,12 +195,9 @@ const MainSectionSix = ({ lang }) => {
                 Strategy<span id="number">1</span>
               </h3>
               <p>
-                Only your success is our success. We empathize & put ourselves
-                completely in the customer's shoes, and try to think along from
-                this perspective . We spend quality time with our clients to
-                discover what their brand really stands for & delve into the
-                company. Our UX designers analyze the competition and see how we
-                can get ahead of them.
+              We only succeed when you succeed. We empathize & put ourselves completely in the client's shoes, and try to think from their perspective . We spend quality time with our clients to
+                dive deep and discover what their brand really stands for. In addition, our UX designers analyze the competition and discover how to
+                 get ahead of them.
               </p>
             </div>
             <div className={`services-design service`}>
@@ -208,13 +205,7 @@ const MainSectionSix = ({ lang }) => {
                 Design<span id="number">2</span>
               </h3>
               <p>
-                We believe that website design is the most important factor in
-                converting visitors into customers. With a young, fresh &
-                ambitious team we are aware of the latest trends & we design the
-                most modern websites & webshops. With innovative design
-                solutions, we ensure that your store appeals to your customers.
-                We combine design and digital innovation to create emotion and
-                stories.
+              We believe that website design is the most important factor in converting visitors into customers. With a young, fresh & ambitious team, we stay up to date with the latest trends & design modern websites & webshops. We combine design and digital innovation to ensure that your store appeals to your customers. 
               </p>
             </div>
             <div className={`services-development service`}>
@@ -222,11 +213,7 @@ const MainSectionSix = ({ lang }) => {
                 Web Development <span id="number">3</span>
               </h3>
               <p>
-                Our focus is always on usability, usability and store
-                performance. Our team brings designs to life. Fast and optimized
-                for maximum conversion. We develop for the present and build for
-                the future. . We build flexible and scalable solutions using
-                modern technologies .
+              We develop for the present and build for the future. Our focus is on usability and store performance. Our team will bring your designs to life quickly and ensure optimization for maximum conversion. We build flexible and scalable solutions using modern technology. 
               </p>
             </div>
 
@@ -238,16 +225,12 @@ const MainSectionSix = ({ lang }) => {
               <p>
                 Already have a{" "}
                 <span className="bold">existing Shopify store</span> and feel
-                limited by your themes? Then you have come to the right place
-                with us . We make custom pages and parts for your webshop. Never
-                feel limited! We are able to fulfill your digital wishes .
-                Contact us and we can see what we can do for you!
+                limited by your themes? Then you have come to the right place  by choosing to work with us. We make custom pages and content for your webshop without limits. We are able to fulfill your digital wishes. 
               </p>
               <p>
-                We also specialize in website speed optimization. When
-                optimizing the speed, we guarantee good luck. Has the agreed
-                speed score not been achieved? = Money back
+              We also specialize in speed optimization and can guarantee positive results. If your desired web speed has not been achieved, we will give you your money back. No result = money back!
               </p>
+              <p>Contact us and we will work with you to fulfill your digital wishes!</p>
             </div>
           </div>
         </div>

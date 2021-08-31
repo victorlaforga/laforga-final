@@ -40,7 +40,7 @@ const IndexPage = ({ location }) => {
       <Seo
         lang="nl"
         image={metaImage}
-        title="Laforga"
+        title="Laforga | E-commerce Agency"
         pathname={location.pathname}
       />
       <AccessProvider>

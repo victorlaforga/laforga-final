@@ -43,9 +43,9 @@ const MainSectionFour = ({ lang }) => {
         </Player>
 
         <h3 className="h2">
-          Shopping behavior is only increasing. <mark>Online visibility</mark>{" "}
+          Online shopping behavior is only increasing. <mark>Online visibility</mark>{" "}
           has never been <br />
-          <mark>important</mark>.
+          <mark> more important</mark>.
         </h3>
       </div>
     );

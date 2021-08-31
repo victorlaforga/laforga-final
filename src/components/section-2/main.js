@@ -34,22 +34,22 @@ const MainSectionTwo = ({ lang }) => {
         <div className="content-section-two">
           <div class="content">
             {" "}
-            We are experts in the
+            We are experts in
             <div class="content__container">
               <ul class="content__container__list">
-                <li class="content__container__list__item">design</li>
-                <li class="content__container__list__item">build</li>
-                <li class="content__container__list__item">optimize</li>
-                <li class="content__container__list__item">develop</li>
+                <li class="content__container__list__item">designing</li>
+                <li class="content__container__list__item">building</li>
+                <li class="content__container__list__item">optimizing</li>
+                <li class="content__container__list__item">developing</li>
               </ul>
             </div>
             <br />
-            from shopify stores.
+            your Shopify stores.
           </div>
           <p>
             We make it easy to sell your products online. If you're just
-            starting your trading journey, switching online or creating a new
-            product line , we can get your online store up and running in no
+            starting your business journey, switching to e-commerce or creating a new
+            product line, we can get your online store up and running in no
             time.
           </p>
         </div>

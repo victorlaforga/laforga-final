@@ -40,8 +40,8 @@ const IndexPage = ({ location }) => {
       <Seo
         lang="en"
         image={metaImage}
-        title="Laforga"
-        description="Start selling online with Shopify today or scale your store with custom features. We turn brands and companies into online legends. Reaching your full potential shouldn't put you down."
+        title="Laforga | E-commerce Agency"
+        description="Start selling online with Shopify today or scale your store with custom features. We turn brands and companies into online legends. Reaching your full potential shouldn't put you down. E-commerce agency."
         pathname={location.pathname}
       />
       <AccessProvider lang="en">

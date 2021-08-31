@@ -925,6 +925,7 @@ mark {
       font-size: 48px;
       line-height: 55px;
       color: #1b1b1b;
+      margin-bottom: 10px;
     }
 
     p {
@@ -1684,10 +1685,11 @@ footer {
       display: grid;
       .switch {
         position: absolute;
-        margin-top: -30px;
+    width: 70px;
+    margin-left: 30px;
       }
       .start-project {
-        margin-top: 25px;
+        margin-top: 75px;
       }
     }
   }
