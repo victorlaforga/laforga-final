@@ -20,9 +20,9 @@ const MainSectionTwo = ({ lang }) => {
             van shopify stores.
           </div>
           <p>
-            We maken het eenvoudig om uw producten online te verkopen. Als u net
-            aan uw handelsreis begint, online overstapt of een nieuwe
-            productlijn maakt, kunnen we uw online winkel binnen de kortste tijd
+            We maken het eenvoudig om je producten online te verkopen. Als je net
+            aan je handelsreis begint, online overstapt of een nieuwe
+            productlijn maakt, kunnen we je online winkel binnen de kortste tijd
             helemaal opzetten.{" "}
           </p>
         </div>
@@ -37,10 +37,10 @@ const MainSectionTwo = ({ lang }) => {
             We are experts in
             <div class="content__container">
               <ul class="content__container__list">
-                <li class="content__container__list__item">designing</li>
-                <li class="content__container__list__item">building</li>
-                <li class="content__container__list__item">optimizing</li>
-                <li class="content__container__list__item">developing</li>
+                <li class="content__container__list__item eng-list">designing</li>
+                <li class="content__container__list__item eng-list">building</li>
+                <li class="content__container__list__item eng-list">optimizing</li>
+                <li class="content__container__list__item eng-list">developing</li>
               </ul>
             </div>
             <br />

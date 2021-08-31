@@ -16,7 +16,7 @@ const MainSectionSix = ({ lang }) => {
             <div className="services-intro-text">
               <h3>Wat doen wij?</h3>
               <p>
-                Wij helpen u in alle fasen van de realisatie van uw digitale
+                Wij helpen jou in alle fasen van de realisatie van je digitale
                 project.
               </p>
             </div>
@@ -71,7 +71,7 @@ const MainSectionSix = ({ lang }) => {
                 Strategie<span id="number">1</span>
               </h3>
               <p>
-                Alleen uw succes is ons succes. Wij leven ons in & verplaatsen
+                Alleen jouw succes is ons succes. Wij leven ons in & verplaatsen
                 ons volledig in de klant, en proberen vanuit dit perspectief mee
                 te denken. We brengen quality time door met onze klanten om te
                 ontdekken waar hun merk echt voor staat & ons te verdiepen in
@@ -138,7 +138,7 @@ const MainSectionSix = ({ lang }) => {
         <div className="services-container">
           <div className="services-intro">
             <div className="services-intro-text">
-              <h3>What do we do?</h3>
+              <h3>What we do</h3>
               <p>
                 We help you in all phases of the realization of your digital
                 project.
