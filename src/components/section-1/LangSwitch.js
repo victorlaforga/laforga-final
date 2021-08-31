@@ -11,6 +11,7 @@ export default function LangSwitch({ lang, link }) {
   if (!lang) {
     return (
       <label className="switch">
+        <span className="slider-right-text">NL</span>
         <input defaultChecked={langu} type="checkbox" onChange={Handle} />
         <span className={`slider round ${langu ? "slider-active" : ""}`} />
       </label>
@@ -18,6 +19,7 @@ export default function LangSwitch({ lang, link }) {
   } else {
     return (
       <label className="switch">
+        <span className="slider-left-text">EN</span>
         <input defaultChecked={langu} type="checkbox" onChange={Handle} />
         <span className={`slider round slider-active`} />
       </label>

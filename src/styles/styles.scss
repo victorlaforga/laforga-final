@@ -144,6 +144,25 @@ ul {
   transition: 0.4s;
 }
 
+.slider-right-text {
+  position: absolute;
+  z-index: 1;
+  color: white;
+  right: 15%;
+  top: 30%;
+
+  font-family: "Bebas-Bold";
+}
+
+.slider-left-text {
+  position: absolute;
+  z-index: 1;
+  left: 15%;
+  top: 30%;
+
+  font-family: "Bebas-Bold";
+}
+
 .slider:before {
   position: absolute;
   content: "";
