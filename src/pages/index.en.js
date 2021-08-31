@@ -48,8 +48,9 @@ const IndexPage = ({ location }) => {
         <SectionOne lang="en" />
         <SectionTwo lang="en" />
         <SectionThree lang="en" />
-        <SectionFour lang="en" />
+       
         <SectionFive lang="en" />
+        <SectionFour lang="en" />
         <OurWork lang="en" />
         <SectionSix lang="en" />
         <SectionSeven lang="en" />

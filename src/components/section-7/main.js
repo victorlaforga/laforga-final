@@ -85,7 +85,7 @@ const MainSectionSeven = ({ lang }) => {
               <li>Wereldwijde concurrenten analyse</li>
               <li>Exclusief ontwerp!</li>
               <li>Geoptimaliseerde webshop</li>
-              <li>Gebouwd & ontwporpen speciaal voor uw bedrijf</li>
+              <li>Gebouwd & ontwporpen speciaal voor je bedrijf</li>
             </ul>
             <div className="container-services--footer">
               <a href="/aanvraag/">Vraag offerte aan</a>
